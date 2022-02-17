@@ -14,12 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
 Route::get('version', function () {
-    sleep(4);
     return response()->json([
         'version' => '0.1.0',
         'timestamp' => date('Y-m-d H:i:s'),
