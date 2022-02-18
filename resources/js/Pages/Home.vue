@@ -1,7 +1,7 @@
 <template>
     <div class="margin-auto">
         <Head title="Crawler Home"/>
-        <h1>{{ title }}</h1>
+        <h1>{{ title }} => {{ $page.props.token }}</h1>
         <p v-for="(p, id) in contents" :key="id">{{ p }}</p>
 
         <div>
@@ -19,7 +19,7 @@
 
 <script>
 import { Link, Head } from '@inertiajs/inertia-vue3'
-import { getApiVersion } from '../Composables/api'
+import { getUser } from '../Composables/api'
 
 export default {
     components: {
@@ -33,7 +33,7 @@ export default {
     },
 
     setup() {
-        const { data, busy } = getApiVersion()
+        const { data, busy } = getUser()
 
         return {
             data, busy

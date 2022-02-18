@@ -1,5 +1,5 @@
 <template>
-    <div class="text-center">
+    <div class="margin-auto">
         <Head title="About Crawler" />
         <h1>About</h1>
         <div>
@@ -7,6 +7,7 @@
 
             <Link href="/">Home</Link>
         </div>
+        <pre>{{ JSON.stringify($page, null, 2) }}</pre>
     </div>
 </template>
 
@@ -21,7 +22,7 @@ export default {
 </script>
 
 <style scoped>
-.text-center {
-    text-align: center;
+.margin-auto {
+    margin: 0 1.2rem;
 }
 </style>

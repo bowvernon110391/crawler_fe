@@ -14,9 +14,14 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/abuud', function() {
+Route::get('/login', function () {
+    // simply redirect to sso login url
+    return Inertia::location(config('sso.login_url'));
+})->name('login');
+
+Route::get('/abuud', function () {
     return Inertia::render('About');
-});
+})->middleware('auth:web');
 
 Route::get('/', function () {
     // return view('welcome');

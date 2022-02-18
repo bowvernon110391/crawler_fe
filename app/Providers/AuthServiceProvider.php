@@ -2,8 +2,11 @@
 
 namespace App\Providers;
 
+use App\Models\SSO\User;
+use App\Services\Auth\SSOGuard;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-use Illuminate\Support\Facades\Gate;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -25,6 +28,13 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        Auth::viaRequest('sso-token', function (Request $request) {
+            $user = User::byToken($request->bearerToken())->first(); 
+            logger('sso-token: ', [
+                'user' => $user
+            ]);
+            
+            return $user;
+        });
     }
 }

@@ -16,12 +16,12 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
 
-            $table->string('username');
+            $table->string('username')->index();
             $table->string('group');
             $table->string('status');
-            $table->string('last_token');
+            $table->string('last_token')->index();
             $table->string('nama');
-            $table->string('nip')->nullable();
+            $table->string('nip')->nullable()->index();
             $table->string('kantor')->nullable();
             $table->string('kantor_id')->nullable();
             $table->string('kantor_level')->nullable();
@@ -29,6 +29,9 @@ class CreateUsersTable extends Migration
             $table->string('eselon2')->nullable();
             $table->string('kode_eselon3')->nullable();
             $table->string('eselon3')->nullable();
+
+            // add role, nullable? nope. must be empty
+            $table->string('role_string')->default('');
 
             $table->timestamps();
         });

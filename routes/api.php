@@ -21,3 +21,12 @@ Route::get('version', function () {
         'timezone' => date_default_timezone_get()
     ]);
 });
+
+
+Route::get('check-token', function (Request $request) {
+    $user = $request->user();
+
+    if ($user) {
+        return response()->json($user);
+    }
+})->middleware('auth:api');

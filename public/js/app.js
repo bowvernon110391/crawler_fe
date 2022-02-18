@@ -19328,9 +19328,9 @@ __webpack_require__.r(__webpack_exports__);
     contents: [Object, Array]
   },
   setup: function setup() {
-    var _getApiVersion = (0,_Composables_api__WEBPACK_IMPORTED_MODULE_1__.getApiVersion)(),
-        data = _getApiVersion.data,
-        busy = _getApiVersion.busy;
+    var _getUser = (0,_Composables_api__WEBPACK_IMPORTED_MODULE_1__.getUser)(),
+        data = _getUser.data,
+        busy = _getUser.busy;
 
     return {
       data: data,
@@ -19360,7 +19360,7 @@ var _withScopeId = function _withScopeId(n) {
 };
 
 var _hoisted_1 = {
-  "class": "text-center"
+  "class": "margin-auto"
 };
 
 var _hoisted_2 = /*#__PURE__*/_withScopeId(function () {
@@ -19389,7 +19389,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  })])]);
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("pre", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(JSON.stringify(_ctx.$page, null, 2)), 1
+  /* TEXT */
+  )]);
 }
 
 /***/ }),
@@ -19431,7 +19433,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
     title: "Crawler Home"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.title), 1
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.title) + " => " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$page.props.token), 1
   /* TEXT */
   ), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.contents, function (p, id) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", {
@@ -19466,18 +19468,45 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "getApiVersion": () => (/* binding */ getApiVersion)
+/* harmony export */   "getApiVersion": () => (/* binding */ getApiVersion),
+/* harmony export */   "getUser": () => (/* binding */ getUser)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
+
 
 
 var axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 
+var token = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(function () {
+  return (0,_inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.usePage)().props.value.token;
+});
+var client = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(function () {
+  return axios.create({
+    headers: {
+      Authorization: "Bearer ".concat(token.value)
+    }
+  });
+});
 function getApiVersion() {
   var data = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
   var busy = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(true); // request directly
 
-  axios.get('/api/version').then(function (res) {
+  client.value.get('/api/version').then(function (res) {
+    busy.value = false;
+    data.value = res.data;
+  })["catch"](function (e) {
+    busy.value = false;
+  });
+  return {
+    data: data,
+    busy: busy
+  };
+}
+function getUser() {
+  var data = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
+  var busy = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(true);
+  client.value.get('/api/check-token').then(function (res) {
     busy.value = false;
     data.value = res.data;
   })["catch"](function (e) {
@@ -19659,7 +19688,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.text-center[data-v-169e1534] {\n    text-align: center;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.margin-auto[data-v-169e1534] {\n    margin: 0 1.2rem;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
