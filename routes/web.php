@@ -53,5 +53,7 @@ Route::post('/logout', function (Request $request, \Jasny\SSO\Broker\Broker $bro
     Auth::logout();
 
     // redirect
-    return redirect('/');
+    // return redirect('/');
+    // use external redirect to force mounting
+    return Inertia::location(url('/'));
 })->middleware('auth');

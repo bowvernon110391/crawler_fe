@@ -27,17 +27,6 @@ export function getApiVersion() {
 }
 
 export function getUser() {
-    const data = ref({})
-    const busy = ref(true)
 
-    client.value.get('/api/check-token')
-        .then((res) => {
-            busy.value = false
-            data.value = res.data
-        })
-        .catch(e => {
-            busy.value = false
-        })
-
-    return { data, busy }
+    return client.value.get('/api/check-token')
 }

@@ -4,12 +4,12 @@
         <h1>{{ title }} => {{ $page.props.token }}</h1>
         <p v-for="(p, id) in contents" :key="id">{{ p }}</p>
 
-        <div v-if="$page.props.token">
+        <div>
             <div v-if="busy">
                 getting api version...
             </div>
             <div v-else>
-                <pre>{{ JSON.stringify(data, null, 2) }}</pre>
+                <pre>{{ JSON.stringify(userData, null, 2) }}</pre>
             </div>
         </div>
 
@@ -26,6 +26,7 @@
 <script>
 import { Link, Head } from '@inertiajs/inertia-vue3'
 import { getUser } from '../Composables/api'
+import { nextTick, onMounted, ref } from 'vue'
 
 export default {
     components: {
@@ -39,10 +40,21 @@ export default {
     },
 
     setup() {
-        const { data, busy } = getUser()
+        const userData = ref(null)
+        const busy = ref(true)
+
+        onMounted(() => {
+            console.log("Mounted at ", new Date().toString())
+            getUser().then((res) => {
+                userData.value = res.data
+                busy.value = false
+            }).catch(e => {
+                busy.value = false
+            })
+        })
 
         return {
-            data, busy
+            userData, busy
         }
     }
 };

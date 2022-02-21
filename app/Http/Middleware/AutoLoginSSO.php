@@ -34,6 +34,23 @@ class AutoLoginSSO {
         // get broker from our service provider?
         // $broker = app()->make(Broker::class);
 
+        // special case if we're in dev mode
+        if (app()->environment(['local', 'dev', 'development', 'staging', 'test'])) {
+            // authenticate using mock user
+            $mockup_user_id = config('sso.mock_user_id');
+            $user = User::find($mockup_user_id);
+            if (!$user) {
+                // then we don't even have mockup user. SAD!
+                abort(403, "Mockup user with id({$mockup_user_id}) doesn't exist. SAD! generate some, bucko!");
+            }
+            // the mockup user exist. login using that
+            Auth::login($user);
+            // continue chain
+            return $next($request);
+        }
+
+        // ==================================================================================================
+        // PRODUCTION MODE!
         // now we're back, but we need to verify
         $verification_string = $request->get('sso_verify');
 
