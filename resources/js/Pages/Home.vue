@@ -4,7 +4,7 @@
         <h1>{{ title }} => {{ $page.props.token }}</h1>
         <p v-for="(p, id) in contents" :key="id">{{ p }}</p>
 
-        <div>
+        <div v-if="$page.props.token">
             <div v-if="busy">
                 getting api version...
             </div>
@@ -13,7 +13,13 @@
             </div>
         </div>
 
-        <Link href="/abuud">About Page (shouldn't reload)</Link>
+        <div style="text-align: center">
+            <Link href="/abuud">About Page (shouldn't reload)</Link>
+            |
+            <Link href="/test">Test Error</Link>
+            |
+            <Link href="/logout" method="post" as="button">Log Out</Link>
+        </div>
     </div>
 </template>
 

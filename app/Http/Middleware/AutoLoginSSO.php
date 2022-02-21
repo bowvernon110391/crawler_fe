@@ -6,13 +6,23 @@ use App\Models\SSO\User;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Cookie;
 use Jasny\SSO\Broker\Broker;
-use Jasny\SSO\Broker\Cookies;
-use Jasny\SSO\Broker\Session;
 
-class AutoLoginSSO
-{
+/**
+ * AutoLoginSSO
+ * -------------------------------
+ * This middleware automatically login our user
+ * if we're logged in the SSO.
+ */
+class AutoLoginSSO {
+    // the broker instance
+    protected $broker;
+
+    // Use dependency injection to get broker...
+    public function __construct(Broker $broker) {
+        $this->broker = $broker;
+    }
+
     /**
      * Handle an incoming request.
      *
@@ -20,17 +30,16 @@ class AutoLoginSSO
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
-    public function handle(Request $request, Closure $next)
-    {
-        // get broker
-        $broker = $this->getBroker();
+    public function handle(Request $request, Closure $next) {
+        // get broker from our service provider?
+        // $broker = app()->make(Broker::class);
 
         // now we're back, but we need to verify
         $verification_string = $request->get('sso_verify');
 
         // eager verification
         if ($verification_string) {
-            $broker->verify($verification_string);
+            $this->broker->verify($verification_string);
 
             logger('SSOLogin: verifying', [
                 'verify' => $verification_string
@@ -39,12 +48,12 @@ class AutoLoginSSO
             // redirect again, without sso_verify
             return redirect($request->fullUrlWithoutQuery('sso_verify'));
         }
-        
+
         // redirect logic and all that bullshit
-        if (!$broker->isAttached()) {
+        if (!$this->broker->isAttached()) {
             // not attached, redirect!
             $return_url = $request->fullUrl();
-            $url = $broker->getAttachUrl(['return_url' => $return_url]);
+            $url = $this->broker->getAttachUrl(['return_url' => $return_url]);
 
             logger('SSOLogin: not attached!', [
                 'return_url' => $return_url,
@@ -55,7 +64,7 @@ class AutoLoginSSO
         }
 
         // attached and verified, check for user info
-        $user = $broker->request('GET', '/api/info.php');
+        $user = $this->broker->request('GET', '/api/info.php');
 
         // are we logged in?
         if ($user) {
@@ -64,7 +73,7 @@ class AutoLoginSSO
             ]);
 
             // cache user + login
-            $userModel = User::cacheUserObject($user, $broker->getBearerToken());
+            $userModel = User::cacheUserObject($user, $this->broker->getBearerToken());
 
             // check user (enabled?)
             if ($userModel->status == 'enabled') {
@@ -74,7 +83,11 @@ class AutoLoginSSO
 
                 Auth::login($userModel);
             } else {
-                // disabled!! must prevent access? just do nothing...
+                // well if in some cases the user is disabled mid-way...
+                // let's tell them they're banned!
+                if (Auth::check()) {
+                    abort(403, "Your user has been disabled. Contact administrator!");
+                }
             }
         } else {
             logger('SSOLogin: NOT LOGGED IN!');
@@ -85,12 +98,5 @@ class AutoLoginSSO
         }
 
         return $next($request);
-    }
-
-    public function getBroker(): Broker {
-        // auto construct
-        return (new Broker(
-            config('sso.url'), config('sso.broker'), config('sso.secret')
-        ));
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -21,7 +23,7 @@ Route::get('/login', function () {
 
 Route::get('/abuud', function () {
     return Inertia::render('About');
-})->middleware('auth:web');
+})->middleware('auth');
 
 Route::get('/', function () {
     // return view('welcome');
@@ -34,3 +36,22 @@ Route::get('/', function () {
         ]
     ]);
 });
+
+Route::get('/test', function () {
+    abort(403);
+});
+
+Route::post('/logout', function (Request $request, \Jasny\SSO\Broker\Broker $broker) {
+    // simply call our broker instance?
+    $broker->request('POST', '/api/logout.php');
+
+    // make our token unusable
+    $user = $request->user();
+    $user->disableToken();
+
+    // log our user out
+    Auth::logout();
+
+    // redirect
+    return redirect('/');
+})->middleware('auth');

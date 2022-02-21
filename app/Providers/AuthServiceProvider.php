@@ -8,8 +8,7 @@ use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvid
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class AuthServiceProvider extends ServiceProvider
-{
+class AuthServiceProvider extends ServiceProvider {
     /**
      * The policy mappings for the application.
      *
@@ -24,16 +23,17 @@ class AuthServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
-    {
+    public function boot() {
         $this->registerPolicies();
 
+        // this will authenticate user via bearer token in request header
+        // if the token is unrecognized, it will not be authenticated
         Auth::viaRequest('sso-token', function (Request $request) {
-            $user = User::byToken($request->bearerToken())->first(); 
+            $user = User::byToken($request->bearerToken())->first();
             logger('sso-token: ', [
                 'user' => $user
             ]);
-            
+
             return $user;
         });
     }

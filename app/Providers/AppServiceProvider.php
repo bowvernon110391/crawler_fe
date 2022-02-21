@@ -3,17 +3,24 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Jasny\SSO\Broker\Broker;
 
-class AppServiceProvider extends ServiceProvider
-{
+class AppServiceProvider extends ServiceProvider {
     /**
      * Register any application services.
      *
      * @return void
      */
-    public function register()
-    {
-        //
+    public function register() {
+        // register our broker class
+        $this->app->singleton(Broker::class, function ($app) {
+            logger('Broker Instance requested, serviced...');
+            return (new Broker(
+                config('sso.url'),
+                config('sso.broker'),
+                config('sso.secret')
+            ));
+        });
     }
 
     /**
@@ -21,8 +28,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
-    {
+    public function boot() {
         //
     }
 }

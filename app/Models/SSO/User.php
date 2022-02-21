@@ -18,6 +18,14 @@ class User extends AuthUser
         'last_token'
     ];
 
+    // disable token
+    public function disableToken() {
+        // make our last_token unusable by adding marker at the beginning?
+        $marker = base64_encode(date('Y-m-d H:i:s'));
+        $this->last_token = $marker . '#' . $this->last_token;
+        $this->save();
+    }
+
     // scopes
     public function scopeByToken($q, string $token = '') {
         return $q->where('last_token', $token);
