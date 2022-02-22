@@ -11,13 +11,13 @@ import {
     // components
     NButton, NSpace, NDivider, NLayout, NLayoutSider, NLayoutHeader, NLayoutContent,
     NLayoutFooter, NMenu, NH1, NH2, NH3, NH4, NH5, NH6, NP, NBlockquote, NInput, NInputGroupLabel,
-    NDrawer, NDrawerContent, NAvatar
+    NDrawer, NDrawerContent, NAvatar, NConfigProvider, NText, NPopover
 } from 'naive-ui'
 
 const components = [
     NButton, NSpace, NDivider, NLayout, NLayoutSider, NLayoutHeader, NLayoutContent,
     NLayoutFooter, NMenu, NH1, NH2, NH3, NH4, NH5, NH6, NP, NBlockquote, NInput, NInputGroupLabel,
-    NDrawer, NDrawerContent, NAvatar
+    NDrawer, NDrawerContent, NAvatar, NConfigProvider, NText, NPopover
 ]
 
 // Icon utils?

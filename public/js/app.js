@@ -480,6 +480,45 @@ const _hoisted_4 = [_hoisted_2, _hoisted_3]
 
 /***/ }),
 
+/***/ "./node_modules/@vicons/ionicons5/es/IdCard.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/@vicons/ionicons5/es/IdCard.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+const _hoisted_1 = {
+  xmlns: 'http://www.w3.org/2000/svg',
+  'xmlns:xlink': 'http://www.w3.org/1999/xlink',
+  viewBox: '0 0 512 512'
+}
+const _hoisted_2 = /*#__PURE__*/ (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)(
+  'path',
+  {
+    d: 'M368 16H144a64.07 64.07 0 0 0-64 64v352a64.07 64.07 0 0 0 64 64h224a64.07 64.07 0 0 0 64-64V80a64.07 64.07 0 0 0-64-64zm-34.52 268.51c7.57 8.17 11.27 19.16 10.39 30.94C342.14 338.91 324.25 358 304 358s-38.17-19.09-39.88-42.55c-.86-11.9 2.81-22.91 10.34-31S292.4 272 304 272a39.65 39.65 0 0 1 29.48 12.51zM192 80a16 16 0 0 1 16-16h96a16 16 0 0 1 0 32h-96a16 16 0 0 1-16-16zm189 363.83a12.05 12.05 0 0 1-9.31 4.17H236.31a12.05 12.05 0 0 1-9.31-4.17a13 13 0 0 1-2.76-10.92c3.25-17.56 13.38-32.31 29.3-42.66C267.68 381.06 285.6 376 304 376s36.32 5.06 50.46 14.25c15.92 10.35 26.05 25.1 29.3 42.66a13 13 0 0 1-2.76 10.92z',
+    fill: 'currentColor'
+  },
+  null,
+  -1
+  /* HOISTED */
+)
+const _hoisted_3 = [_hoisted_2]
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: 'IdCard',
+  render: function render(_ctx, _cache) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)('svg', _hoisted_1, _hoisted_3)
+  }
+}));
+
+
+/***/ }),
+
 /***/ "./node_modules/@vicons/ionicons5/es/MailOpen.js":
 /*!*******************************************************!*\
   !*** ./node_modules/@vicons/ionicons5/es/MailOpen.js ***!
@@ -607,6 +646,55 @@ const _hoisted_3 = /*#__PURE__*/ (0,vue__WEBPACK_IMPORTED_MODULE_0__.createEleme
 const _hoisted_4 = [_hoisted_2, _hoisted_3]
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
   name: 'Pencil',
+  render: function render(_ctx, _cache) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)('svg', _hoisted_1, _hoisted_4)
+  }
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/@vicons/ionicons5/es/Power.js":
+/*!****************************************************!*\
+  !*** ./node_modules/@vicons/ionicons5/es/Power.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+const _hoisted_1 = {
+  xmlns: 'http://www.w3.org/2000/svg',
+  'xmlns:xlink': 'http://www.w3.org/1999/xlink',
+  viewBox: '0 0 512 512'
+}
+const _hoisted_2 = /*#__PURE__*/ (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)(
+  'path',
+  {
+    d: 'M256 464c-114.69 0-208-93.47-208-208.35c0-62.45 27.25-121 74.76-160.55a22 22 0 1 1 28.17 33.8C113.48 160.1 92 206.3 92 255.65C92 346.27 165.57 420 256 420s164-73.73 164-164.35A164 164 0 0 0 360.17 129a22 22 0 1 1 28-33.92A207.88 207.88 0 0 1 464 255.65C464 370.53 370.69 464 256 464z',
+    fill: 'currentColor'
+  },
+  null,
+  -1
+  /* HOISTED */
+)
+const _hoisted_3 = /*#__PURE__*/ (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)(
+  'path',
+  {
+    d: 'M256 272a22 22 0 0 1-22-22V70a22 22 0 0 1 44 0v180a22 22 0 0 1-22 22z',
+    fill: 'currentColor'
+  },
+  null,
+  -1
+  /* HOISTED */
+)
+const _hoisted_4 = [_hoisted_2, _hoisted_3]
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: 'Power',
   render: function render(_ctx, _cache) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)('svg', _hoisted_1, _hoisted_4)
   }
@@ -20847,11 +20935,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _naiveui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../naiveui */ "./resources/js/naiveui.js");
 /* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/MenuSharp.js");
 /* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/ChevronDown.js");
-/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Bookmark.js");
-/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Rocket.js");
-/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Trash.js");
-/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Download.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Bookmark.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Rocket.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Trash.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Download.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/IdCard.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Power.js");
 /* harmony import */ var _Composables_screen__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Composables/screen */ "./resources/js/Composables/screen.js");
+/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/themes/dark.js");
+
 
 
 
@@ -20872,6 +20964,8 @@ __webpack_require__.r(__webpack_exports__);
   setup: function setup() {
     var userData = (0,vue__WEBPACK_IMPORTED_MODULE_2__.ref)(null);
     var busy = (0,vue__WEBPACK_IMPORTED_MODULE_2__.ref)(true);
+    var theme = (0,vue__WEBPACK_IMPORTED_MODULE_2__.ref)(naive_ui__WEBPACK_IMPORTED_MODULE_7__.darkTheme);
+    console.log('Theme', naive_ui__WEBPACK_IMPORTED_MODULE_7__.darkTheme);
     (0,vue__WEBPACK_IMPORTED_MODULE_2__.onMounted)(function () {
       console.log("Mounted at ", new Date().toString());
       (0,_Composables_api__WEBPACK_IMPORTED_MODULE_1__.getUser)().then(function (res) {
@@ -20925,7 +21019,7 @@ __webpack_require__.r(__webpack_exports__);
         });
       },
       key: "article-2",
-      icon: (0,_naiveui__WEBPACK_IMPORTED_MODULE_3__.renderIcon)(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_7__["default"])
+      icon: (0,_naiveui__WEBPACK_IMPORTED_MODULE_3__.renderIcon)(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_8__["default"])
     }, {
       label: function label() {
         return (0,vue__WEBPACK_IMPORTED_MODULE_2__.h)(_inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.Link, {
@@ -20937,7 +21031,7 @@ __webpack_require__.r(__webpack_exports__);
         });
       },
       key: "article-3",
-      icon: (0,_naiveui__WEBPACK_IMPORTED_MODULE_3__.renderIcon)(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_7__["default"])
+      icon: (0,_naiveui__WEBPACK_IMPORTED_MODULE_3__.renderIcon)(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_8__["default"])
     }, {
       label: function label() {
         return (0,vue__WEBPACK_IMPORTED_MODULE_2__.h)(_inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.Link, {
@@ -20949,18 +21043,47 @@ __webpack_require__.r(__webpack_exports__);
         });
       },
       key: "article-4",
-      icon: (0,_naiveui__WEBPACK_IMPORTED_MODULE_3__.renderIcon)(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_7__["default"])
+      icon: (0,_naiveui__WEBPACK_IMPORTED_MODULE_3__.renderIcon)(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_8__["default"])
     }];
-    menu.push(createMenuItem("Article 42", "/article/42", "article-42", _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_8__["default"]));
-    menu.push(createMenuItem("Article 44", "/article/44", "article-44", _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_9__["default"]));
-    menu.push(createMenuItem("Article 45", "/article/45", "article-45", _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_10__["default"]));
+    menu.push(createMenuItem("Article 42", "/article/42", "article-42", _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_9__["default"]));
+    menu.push(createMenuItem("Article 44", "/article/44", "article-44", _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_10__["default"]));
+    menu.push(createMenuItem("Article 45", "/article/45", "article-45", _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_11__["default"]));
     var i = 0;
 
     while (i < 10) {
-      menu.push(createMenuItem("Article " + i, "/article/" + i, "article-" + i, _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_9__["default"]));
+      menu.push(createMenuItem("Article " + i, "/article/" + i, "article-" + i, _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_10__["default"]));
       i++;
-    } // track screen size
+    }
 
+    var userMenu = [{
+      label: function label() {
+        return (0,vue__WEBPACK_IMPORTED_MODULE_2__.h)('a', {
+          href: 'https://intra.siroleg.xyz/'
+        }, {
+          "default": function _default() {
+            return "Profile";
+          }
+        });
+      },
+      key: 'user-profile',
+      icon: (0,_naiveui__WEBPACK_IMPORTED_MODULE_3__.renderIcon)(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_12__["default"])
+    }, {
+      key: 'divider-1',
+      type: 'divider'
+    }, {
+      label: function label() {
+        return (0,vue__WEBPACK_IMPORTED_MODULE_2__.h)(_inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.Link, {
+          href: "/logout",
+          method: 'post'
+        }, {
+          "default": function _default() {
+            return "Logout";
+          }
+        });
+      },
+      key: 'user-logout',
+      icon: (0,_naiveui__WEBPACK_IMPORTED_MODULE_3__.renderIcon)(_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_13__["default"])
+    }]; // track screen size
 
     var _useScreen = (0,_Composables_screen__WEBPACK_IMPORTED_MODULE_4__.useScreen)(),
         width = _useScreen.width,
@@ -20975,6 +21098,15 @@ __webpack_require__.r(__webpack_exports__);
 
     var toggleMenu = function toggleMenu() {
       menuCollapsed.value = !menuCollapsed.value;
+    }; // handle menu click
+
+
+    var handleMenuClick = function handleMenuClick(key, item) {
+      console.log('key', key);
+      console.log('item', item);
+      console.log('menuCollapse? ', menuCollapsed.value); // toggle drawer
+
+      toggleMenu();
     };
 
     return {
@@ -20984,11 +21116,14 @@ __webpack_require__.r(__webpack_exports__);
       archive: archive,
       deleteResult: deleteResult,
       menuOptions: menu,
+      userMenu: userMenu,
       width: width,
       height: height,
       menuCollapsed: menuCollapsed,
       toggleMenu: toggleMenu,
-      useDrawer: useDrawer
+      handleMenuClick: handleMenuClick,
+      useDrawer: useDrawer,
+      theme: theme
     };
   }
 });
@@ -21143,6 +21278,7 @@ var _hoisted_2 = {
 };
 var _hoisted_3 = {
   style: {
+    "padding": "0.5rem 1rem",
     "display": "inline-flex",
     "justify-content": "flex-end",
     "align-items": "center",
@@ -21160,6 +21296,18 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNod
 
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus augue at diam faucibus volutpat. Ut gravida lorem eu eros egestas, in euismod lorem finibus. Curabitur at justo ac tortor volutpat lobortis. Suspendisse dignissim urna at orci gravida sagittis. Nunc ac dictum felis. Sed mi dui, ullamcorper non lobortis vel, hendrerit a felis. Morbi massa risus, tempor at neque a, rutrum varius mauris. Pellentesque mattis massa in lectus pellentesque, eu imperdiet dolor vulputate. Aliquam erat volutpat. Quisque id lectus at nisi aliquam pulvinar. Mauris nisi nibh, fringilla vel elit a, auctor rutrum mauris. Suspendisse rutrum placerat sodales.");
 
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Sed maximus consectetur est, et interdum lorem vestibulum id. Fusce quis convallis diam, nec consequat lorem. Nulla facilisi. Pellentesque placerat aliquam ipsum, vel aliquam odio venenatis quis. Donec aliquet velit sed nisi consectetur, at euismod tortor finibus. In neque arcu, vehicula et dolor non, consequat finibus dolor. Donec faucibus sem vitae aliquam fermentum. Donec cursus augue metus. Maecenas semper fermentum dui, vel sodales enim laoreet semper. In ut elementum velit. Donec ipsum massa, porttitor eget pretium quis, commodo eget massa. Aenean ante eros, efficitur ut est ut, aliquet accumsan magna. Donec commodo, enim pulvinar ultrices scelerisque, erat urna varius orci, vel posuere est eros eget quam. ");
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Curabitur eget nibh justo. Sed sit amet sapien urna. Donec lacinia velit ut urna ornare aliquam. Curabitur varius pellentesque tellus, sed sagittis dui tincidunt vitae. Fusce lacinia congue placerat. Aenean consectetur imperdiet urna, sit amet finibus lorem elementum a. Phasellus diam dui, feugiat sit amet erat nec, lobortis hendrerit lacus. Nullam sit amet eleifend dui. Integer nisi ipsum, consectetur nec turpis in, mattis dapibus turpis. Nulla nibh magna, rhoncus pharetra enim quis, mattis porta elit. Mauris nec mi et felis porttitor molestie id at felis. Integer metus nibh, eleifend quis risus nec, tincidunt ultrices sem. Donec at auctor sem. Ut feugiat tempus lacinia. Vestibulum eget iaculis lorem, sit amet tristique diam. Sed rutrum orci at nibh cursus viverra. ");
+
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Sed at orci ut purus faucibus ultrices. Donec aliquet justo non dictum porttitor. Suspendisse et eleifend augue, quis condimentum dolor. Donec ut sem ac enim imperdiet vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ligula aliquet, rutrum nisl vel, pharetra eros. Sed finibus urna non massa pulvinar semper. Fusce in velit commodo, elementum orci eu, volutpat est. Donec et arcu diam. Maecenas eleifend, tellus id porta elementum, quam risus hendrerit erat, eget molestie dolor urna eget odio. Nam sed leo pretium, dictum arcu sit amet, euismod mauris. Quisque eleifend aliquet neque. Phasellus neque nisi, aliquet in consectetur at, viverra sit amet quam. Morbi elementum nibh non neque lobortis, nec mattis nunc rutrum. Donec sagittis nibh in nibh finibus laoreet. ");
+
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Integer nulla eros, mollis vitae odio in, tincidunt volutpat nulla. Nulla mattis, eros sit amet ornare convallis, ante mi tempor lectus, quis finibus dui quam eget est. In sollicitudin ac nisi a iaculis. Praesent bibendum sollicitudin odio quis lobortis. Curabitur porttitor sem in turpis efficitur tincidunt sit amet non diam. Nunc in ante vel nunc aliquet tempor. Donec mollis ultrices elit at sodales. In dui neque, tincidunt feugiat lobortis at, sagittis a leo. Fusce sollicitudin dolor non augue rutrum mattis. Sed aliquet cursus velit sit amet facilisis. Etiam dictum pellentesque rhoncus. Aenean tincidunt faucibus cursus. Ut auctor lorem est, bibendum ornare neque efficitur quis. Morbi condimentum, nisl sed cursus sagittis, neque eros varius enim, pellentesque dignissim mi leo ac nisl. Aliquam maximus porttitor ante, nec tincidunt arcu pellentesque ac. Aenean rutrum purus nisl, a tempus est molestie ac. ");
+
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Ut eget velit arcu. Etiam pretium orci at nulla congue, et lacinia eros fringilla. Nulla iaculis pharetra aliquam. Cras pellentesque metus dui, eget pellentesque leo pulvinar et. Duis vestibulum dolor et nunc ornare, id pulvinar elit varius. Maecenas nec ornare dolor. Aenean condimentum eu lorem eu volutpat. Donec non efficitur felis. Phasellus lacinia auctor massa a luctus. Sed consectetur, tellus et gravida finibus, nunc diam consequat augue, vitae egestas purus nisl convallis quam. Phasellus sed consequat metus, eget laoreet ligula. Sed fringilla bibendum est, eu semper lacus consectetur dapibus. Curabitur nec pulvinar felis. Nulla rutrum sapien vitae mollis posuere. Proin auctor consequat eros pretium tincidunt. ");
+
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Vestibulum ullamcorper arcu at lacus molestie ullamcorper ac quis ex. Ut sit amet enim sit amet nunc efficitur porta in at elit. Phasellus molestie, mi quis aliquet aliquam, urna eros aliquet nisl, eu bibendum mauris massa ut orci. Nam placerat venenatis facilisis. Duis in sem libero. Cras sit amet ligula nulla. Mauris malesuada dictum rhoncus. Suspendisse facilisis lorem vel ligula commodo eleifend. Cras luctus nec est at efficitur. Praesent vestibulum fringilla diam vel suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam eu faucibus quam. Vivamus quis nisl eu velit porttitor volutpat. Morbi neque dui, eleifend ac dui at, eleifend elementum libero. Maecenas pellentesque mattis sodales. Etiam fringilla turpis a ligula gravida, ac pulvinar urna sollicitudin. ");
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_n_menu = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("n-menu");
 
@@ -21168,6 +21316,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_n_drawer_content = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("n-drawer-content");
 
   var _component_n_drawer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("n-drawer");
+
+  var _component_n_config_provider = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("n-config-provider");
 
   var _component_MenuSharp = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("MenuSharp");
 
@@ -21178,6 +21328,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_ChevronDown = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("ChevronDown");
 
   var _component_n_avatar = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("n-avatar");
+
+  var _component_n_popover = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("n-popover");
 
   var _component_n_layout_header = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("n-layout-header");
 
@@ -21191,62 +21343,83 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "has-sider": !$setup.useDrawer
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" menu goes here "), !$setup.useDrawer ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_n_layout_sider, {
-        key: 0,
-        bordered: "",
-        "collapse-mode": "width",
-        "collapsed-width": 64,
-        width: 240,
-        "native-scrollbar": false,
-        style: {
-          "height": "100vh"
-        },
-        collapsed: $setup.menuCollapsed
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" menu goes here "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_config_provider, {
+        theme: $setup.theme
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_menu, {
+          return [!$setup.useDrawer ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_n_layout_sider, {
+            key: 0,
+            bordered: "",
+            "collapse-mode": "width",
             "collapsed-width": 64,
-            "collapsed-icon-size": 22,
-            options: $setup.menuOptions,
-            collapsed: $setup.menuCollapsed
-          }, null, 8
-          /* PROPS */
-          , ["options", "collapsed"])];
-        }),
-        _: 1
-        /* STABLE */
-
-      }, 8
-      /* PROPS */
-      , ["collapsed"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" otherwise? use drawer :) "), $setup.useDrawer ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_n_drawer, {
-        key: 1,
-        show: $setup.menuCollapsed,
-        "onUpdate:show": _cache[0] || (_cache[0] = function ($event) {
-          return $setup.menuCollapsed = $event;
-        }),
-        width: 240,
-        placement: "left"
-      }, {
-        "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_drawer_content, null, {
+            width: 240,
+            "native-scrollbar": false,
+            style: {
+              "height": "100vh"
+            },
+            "show-trigger": !$setup.useDrawer,
+            collapsed: $setup.menuCollapsed,
+            onCollapse: _cache[0] || (_cache[0] = function ($event) {
+              return $setup.menuCollapsed = true;
+            }),
+            onExpand: _cache[1] || (_cache[1] = function ($event) {
+              return $setup.menuCollapsed = false;
+            })
+          }, {
             "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
               return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_menu, {
-                options: $setup.menuOptions
+                "collapsed-width": 64,
+                "collapsed-icon-size": 22,
+                options: $setup.menuOptions,
+                collapsed: $setup.menuCollapsed
               }, null, 8
               /* PROPS */
-              , ["options"])];
+              , ["options", "collapsed"])];
             }),
             _: 1
             /* STABLE */
 
-          })];
+          }, 8
+          /* PROPS */
+          , ["show-trigger", "collapsed"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" otherwise? use drawer :) "), $setup.useDrawer ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_n_drawer, {
+            key: 1,
+            show: $setup.menuCollapsed,
+            "onUpdate:show": _cache[2] || (_cache[2] = function ($event) {
+              return $setup.menuCollapsed = $event;
+            }),
+            width: 240,
+            placement: "left"
+          }, {
+            "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+              return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_drawer_content, {
+                "body-content-style": "padding:0;"
+              }, {
+                "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+                  return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" the menu on drawer. close drawer on select "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_menu, {
+                    options: $setup.menuOptions,
+                    "onUpdate:value": $setup.handleMenuClick
+                  }, null, 8
+                  /* PROPS */
+                  , ["options", "onUpdate:value"])];
+                }),
+                _: 1
+                /* STABLE */
+
+              })];
+            }),
+            _: 1
+            /* STABLE */
+
+          }, 8
+          /* PROPS */
+          , ["show"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
         }),
         _: 1
         /* STABLE */
 
       }, 8
       /* PROPS */
-      , ["show"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" content goes here "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_layout, {
+      , ["theme"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" content goes here "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_layout, {
         style: {
           "height": "100vh"
         }
@@ -21254,7 +21427,6 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
           return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_layout_header, {
             style: {
-              "padding": "0.2rem 1rem",
               "top": "0",
               "position": "sticky",
               "z-index": "1"
@@ -21262,8 +21434,13 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
             bordered: ""
           }, {
             "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-              return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_button, {
-                onClick: $setup.toggleMenu
+              return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" hamburger menu "), $setup.useDrawer ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_n_button, {
+                key: 0,
+                onClick: $setup.toggleMenu,
+                tertiary: "",
+                style: {
+                  "margin": "0.5rem 1rem"
+                }
               }, {
                 "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
                   return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icon, null, {
@@ -21280,18 +21457,43 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
               }, 8
               /* PROPS */
-              , ["onClick"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icon, null, {
+              , ["onClick"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_popover, {
+                trigger: "click",
+                placement: "bottom-end",
+                style: {
+                  "padding": "0",
+                  "margin-right": "0.5rem"
+                }
+              }, {
+                trigger: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+                  return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icon, null, {
+                    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+                      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_ChevronDown)];
+                    }),
+                    _: 1
+                    /* STABLE */
+
+                  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_avatar, {
+                    src: "https://i.pravatar.cc/48",
+                    size: 32,
+                    round: ""
+                  })])];
+                }),
                 "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-                  return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_ChevronDown)];
+                  return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_menu, {
+                    options: $setup.userMenu,
+                    "root-indent": 12,
+                    style: {
+                      "min-width": "160px"
+                    }
+                  }, null, 8
+                  /* PROPS */
+                  , ["options"])];
                 }),
                 _: 1
                 /* STABLE */
 
-              })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_avatar, {
-                src: "https://i.pravatar.cc/48",
-                size: 48,
-                round: ""
-              })])])])];
+              })])])];
             }),
             _: 1
             /* STABLE */
@@ -21316,7 +21518,49 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
                 _: 1
                 /* STABLE */
 
-              }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <n-p>Sed maximus consectetur est, et interdum lorem vestibulum id. Fusce quis convallis diam, nec consequat lorem. Nulla facilisi. Pellentesque placerat aliquam ipsum, vel aliquam odio venenatis quis. Donec aliquet velit sed nisi consectetur, at euismod tortor finibus. In neque arcu, vehicula et dolor non, consequat finibus dolor. Donec faucibus sem vitae aliquam fermentum. Donec cursus augue metus. Maecenas semper fermentum dui, vel sodales enim laoreet semper. In ut elementum velit. Donec ipsum massa, porttitor eget pretium quis, commodo eget massa. Aenean ante eros, efficitur ut est ut, aliquet accumsan magna. Donec commodo, enim pulvinar ultrices scelerisque, erat urna varius orci, vel posuere est eros eget quam. </n-p>\n                <n-p> Curabitur eget nibh justo. Sed sit amet sapien urna. Donec lacinia velit ut urna ornare aliquam. Curabitur varius pellentesque tellus, sed sagittis dui tincidunt vitae. Fusce lacinia congue placerat. Aenean consectetur imperdiet urna, sit amet finibus lorem elementum a. Phasellus diam dui, feugiat sit amet erat nec, lobortis hendrerit lacus. Nullam sit amet eleifend dui. Integer nisi ipsum, consectetur nec turpis in, mattis dapibus turpis. Nulla nibh magna, rhoncus pharetra enim quis, mattis porta elit. Mauris nec mi et felis porttitor molestie id at felis. Integer metus nibh, eleifend quis risus nec, tincidunt ultrices sem. Donec at auctor sem. Ut feugiat tempus lacinia. Vestibulum eget iaculis lorem, sit amet tristique diam. Sed rutrum orci at nibh cursus viverra. </n-p>\n                <n-p> Sed at orci ut purus faucibus ultrices. Donec aliquet justo non dictum porttitor. Suspendisse et eleifend augue, quis condimentum dolor. Donec ut sem ac enim imperdiet vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ligula aliquet, rutrum nisl vel, pharetra eros. Sed finibus urna non massa pulvinar semper. Fusce in velit commodo, elementum orci eu, volutpat est. Donec et arcu diam. Maecenas eleifend, tellus id porta elementum, quam risus hendrerit erat, eget molestie dolor urna eget odio. Nam sed leo pretium, dictum arcu sit amet, euismod mauris. Quisque eleifend aliquet neque. Phasellus neque nisi, aliquet in consectetur at, viverra sit amet quam. Morbi elementum nibh non neque lobortis, nec mattis nunc rutrum. Donec sagittis nibh in nibh finibus laoreet. </n-p>\n                <n-p> Integer nulla eros, mollis vitae odio in, tincidunt volutpat nulla. Nulla mattis, eros sit amet ornare convallis, ante mi tempor lectus, quis finibus dui quam eget est. In sollicitudin ac nisi a iaculis. Praesent bibendum sollicitudin odio quis lobortis. Curabitur porttitor sem in turpis efficitur tincidunt sit amet non diam. Nunc in ante vel nunc aliquet tempor. Donec mollis ultrices elit at sodales. In dui neque, tincidunt feugiat lobortis at, sagittis a leo. Fusce sollicitudin dolor non augue rutrum mattis. Sed aliquet cursus velit sit amet facilisis. Etiam dictum pellentesque rhoncus. Aenean tincidunt faucibus cursus. Ut auctor lorem est, bibendum ornare neque efficitur quis. Morbi condimentum, nisl sed cursus sagittis, neque eros varius enim, pellentesque dignissim mi leo ac nisl. Aliquam maximus porttitor ante, nec tincidunt arcu pellentesque ac. Aenean rutrum purus nisl, a tempus est molestie ac. </n-p>\n                <n-p> Ut eget velit arcu. Etiam pretium orci at nulla congue, et lacinia eros fringilla. Nulla iaculis pharetra aliquam. Cras pellentesque metus dui, eget pellentesque leo pulvinar et. Duis vestibulum dolor et nunc ornare, id pulvinar elit varius. Maecenas nec ornare dolor. Aenean condimentum eu lorem eu volutpat. Donec non efficitur felis. Phasellus lacinia auctor massa a luctus. Sed consectetur, tellus et gravida finibus, nunc diam consequat augue, vitae egestas purus nisl convallis quam. Phasellus sed consequat metus, eget laoreet ligula. Sed fringilla bibendum est, eu semper lacus consectetur dapibus. Curabitur nec pulvinar felis. Nulla rutrum sapien vitae mollis posuere. Proin auctor consequat eros pretium tincidunt. </n-p>\n                <n-p> Vestibulum ullamcorper arcu at lacus molestie ullamcorper ac quis ex. Ut sit amet enim sit amet nunc efficitur porta in at elit. Phasellus molestie, mi quis aliquet aliquam, urna eros aliquet nisl, eu bibendum mauris massa ut orci. Nam placerat venenatis facilisis. Duis in sem libero. Cras sit amet ligula nulla. Mauris malesuada dictum rhoncus. Suspendisse facilisis lorem vel ligula commodo eleifend. Cras luctus nec est at efficitur. Praesent vestibulum fringilla diam vel suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam eu faucibus quam. Vivamus quis nisl eu velit porttitor volutpat. Morbi neque dui, eleifend ac dui at, eleifend elementum libero. Maecenas pellentesque mattis sodales. Etiam fringilla turpis a ligula gravida, ac pulvinar urna sollicitudin. </n-p> ")];
+              }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_p, null, {
+                "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+                  return [_hoisted_7];
+                }),
+                _: 1
+                /* STABLE */
+
+              }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_p, null, {
+                "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+                  return [_hoisted_8];
+                }),
+                _: 1
+                /* STABLE */
+
+              }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_p, null, {
+                "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+                  return [_hoisted_9];
+                }),
+                _: 1
+                /* STABLE */
+
+              }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_p, null, {
+                "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+                  return [_hoisted_10];
+                }),
+                _: 1
+                /* STABLE */
+
+              }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_p, null, {
+                "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+                  return [_hoisted_11];
+                }),
+                _: 1
+                /* STABLE */
+
+              }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_p, null, {
+                "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+                  return [_hoisted_12];
+                }),
+                _: 1
+                /* STABLE */
+
+              })];
             }),
             _: 1
             /* STABLE */
@@ -21527,35 +21771,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/drawer/src/Drawer.js");
 /* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/drawer/src/DrawerContent.js");
 /* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/avatar/src/Avatar.js");
-/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/create.js");
-/* harmony import */ var _vicons_utils__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @vicons/utils */ "./node_modules/@vicons/utils/es/index.js");
-/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/MailOpen.js");
-/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Archive.js");
-/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/TrashOutline.js");
-/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Trash.js");
-/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Pencil.js");
-/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Rocket.js");
+/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/config-provider/src/ConfigProvider.js");
+/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/typography/src/text.js");
+/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/popover/src/Popover.js");
+/* harmony import */ var naive_ui__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! naive-ui */ "./node_modules/naive-ui/es/create.js");
+/* harmony import */ var _vicons_utils__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @vicons/utils */ "./node_modules/@vicons/utils/es/index.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/MailOpen.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Archive.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/TrashOutline.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Trash.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Pencil.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Rocket.js");
 // import css?
  // vue helper
 
  // initialize naive ui shit?
 
 
-var components = [naive_ui__WEBPACK_IMPORTED_MODULE_2__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_3__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_4__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_5__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_6__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_7__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_8__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_9__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_10__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_11__.NH1, naive_ui__WEBPACK_IMPORTED_MODULE_11__.NH2, naive_ui__WEBPACK_IMPORTED_MODULE_11__.NH3, naive_ui__WEBPACK_IMPORTED_MODULE_11__.NH4, naive_ui__WEBPACK_IMPORTED_MODULE_11__.NH5, naive_ui__WEBPACK_IMPORTED_MODULE_11__.NH6, naive_ui__WEBPACK_IMPORTED_MODULE_12__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_13__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_14__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_15__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_16__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_17__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_18__["default"]]; // Icon utils?
+var components = [naive_ui__WEBPACK_IMPORTED_MODULE_2__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_3__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_4__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_5__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_6__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_7__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_8__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_9__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_10__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_11__.NH1, naive_ui__WEBPACK_IMPORTED_MODULE_11__.NH2, naive_ui__WEBPACK_IMPORTED_MODULE_11__.NH3, naive_ui__WEBPACK_IMPORTED_MODULE_11__.NH4, naive_ui__WEBPACK_IMPORTED_MODULE_11__.NH5, naive_ui__WEBPACK_IMPORTED_MODULE_11__.NH6, naive_ui__WEBPACK_IMPORTED_MODULE_12__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_13__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_14__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_15__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_16__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_17__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_18__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_19__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_20__["default"], naive_ui__WEBPACK_IMPORTED_MODULE_21__["default"]]; // Icon utils?
 
  // icons 
 
 
-var icons = [_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_20__["default"], _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_21__["default"], _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_22__["default"], _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_23__["default"], _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_24__["default"], _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_25__["default"]]; //========================EXPORTS=====================================================
+var icons = [_vicons_ionicons5__WEBPACK_IMPORTED_MODULE_23__["default"], _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_24__["default"], _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_25__["default"], _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_26__["default"], _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_27__["default"], _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_28__["default"]]; //========================EXPORTS=====================================================
 // naiveUiSetup plugin
 
-var naiveUiSetup = (0,naive_ui__WEBPACK_IMPORTED_MODULE_26__["default"])({
+var naiveUiSetup = (0,naive_ui__WEBPACK_IMPORTED_MODULE_29__["default"])({
   components: components
 }); // register icon component
 
 var iconPlugin = {
   install: function install(app, options) {
-    app.component('Icon', _vicons_utils__WEBPACK_IMPORTED_MODULE_19__.Icon), // the icons
+    app.component('Icon', _vicons_utils__WEBPACK_IMPORTED_MODULE_22__.Icon), // the icons
     icons.forEach(function (e) {
       // console.log(e.name, e)
       app.component(e.name, e);
@@ -46312,6 +46559,31 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/naive-ui/es/_internal/scrollbar/styles/dark.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/naive-ui/es/_internal/scrollbar/styles/dark.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/light.js");
+
+
+const scrollbarDark = {
+    name: 'Scrollbar',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (scrollbarDark);
+
+
+/***/ }),
+
 /***/ "./node_modules/naive-ui/es/_internal/scrollbar/styles/light.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/naive-ui/es/_internal/scrollbar/styles/light.js ***!
@@ -46359,6 +46631,260 @@ __webpack_require__.r(__webpack_exports__);
 
 const internalSelectionMenuInjectionKey = (0,_utils_vue_create_injection_key__WEBPACK_IMPORTED_MODULE_0__.createInjectionKey)('n-internal-select-menu');
 const internalSelectionMenuBodyInjectionKey = (0,_utils_vue_create_injection_key__WEBPACK_IMPORTED_MODULE_0__.createInjectionKey)('n-internal-select-menu-body');
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/_internal/select-menu/styles/_common.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/naive-ui/es/_internal/select-menu/styles/_common.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    height: 'calc(var(--n-option-height) * 7.6)',
+    paddingSmall: '4px 0',
+    paddingMedium: '4px 0',
+    paddingLarge: '4px 0',
+    paddingHuge: '4px 0',
+    optionPaddingSmall: '0 12px',
+    optionPaddingMedium: '0 12px',
+    optionPaddingLarge: '0 12px',
+    optionPaddingHuge: '0 12px',
+    loadingSize: '18px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/_internal/select-menu/styles/dark.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/naive-ui/es/_internal/select-menu/styles/dark.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _empty_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../empty/styles */ "./node_modules/naive-ui/es/empty/styles/dark.js");
+/* harmony import */ var _scrollbar_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/_internal/select-menu/styles/light.js");
+
+
+
+
+const internalSelectMenuDark = {
+    name: 'InternalSelectMenu',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Scrollbar: _scrollbar_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        Empty: _empty_styles__WEBPACK_IMPORTED_MODULE_2__["default"]
+    },
+    self: _light__WEBPACK_IMPORTED_MODULE_3__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (internalSelectMenuDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/_internal/select-menu/styles/light.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/naive-ui/es/_internal/select-menu/styles/light.js ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _empty_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../empty/styles */ "./node_modules/naive-ui/es/empty/styles/light.js");
+/* harmony import */ var _scrollbar_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/light.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/_internal/select-menu/styles/_common.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+
+
+
+
+
+const self = (vars) => {
+    const { borderRadius, popoverColor, textColor3, dividerColor, textColor2, primaryColorPressed, textColorDisabled, primaryColor, opacityDisabled, hoverColor, fontSizeSmall, fontSizeMedium, fontSizeLarge, fontSizeHuge, heightSmall, heightMedium, heightLarge, heightHuge } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { optionFontSizeSmall: fontSizeSmall, optionFontSizeMedium: fontSizeMedium, optionFontSizeLarge: fontSizeLarge, optionFontSizeHuge: fontSizeHuge, optionHeightSmall: heightSmall, optionHeightMedium: heightMedium, optionHeightLarge: heightLarge, optionHeightHuge: heightHuge, borderRadius: borderRadius, color: popoverColor, groupHeaderTextColor: textColor3, actionDividerColor: dividerColor, optionTextColor: textColor2, optionTextColorPressed: primaryColorPressed, optionTextColorDisabled: textColorDisabled, optionTextColorActive: primaryColor, optionOpacityDisabled: opacityDisabled, optionCheckColor: primaryColor, optionColorPending: hoverColor, optionColorActive: hoverColor, actionTextColor: textColor2, loadingColor: primaryColor });
+};
+const internalSelectMenuLight = (0,_mixins__WEBPACK_IMPORTED_MODULE_1__.createTheme)({
+    name: 'InternalSelectMenu',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_2__["default"],
+    peers: {
+        Scrollbar: _scrollbar_styles__WEBPACK_IMPORTED_MODULE_3__["default"],
+        Empty: _empty_styles__WEBPACK_IMPORTED_MODULE_4__["default"]
+    },
+    self
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (internalSelectMenuLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/_internal/selection/styles/_common.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/naive-ui/es/_internal/selection/styles/_common.js ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    paddingSingle: '0 26px 0 12px',
+    paddingMultiple: '3px 26px 0 12px',
+    clearSize: '16px',
+    arrowSize: '16px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/_internal/selection/styles/dark.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/naive-ui/es/_internal/selection/styles/dark.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _popover_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../popover/styles */ "./node_modules/naive-ui/es/popover/styles/dark.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/_internal/selection/styles/_common.js");
+
+
+
+
+const internalSelectionDark = {
+    name: 'InternalSelection',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Popover: _popover_styles__WEBPACK_IMPORTED_MODULE_1__["default"]
+    },
+    self(vars) {
+        const { borderRadius, textColor2, textColorDisabled, inputColor, inputColorDisabled, primaryColor, primaryColorHover, warningColor, warningColorHover, errorColor, errorColorHover, iconColor, iconColorDisabled, clearColor, clearColorHover, clearColorPressed, placeholderColor, placeholderColorDisabled, fontSizeTiny, fontSizeSmall, fontSizeMedium, fontSizeLarge, heightTiny, heightSmall, heightMedium, heightLarge } = vars;
+        return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_2__["default"]), { fontSizeTiny,
+            fontSizeSmall,
+            fontSizeMedium,
+            fontSizeLarge,
+            heightTiny,
+            heightSmall,
+            heightMedium,
+            heightLarge,
+            borderRadius, 
+            // default
+            textColor: textColor2, textColorDisabled,
+            placeholderColor,
+            placeholderColorDisabled, color: inputColor, colorDisabled: inputColorDisabled, colorActive: (0,seemly__WEBPACK_IMPORTED_MODULE_3__.changeColor)(primaryColor, { alpha: 0.1 }), border: '1px solid #0000', borderHover: `1px solid ${primaryColorHover}`, borderActive: `1px solid ${primaryColor}`, borderFocus: `1px solid ${primaryColorHover}`, boxShadowHover: 'none', boxShadowActive: `0 0 8px 0 ${(0,seemly__WEBPACK_IMPORTED_MODULE_3__.changeColor)(primaryColor, {
+                alpha: 0.4
+            })}`, boxShadowFocus: `0 0 8px 0 ${(0,seemly__WEBPACK_IMPORTED_MODULE_3__.changeColor)(primaryColor, {
+                alpha: 0.4
+            })}`, caretColor: primaryColor, arrowColor: iconColor, arrowColorDisabled: iconColorDisabled, loadingColor: primaryColor, 
+            // warning
+            borderWarning: `1px solid ${warningColor}`, borderHoverWarning: `1px solid ${warningColorHover}`, borderActiveWarning: `1px solid ${warningColor}`, borderFocusWarning: `1px solid ${warningColorHover}`, boxShadowHoverWarning: 'none', boxShadowActiveWarning: `0 0 8px 0 ${(0,seemly__WEBPACK_IMPORTED_MODULE_3__.changeColor)(warningColor, {
+                alpha: 0.4
+            })}`, boxShadowFocusWarning: `0 0 8px 0 ${(0,seemly__WEBPACK_IMPORTED_MODULE_3__.changeColor)(warningColor, {
+                alpha: 0.4
+            })}`, colorActiveWarning: (0,seemly__WEBPACK_IMPORTED_MODULE_3__.changeColor)(warningColor, { alpha: 0.1 }), caretColorWarning: warningColor, 
+            // error
+            borderError: `1px solid ${errorColor}`, borderHoverError: `1px solid ${errorColorHover}`, borderActiveError: `1px solid ${errorColor}`, borderFocusError: `1px solid ${errorColorHover}`, boxShadowHoverError: 'none', boxShadowActiveError: `0 0 8px 0 ${(0,seemly__WEBPACK_IMPORTED_MODULE_3__.changeColor)(errorColor, {
+                alpha: 0.4
+            })}`, boxShadowFocusError: `0 0 8px 0 ${(0,seemly__WEBPACK_IMPORTED_MODULE_3__.changeColor)(errorColor, {
+                alpha: 0.4
+            })}`, colorActiveError: (0,seemly__WEBPACK_IMPORTED_MODULE_3__.changeColor)(errorColor, { alpha: 0.1 }), caretColorError: errorColor, clearColor,
+            clearColorHover,
+            clearColorPressed });
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (internalSelectionDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/_internal/selection/styles/light.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/naive-ui/es/_internal/selection/styles/light.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _popover_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../popover/styles */ "./node_modules/naive-ui/es/popover/styles/light.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/_internal/selection/styles/_common.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+
+
+
+
+
+const self = (vars) => {
+    const { borderRadius, textColor2, textColorDisabled, inputColor, inputColorDisabled, primaryColor, primaryColorHover, warningColor, warningColorHover, errorColor, errorColorHover, borderColor, iconColor, iconColorDisabled, clearColor, clearColorHover, clearColorPressed, placeholderColor, placeholderColorDisabled, fontSizeTiny, fontSizeSmall, fontSizeMedium, fontSizeLarge, heightTiny, heightSmall, heightMedium, heightLarge } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { fontSizeTiny,
+        fontSizeSmall,
+        fontSizeMedium,
+        fontSizeLarge,
+        heightTiny,
+        heightSmall,
+        heightMedium,
+        heightLarge,
+        borderRadius, 
+        // default
+        textColor: textColor2, textColorDisabled,
+        placeholderColor,
+        placeholderColorDisabled, color: inputColor, colorDisabled: inputColorDisabled, colorActive: inputColor, border: `1px solid ${borderColor}`, borderHover: `1px solid ${primaryColorHover}`, borderActive: `1px solid ${primaryColor}`, borderFocus: `1px solid ${primaryColorHover}`, boxShadowHover: 'none', boxShadowActive: `0 0 0 2px ${(0,seemly__WEBPACK_IMPORTED_MODULE_1__.changeColor)(primaryColor, {
+            alpha: 0.2
+        })}`, boxShadowFocus: `0 0 0 2px ${(0,seemly__WEBPACK_IMPORTED_MODULE_1__.changeColor)(primaryColor, {
+            alpha: 0.2
+        })}`, caretColor: primaryColor, arrowColor: iconColor, arrowColorDisabled: iconColorDisabled, loadingColor: primaryColor, 
+        // warning
+        borderWarning: `1px solid ${warningColor}`, borderHoverWarning: `1px solid ${warningColorHover}`, borderActiveWarning: `1px solid ${warningColor}`, borderFocusWarning: `1px solid ${warningColorHover}`, boxShadowHoverWarning: 'none', boxShadowActiveWarning: `0 0 0 2px ${(0,seemly__WEBPACK_IMPORTED_MODULE_1__.changeColor)(warningColor, {
+            alpha: 0.2
+        })}`, boxShadowFocusWarning: `0 0 0 2px ${(0,seemly__WEBPACK_IMPORTED_MODULE_1__.changeColor)(warningColor, {
+            alpha: 0.2
+        })}`, colorActiveWarning: inputColor, caretColorWarning: warningColor, 
+        // error
+        borderError: `1px solid ${errorColor}`, borderHoverError: `1px solid ${errorColorHover}`, borderActiveError: `1px solid ${errorColor}`, borderFocusError: `1px solid ${errorColorHover}`, boxShadowHoverError: 'none', boxShadowActiveError: `0 0 0 2px ${(0,seemly__WEBPACK_IMPORTED_MODULE_1__.changeColor)(errorColor, {
+            alpha: 0.2
+        })}`, boxShadowFocusError: `0 0 0 2px ${(0,seemly__WEBPACK_IMPORTED_MODULE_1__.changeColor)(errorColor, {
+            alpha: 0.2
+        })}`, colorActiveError: inputColor, caretColorError: errorColor, clearColor,
+        clearColorHover,
+        clearColorPressed });
+};
+const internalSelectionLight = (0,_mixins__WEBPACK_IMPORTED_MODULE_2__.createTheme)({
+    name: 'InternalSelection',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_3__["default"],
+    peers: {
+        Popover: _popover_styles__WEBPACK_IMPORTED_MODULE_4__["default"]
+    },
+    self
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (internalSelectionLight);
 
 
 /***/ }),
@@ -47065,6 +47591,115 @@ __webpack_require__.r(__webpack_exports__);
     heightHuge: '46px',
     transformDebounceScale: 'scale(1)'
 });
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/_styles/common/dark.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/naive-ui/es/_styles/common/dark.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/_styles/common/_common.js");
+
+
+const base = {
+    neutralBase: '#000',
+    neutralInvertBase: '#fff',
+    neutralTextBase: '#fff',
+    neutralPopover: 'rgb(72, 72, 78)',
+    neutralCard: 'rgb(24, 24, 28)',
+    neutralModal: 'rgb(44, 44, 50)',
+    neutralBody: 'rgb(16, 16, 20)',
+    alpha1: '0.9',
+    alpha2: '0.82',
+    alpha3: '0.52',
+    alpha4: '0.38',
+    alpha5: '0.28',
+    alphaClose: '0.52',
+    alphaDisabled: '0.38',
+    alphaDisabledInput: '0.06',
+    alphaPending: '0.09',
+    alphaTablePending: '0.06',
+    alphaTableStriped: '0.05',
+    alphaPressed: '0.05',
+    alphaAvatar: '0.18',
+    alphaRail: '0.2',
+    alphaProgressRail: '0.12',
+    alphaBorder: '0.24',
+    alphaDivider: '0.09',
+    alphaInput: '0.1',
+    alphaAction: '0.06',
+    alphaTab: '0.04',
+    alphaScrollbar: '0.2',
+    alphaScrollbarHover: '0.3',
+    alphaCode: '0.12',
+    alphaTag: '0',
+    // primary
+    primaryHover: '#7fe7c4',
+    primaryDefault: '#63e2b7',
+    primaryActive: '#5acea7',
+    primarySuppl: 'rgb(42, 148, 125)',
+    // info
+    infoHover: '#8acbec',
+    infoDefault: '#70c0e8',
+    infoActive: '#66afd3',
+    infoSuppl: 'rgb(56, 137, 197)',
+    // error
+    errorHover: '#e98b8b',
+    errorDefault: '#e88080',
+    errorActive: '#e57272',
+    errorSuppl: 'rgb(208, 58, 82)',
+    // warning
+    warningHover: '#f5d599',
+    warningDefault: '#f2c97d',
+    warningActive: '#e6c260',
+    warningSuppl: 'rgb(240, 138, 0)',
+    // success
+    successHover: '#7fe7c4',
+    successDefault: '#63e2b7',
+    successActive: '#5acea7',
+    successSuppl: 'rgb(42, 148, 125)'
+};
+const baseBackgroundRgb = (0,seemly__WEBPACK_IMPORTED_MODULE_0__.rgba)(base.neutralBase);
+const baseInvertBackgroundRgb = (0,seemly__WEBPACK_IMPORTED_MODULE_0__.rgba)(base.neutralInvertBase);
+const overlayPrefix = 'rgba(' + baseInvertBackgroundRgb.slice(0, 3).join(', ') + ', ';
+function overlay(alpha) {
+    return overlayPrefix + String(alpha) + ')';
+}
+function neutral(alpha) {
+    const overlayRgba = Array.from(baseInvertBackgroundRgb);
+    overlayRgba[3] = Number(alpha);
+    return (0,seemly__WEBPACK_IMPORTED_MODULE_0__.composite)(baseBackgroundRgb, overlayRgba);
+}
+const derived = Object.assign(Object.assign({ name: 'common' }, _common__WEBPACK_IMPORTED_MODULE_1__["default"]), { baseColor: base.neutralBase, 
+    // primary color
+    primaryColor: base.primaryDefault, primaryColorHover: base.primaryHover, primaryColorPressed: base.primaryActive, primaryColorSuppl: base.primarySuppl, 
+    // info color
+    infoColor: base.infoDefault, infoColorHover: base.infoHover, infoColorPressed: base.infoActive, infoColorSuppl: base.infoSuppl, 
+    // success color
+    successColor: base.successDefault, successColorHover: base.successHover, successColorPressed: base.successActive, successColorSuppl: base.successSuppl, 
+    // warning color
+    warningColor: base.warningDefault, warningColorHover: base.warningHover, warningColorPressed: base.warningActive, warningColorSuppl: base.warningSuppl, 
+    // error color
+    errorColor: base.errorDefault, errorColorHover: base.errorHover, errorColorPressed: base.errorActive, errorColorSuppl: base.errorSuppl, 
+    // text color
+    textColorBase: base.neutralTextBase, textColor1: overlay(base.alpha1), textColor2: overlay(base.alpha2), textColor3: overlay(base.alpha3), 
+    // textColor4: overlay(base.alpha4), // disabled, placeholder, icon
+    // textColor5: overlay(base.alpha5),
+    textColorDisabled: overlay(base.alpha4), placeholderColor: overlay(base.alpha4), placeholderColorDisabled: overlay(base.alpha5), iconColor: overlay(base.alpha4), iconColorDisabled: overlay(base.alpha5), iconColorHover: overlay(Number(base.alpha4) * 1.25), iconColorPressed: overlay(Number(base.alpha4) * 0.8), opacity1: base.alpha1, opacity2: base.alpha2, opacity3: base.alpha3, opacity4: base.alpha4, opacity5: base.alpha5, dividerColor: overlay(base.alphaDivider), borderColor: overlay(base.alphaBorder), 
+    // close
+    closeColorHover: overlay(Number(base.alphaClose) * 1.25), closeColor: overlay(Number(base.alphaClose)), closeColorPressed: overlay(Number(base.alphaClose) * 0.8), closeColorDisabled: overlay(base.alpha4), 
+    // clear
+    clearColor: overlay(base.alpha4), clearColorHover: (0,seemly__WEBPACK_IMPORTED_MODULE_0__.scaleColor)(overlay(base.alpha4), { alpha: 1.25 }), clearColorPressed: (0,seemly__WEBPACK_IMPORTED_MODULE_0__.scaleColor)(overlay(base.alpha4), { alpha: 0.8 }), scrollbarColor: overlay(base.alphaScrollbar), scrollbarColorHover: overlay(base.alphaScrollbarHover), scrollbarWidth: '5px', scrollbarHeight: '5px', scrollbarBorderRadius: '5px', progressRailColor: overlay(base.alphaProgressRail), railColor: overlay(base.alphaRail), popoverColor: base.neutralPopover, tableColor: base.neutralCard, cardColor: base.neutralCard, modalColor: base.neutralModal, bodyColor: base.neutralBody, tagColor: neutral(base.alphaTag), avatarColor: overlay(base.alphaAvatar), invertedColor: base.neutralBase, inputColor: overlay(base.alphaInput), codeColor: overlay(base.alphaCode), tabColor: overlay(base.alphaTab), actionColor: overlay(base.alphaAction), tableHeaderColor: overlay(base.alphaAction), hoverColor: overlay(base.alphaPending), tableColorHover: overlay(base.alphaTablePending), tableColorStriped: overlay(base.alphaTableStriped), pressedColor: overlay(base.alphaPressed), opacityDisabled: base.alphaDisabled, inputColorDisabled: overlay(base.alphaDisabledInput), buttonColor2: 'rgba(255, 255, 255, .06)', buttonColor2Hover: 'rgba(255, 255, 255, .09)', buttonColor2Pressed: 'rgba(255, 255, 255, .05)', boxShadow1: '0 1px 2px -2px rgba(0, 0, 0, .24), 0 3px 6px 0 rgba(0, 0, 0, .18), 0 5px 12px 4px rgba(0, 0, 0, .12)', boxShadow2: '0 3px 6px -4px rgba(0, 0, 0, .24), 0 6px 12px 0 rgba(0, 0, 0, .16), 0 9px 18px 8px rgba(0, 0, 0, .10)', boxShadow3: '0 6px 16px -9px rgba(0, 0, 0, .08), 0 9px 28px 0 rgba(0, 0, 0, .05), 0 12px 48px 16px rgba(0, 0, 0, .03)' });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (derived);
 
 
 /***/ }),
@@ -48374,6 +49009,213 @@ function isSlotEmpty(slot) {
 
 /***/ }),
 
+/***/ "./node_modules/naive-ui/es/alert/styles/_common.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/naive-ui/es/alert/styles/_common.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    iconMargin: '12px 8px 0 12px',
+    iconSize: '26px',
+    closeSize: '16px',
+    closeMargin: '14px 16px 0 0',
+    padding: '15px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/alert/styles/dark.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/naive-ui/es/alert/styles/dark.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/alert/styles/_common.js");
+
+
+
+const alertDark = {
+    name: 'Alert',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const { lineHeight, borderRadius, fontWeightStrong, dividerColor, inputColor, textColor1, textColor2, closeColor, closeColorHover, closeColorPressed, infoColorSuppl, successColorSuppl, warningColorSuppl, errorColorSuppl, fontSize } = vars;
+        return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_1__["default"]), { fontSize,
+            lineHeight, titleFontWeight: fontWeightStrong, borderRadius, border: `1px solid ${dividerColor}`, color: inputColor, titleTextColor: textColor1, iconColor: textColor2, contentTextColor: textColor2, closeColor: closeColor, closeColorHover: closeColorHover, closeColorPressed: closeColorPressed, borderInfo: `1px solid ${(0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(infoColorSuppl, { alpha: 0.35 })}`, colorInfo: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(infoColorSuppl, { alpha: 0.25 }), titleTextColorInfo: textColor1, iconColorInfo: infoColorSuppl, contentTextColorInfo: textColor2, closeColorInfo: closeColor, closeColorHoverInfo: closeColorHover, closeColorPressedInfo: closeColorPressed, borderSuccess: `1px solid ${(0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(successColorSuppl, {
+                alpha: 0.35
+            })}`, colorSuccess: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(successColorSuppl, { alpha: 0.25 }), titleTextColorSuccess: textColor1, iconColorSuccess: successColorSuppl, contentTextColorSuccess: textColor2, closeColorSuccess: closeColor, closeColorHoverSuccess: closeColorHover, closeColorPressedSuccess: closeColorPressed, borderWarning: `1px solid ${(0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(warningColorSuppl, {
+                alpha: 0.35
+            })}`, colorWarning: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(warningColorSuppl, { alpha: 0.25 }), titleTextColorWarning: textColor1, iconColorWarning: warningColorSuppl, contentTextColorWarning: textColor2, closeColorWarning: closeColor, closeColorHoverWarning: closeColorHover, closeColorPressedWarning: closeColorPressed, borderError: `1px solid ${(0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(errorColorSuppl, { alpha: 0.35 })}`, colorError: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(errorColorSuppl, { alpha: 0.25 }), titleTextColorError: textColor1, iconColorError: errorColorSuppl, contentTextColorError: textColor2, closeColorError: closeColor, closeColorHoverError: closeColorHover, closeColorPressedError: closeColorPressed });
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (alertDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/anchor/styles/_common.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/naive-ui/es/anchor/styles/_common.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    linkFontSize: '13px',
+    linkPadding: '0 0 0 16px',
+    railWidth: '4px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/anchor/styles/dark.js":
+/*!********************************************************!*\
+  !*** ./node_modules/naive-ui/es/anchor/styles/dark.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/anchor/styles/light.js");
+
+
+const anchorDark = {
+    name: 'Anchor',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (anchorDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/anchor/styles/light.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/naive-ui/es/anchor/styles/light.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/anchor/styles/_common.js");
+
+
+
+const self = (vars) => {
+    const { borderRadius, railColor, primaryColor, primaryColorHover, primaryColorPressed, textColor2 } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { borderRadius, railColor: railColor, railColorActive: primaryColor, linkColor: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.changeColor)(primaryColor, { alpha: 0.15 }), linkTextColor: textColor2, linkTextColorHover: primaryColorHover, linkTextColorPressed: primaryColorPressed, linkTextColorActive: primaryColor });
+};
+const anchorLight = {
+    name: 'Anchor',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_2__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (anchorLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/auto-complete/styles/dark.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/naive-ui/es/auto-complete/styles/dark.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _internal_select_menu_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_internal/select-menu/styles */ "./node_modules/naive-ui/es/_internal/select-menu/styles/dark.js");
+/* harmony import */ var _input_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../input/styles */ "./node_modules/naive-ui/es/input/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/auto-complete/styles/light.js");
+
+
+
+
+const autoCompleteDark = {
+    name: 'AutoComplete',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        InternalSelectMenu: _internal_select_menu_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        Input: _input_styles__WEBPACK_IMPORTED_MODULE_2__["default"]
+    },
+    self: _light__WEBPACK_IMPORTED_MODULE_3__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (autoCompleteDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/auto-complete/styles/light.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/naive-ui/es/auto-complete/styles/light.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _internal_select_menu_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_internal/select-menu/styles */ "./node_modules/naive-ui/es/_internal/select-menu/styles/light.js");
+/* harmony import */ var _input_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../input/styles */ "./node_modules/naive-ui/es/input/styles/light.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+
+
+
+
+function self(vars) {
+    const { boxShadow2 } = vars;
+    return {
+        menuBoxShadow: boxShadow2
+    };
+}
+const autoCompleteLight = (0,_mixins__WEBPACK_IMPORTED_MODULE_0__.createTheme)({
+    name: 'AutoComplete',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_1__["default"],
+    peers: {
+        InternalSelectMenu: _internal_select_menu_styles__WEBPACK_IMPORTED_MODULE_2__["default"],
+        Input: _input_styles__WEBPACK_IMPORTED_MODULE_3__["default"]
+    },
+    self
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (autoCompleteLight);
+
+
+/***/ }),
+
 /***/ "./node_modules/naive-ui/es/avatar/src/Avatar.js":
 /*!*******************************************************!*\
   !*** ./node_modules/naive-ui/es/avatar/src/Avatar.js ***!
@@ -48603,6 +49445,31 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/naive-ui/es/avatar/styles/dark.js":
+/*!********************************************************!*\
+  !*** ./node_modules/naive-ui/es/avatar/styles/dark.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/avatar/styles/light.js");
+
+
+const avatarDark = {
+    name: 'Avatar',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (avatarDark);
+
+
+/***/ }),
+
 /***/ "./node_modules/naive-ui/es/avatar/styles/light.js":
 /*!*********************************************************!*\
   !*** ./node_modules/naive-ui/es/avatar/styles/light.js ***!
@@ -48641,6 +49508,162 @@ const avatarLight = {
     self
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (avatarLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/back-top/styles/_common.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/naive-ui/es/back-top/styles/_common.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    width: '44px',
+    height: '44px',
+    borderRadius: '22px',
+    iconSize: '26px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/back-top/styles/dark.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/naive-ui/es/back-top/styles/dark.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/back-top/styles/_common.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+
+
+const backTopDark = {
+    name: 'BackTop',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const { popoverColor, textColor2, primaryColorHover, primaryColorPressed } = vars;
+        return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_1__["default"]), { color: popoverColor, textColor: textColor2, iconColor: textColor2, iconColorHover: primaryColorHover, iconColorPressed: primaryColorPressed, boxShadow: '0 2px 8px 0px rgba(0, 0, 0, .12)', boxShadowHover: '0 2px 12px 0px rgba(0, 0, 0, .18)', boxShadowPressed: '0 2px 12px 0px rgba(0, 0, 0, .18)' });
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (backTopDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/badge/styles/dark.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/naive-ui/es/badge/styles/dark.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+
+const badgeDark = {
+    name: 'Badge',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const { errorColorSuppl, infoColorSuppl, successColorSuppl, warningColorSuppl, fontFamily } = vars;
+        return {
+            color: errorColorSuppl,
+            colorInfo: infoColorSuppl,
+            colorSuccess: successColorSuppl,
+            colorError: errorColorSuppl,
+            colorWarning: warningColorSuppl,
+            fontSize: '12px',
+            fontFamily
+        };
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (badgeDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/breadcrumb/styles/_common.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/naive-ui/es/breadcrumb/styles/_common.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    fontWeightActive: '400'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/breadcrumb/styles/dark.js":
+/*!************************************************************!*\
+  !*** ./node_modules/naive-ui/es/breadcrumb/styles/dark.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/breadcrumb/styles/light.js");
+
+
+const breadcrumbDark = {
+    name: 'Breadcrumb',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (breadcrumbDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/breadcrumb/styles/light.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/naive-ui/es/breadcrumb/styles/light.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/breadcrumb/styles/_common.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+
+
+const self = (vars) => {
+    const { fontSize, textColor3, primaryColorHover, primaryColorPressed, textColor2 } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { fontSize: fontSize, itemTextColor: textColor3, itemTextColorHover: primaryColorHover, itemTextColorPressed: primaryColorPressed, itemTextColorActive: textColor2, separatorColor: textColor3 });
+};
+const breadcrumbLight = {
+    name: 'Breadcrumb',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_1__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (breadcrumbLight);
 
 
 /***/ }),
@@ -49501,6 +50524,38 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/naive-ui/es/button/styles/dark.js":
+/*!********************************************************!*\
+  !*** ./node_modules/naive-ui/es/button/styles/dark.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/button/styles/light.js");
+
+
+const buttonDark = {
+    name: 'Button',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const commonSelf = (0,_light__WEBPACK_IMPORTED_MODULE_1__.self)(vars);
+        commonSelf.waveOpacity = '0.8';
+        commonSelf.colorOpacitySecondary = '0.16';
+        commonSelf.colorOpacitySecondaryHover = '0.2';
+        commonSelf.colorOpacitySecondaryPressed = '0.12';
+        return commonSelf;
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (buttonDark);
+
+
+/***/ }),
+
 /***/ "./node_modules/naive-ui/es/button/styles/light.js":
 /*!*********************************************************!*\
   !*** ./node_modules/naive-ui/es/button/styles/light.js ***!
@@ -49549,6 +50604,886 @@ const buttonLight = {
     self
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (buttonLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/calendar/styles/_common.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/naive-ui/es/calendar/styles/_common.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    titleFontSize: '22px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/calendar/styles/dark.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/naive-ui/es/calendar/styles/dark.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/calendar/styles/light.js");
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/dark.js");
+
+
+
+const calendarDark = {
+    name: 'Calendar',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_1__["default"]
+    },
+    self: _light__WEBPACK_IMPORTED_MODULE_2__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (calendarDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/calendar/styles/light.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/naive-ui/es/calendar/styles/light.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/calendar/styles/_common.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/light.js");
+
+
+
+
+
+const self = (vars) => {
+    const { borderRadius, fontSize, lineHeight, textColor2, textColor1, textColorDisabled, dividerColor, fontWeightStrong, primaryColor, baseColor, hoverColor, cardColor, modalColor, popoverColor } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { borderRadius, borderColor: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(cardColor, dividerColor), borderColorModal: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(modalColor, dividerColor), borderColorPopover: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(popoverColor, dividerColor), textColor: textColor2, titleFontWeight: fontWeightStrong, titleTextColor: textColor1, dayTextColor: textColorDisabled, fontSize,
+        lineHeight, dateColorCurrent: primaryColor, dateTextColorCurrent: baseColor, cellColorHover: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(cardColor, hoverColor), cellColorHoverModal: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(modalColor, hoverColor), cellColorHoverPopover: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(popoverColor, hoverColor), cellColor: cardColor, cellColorModal: modalColor, cellColorPopover: popoverColor, barColor: primaryColor });
+};
+const calendarLight = (0,_mixins__WEBPACK_IMPORTED_MODULE_2__.createTheme)({
+    name: 'Calendar',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_3__["default"],
+    peers: {
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_4__["default"]
+    },
+    self
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (calendarLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/card/styles/_common.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/naive-ui/es/card/styles/_common.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    paddingSmall: '12px 16px 12px',
+    paddingMedium: '19px 24px 20px',
+    paddingLarge: '23px 32px 24px',
+    paddingHuge: '27px 40px 28px',
+    titleFontSizeSmall: '16px',
+    titleFontSizeMedium: '18px',
+    titleFontSizeLarge: '18px',
+    titleFontSizeHuge: '18px',
+    closeSize: '18px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/card/styles/dark.js":
+/*!******************************************************!*\
+  !*** ./node_modules/naive-ui/es/card/styles/dark.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/card/styles/light.js");
+
+
+const cardDark = {
+    name: 'Card',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const commonSelf = (0,_light__WEBPACK_IMPORTED_MODULE_1__.self)(vars);
+        const { cardColor } = vars;
+        commonSelf.colorEmbedded = cardColor;
+        return commonSelf;
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (cardDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/card/styles/light.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/naive-ui/es/card/styles/light.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/card/styles/_common.js");
+
+
+const self = (vars) => {
+    const { primaryColor, borderRadius, lineHeight, fontSize, cardColor, textColor2, textColor1, dividerColor, fontWeightStrong, closeColor, closeColorHover, closeColorPressed, modalColor, boxShadow1, popoverColor, actionColor } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { lineHeight, color: cardColor, colorModal: modalColor, colorPopover: popoverColor, colorTarget: primaryColor, colorEmbedded: actionColor, textColor: textColor2, titleTextColor: textColor1, borderColor: dividerColor, actionColor: actionColor, titleFontWeight: fontWeightStrong, closeColor: closeColor, closeColorHover: closeColorHover, closeColorPressed: closeColorPressed, fontSizeSmall: fontSize, fontSizeMedium: fontSize, fontSizeLarge: fontSize, fontSizeHuge: fontSize, boxShadow: boxShadow1, borderRadius });
+};
+const cardLight = {
+    name: 'Card',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_1__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (cardLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/carousel/styles/dark.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/naive-ui/es/carousel/styles/dark.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/carousel/styles/light.js");
+
+
+const carouselDark = {
+    name: 'Carousel',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (carouselDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/carousel/styles/light.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/naive-ui/es/carousel/styles/light.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+
+const self = (vars) => {
+    return {
+        dotSize: '8px',
+        dotColor: 'rgba(255, 255, 255, .3)',
+        dotColorActive: 'rgba(255, 255, 255, 1)',
+        dotColorFocus: 'rgba(255, 255, 255, .5)',
+        dotLineWidth: '16px',
+        dotLineWidthActive: '24px',
+        arrowColor: '#eee'
+    };
+};
+const carouselLight = {
+    name: 'Carousel',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (carouselLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/cascader/styles/dark.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/naive-ui/es/cascader/styles/dark.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _internal_selection_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_internal/selection/styles */ "./node_modules/naive-ui/es/_internal/selection/styles/dark.js");
+/* harmony import */ var _internal_select_menu_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_internal/select-menu/styles */ "./node_modules/naive-ui/es/_internal/select-menu/styles/dark.js");
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/dark.js");
+/* harmony import */ var _checkbox_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../checkbox/styles */ "./node_modules/naive-ui/es/checkbox/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/cascader/styles/light.js");
+/* harmony import */ var _empty_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../empty/styles */ "./node_modules/naive-ui/es/empty/styles/light.js");
+
+
+
+
+
+
+
+const cascaderDark = {
+    name: 'Cascader',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        InternalSelectMenu: _internal_select_menu_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        InternalSelection: _internal_selection_styles__WEBPACK_IMPORTED_MODULE_2__["default"],
+        Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_3__["default"],
+        Checkbox: _checkbox_styles__WEBPACK_IMPORTED_MODULE_4__["default"],
+        Empty: _empty_styles__WEBPACK_IMPORTED_MODULE_5__["default"]
+    },
+    self: _light__WEBPACK_IMPORTED_MODULE_6__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (cascaderDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/cascader/styles/light.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/naive-ui/es/cascader/styles/light.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _internal_selection_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../_internal/selection/styles */ "./node_modules/naive-ui/es/_internal/selection/styles/light.js");
+/* harmony import */ var _internal_select_menu_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_internal/select-menu/styles */ "./node_modules/naive-ui/es/_internal/select-menu/styles/light.js");
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/light.js");
+/* harmony import */ var _checkbox_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../checkbox/styles */ "./node_modules/naive-ui/es/checkbox/styles/light.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+/* harmony import */ var _empty_styles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../empty/styles */ "./node_modules/naive-ui/es/empty/styles/light.js");
+
+
+
+
+
+
+
+const self = (vars) => {
+    const { borderRadius, boxShadow2, popoverColor, textColor2, textColor3, primaryColor, textColorDisabled, dividerColor, hoverColor, fontSizeMedium, heightMedium } = vars;
+    return {
+        menuBorderRadius: borderRadius,
+        menuColor: popoverColor,
+        menuBoxShadow: boxShadow2,
+        menuDividerColor: dividerColor,
+        menuHeight: 'calc(var(--n-option-height) * 6.6)',
+        optionArrowColor: textColor3,
+        optionHeight: heightMedium,
+        optionFontSize: fontSizeMedium,
+        optionColorHover: hoverColor,
+        optionTextColor: textColor2,
+        optionTextColorActive: primaryColor,
+        optionTextColorDisabled: textColorDisabled,
+        optionCheckMarkColor: primaryColor,
+        loadingColor: primaryColor,
+        columnWidth: '180px'
+    };
+};
+const cascaderLight = (0,_mixins__WEBPACK_IMPORTED_MODULE_0__.createTheme)({
+    name: 'Cascader',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_1__["default"],
+    peers: {
+        InternalSelectMenu: _internal_select_menu_styles__WEBPACK_IMPORTED_MODULE_2__["default"],
+        InternalSelection: _internal_selection_styles__WEBPACK_IMPORTED_MODULE_3__["default"],
+        Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_4__["default"],
+        Checkbox: _checkbox_styles__WEBPACK_IMPORTED_MODULE_5__["default"],
+        Empty: _empty_styles__WEBPACK_IMPORTED_MODULE_6__["default"]
+    },
+    self
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (cascaderLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/checkbox/styles/_common.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/naive-ui/es/checkbox/styles/_common.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    sizeSmall: '14px',
+    sizeMedium: '16px',
+    sizeLarge: '18px',
+    labelPadding: '0 8px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/checkbox/styles/dark.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/naive-ui/es/checkbox/styles/dark.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/checkbox/styles/light.js");
+
+
+const checkboxDark = {
+    name: 'Checkbox',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const { cardColor } = vars;
+        const commonSelf = (0,_light__WEBPACK_IMPORTED_MODULE_1__.self)(vars);
+        commonSelf.color = '#0000';
+        commonSelf.checkMarkColor = cardColor;
+        return commonSelf;
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (checkboxDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/checkbox/styles/light.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/naive-ui/es/checkbox/styles/light.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/checkbox/styles/_common.js");
+
+
+
+const self = (vars) => {
+    const { baseColor, inputColorDisabled, cardColor, modalColor, popoverColor, textColorDisabled, borderColor, primaryColor, textColor2, fontSizeSmall, fontSizeMedium, fontSizeLarge, borderRadiusSmall } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { fontSizeSmall,
+        fontSizeMedium,
+        fontSizeLarge, borderRadius: borderRadiusSmall, color: baseColor, colorChecked: primaryColor, colorDisabled: inputColorDisabled, colorDisabledChecked: inputColorDisabled, colorTableHeader: cardColor, colorTableHeaderModal: modalColor, colorTableHeaderPopover: popoverColor, checkMarkColor: baseColor, checkMarkColorDisabled: textColorDisabled, checkMarkColorDisabledChecked: textColorDisabled, border: `1px solid ${borderColor}`, borderDisabled: `1px solid ${borderColor}`, borderDisabledChecked: `1px solid ${borderColor}`, borderChecked: `1px solid ${primaryColor}`, borderFocus: `1px solid ${primaryColor}`, boxShadowFocus: `0 0 0 2px ${(0,seemly__WEBPACK_IMPORTED_MODULE_1__.changeColor)(primaryColor, { alpha: 0.3 })}`, textColor: textColor2, textColorDisabled: textColorDisabled });
+};
+const checkboxLight = {
+    name: 'Checkbox',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_2__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (checkboxLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/code/styles/dark.js":
+/*!******************************************************!*\
+  !*** ./node_modules/naive-ui/es/code/styles/dark.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+
+const codeDark = {
+    name: 'Code',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const { textColor2, fontSize, fontWeightStrong } = vars;
+        return {
+            textColor: textColor2,
+            fontSize,
+            fontWeightStrong,
+            // extracted from hljs atom-one-dark.scss
+            'mono-3': '#5c6370',
+            'hue-1': '#56b6c2',
+            'hue-2': '#61aeee',
+            'hue-3': '#c678dd',
+            'hue-4': '#98c379',
+            'hue-5': '#e06c75',
+            'hue-5-2': '#be5046',
+            'hue-6': '#d19a66',
+            'hue-6-2': '#e6c07b'
+        };
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (codeDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/collapse-transition/styles/dark.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/naive-ui/es/collapse-transition/styles/dark.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/collapse-transition/styles/light.js");
+
+
+const collapseTransitionDark = {
+    name: 'CollapseTransition',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (collapseTransitionDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/collapse-transition/styles/light.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/naive-ui/es/collapse-transition/styles/light.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+
+const self = (vars) => {
+    const { cubicBezierEaseInOut } = vars;
+    return {
+        bezier: cubicBezierEaseInOut
+    };
+};
+const collapseTransitionLight = {
+    name: 'CollapseTransition',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (collapseTransitionLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/collapse/styles/dark.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/naive-ui/es/collapse/styles/dark.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/collapse/styles/light.js");
+
+
+const collapseDark = {
+    name: 'Collapse',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (collapseDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/collapse/styles/light.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/naive-ui/es/collapse/styles/light.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+
+const self = (vars) => {
+    const { fontWeight, textColor1, textColor2, dividerColor, fontSize } = vars;
+    return {
+        titleFontSize: fontSize,
+        titleFontWeight: fontWeight,
+        dividerColor: dividerColor,
+        titleTextColor: textColor1,
+        fontSize,
+        textColor: textColor2,
+        arrowColor: textColor2
+    };
+};
+const collapseLight = {
+    name: 'Collapse',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (collapseLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/color-picker/styles/dark.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/naive-ui/es/color-picker/styles/dark.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/dark.js");
+/* harmony import */ var _input_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../input/styles */ "./node_modules/naive-ui/es/input/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/color-picker/styles/light.js");
+
+
+
+
+const colorPickerDark = {
+    name: 'ColorPicker',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Input: _input_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_2__["default"]
+    },
+    self: _light__WEBPACK_IMPORTED_MODULE_3__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (colorPickerDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/color-picker/styles/light.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/naive-ui/es/color-picker/styles/light.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _mixins_use_theme__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_mixins/use-theme */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+/* harmony import */ var _input_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../input/styles */ "./node_modules/naive-ui/es/input/styles/light.js");
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/light.js");
+
+
+
+
+const self = (vars) => {
+    const { fontSize, boxShadow2, popoverColor, textColor2, borderRadius, borderColor, heightSmall, heightMedium, heightLarge, fontSizeSmall, fontSizeMedium, fontSizeLarge, dividerColor } = vars;
+    return {
+        panelFontSize: fontSize,
+        boxShadow: boxShadow2,
+        color: popoverColor,
+        textColor: textColor2,
+        borderRadius,
+        border: `1px solid ${borderColor}`,
+        heightSmall,
+        heightMedium,
+        heightLarge,
+        fontSizeSmall,
+        fontSizeMedium,
+        fontSizeLarge,
+        dividerColor
+    };
+};
+const colorPickerLight = (0,_mixins_use_theme__WEBPACK_IMPORTED_MODULE_0__.createTheme)({
+    name: 'ColorPicker',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_1__["default"],
+    peers: {
+        Input: _input_styles__WEBPACK_IMPORTED_MODULE_2__["default"],
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_3__["default"]
+    },
+    self
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (colorPickerLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/config-provider/src/ConfigProvider.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/naive-ui/es/config-provider/src/ConfigProvider.js ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "configProviderProps": () => (/* binding */ configProviderProps),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var vooks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vooks */ "./node_modules/vooks/es/use-memo.js");
+/* harmony import */ var lodash_es__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es */ "./node_modules/lodash-es/merge.js");
+/* harmony import */ var css_render__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! css-render */ "./node_modules/@emotion/hash/dist/hash.browser.esm.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_utils */ "./node_modules/naive-ui/es/_utils/naive/warn.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-config.js");
+/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./context */ "./node_modules/naive-ui/es/config-provider/src/context.js");
+
+
+
+
+
+
+
+const configProviderProps = {
+    abstract: Boolean,
+    bordered: {
+        type: Boolean,
+        default: undefined
+    },
+    clsPrefix: String,
+    locale: Object,
+    dateLocale: Object,
+    namespace: String,
+    rtl: Array,
+    tag: {
+        type: String,
+        default: 'div'
+    },
+    hljs: Object,
+    theme: Object,
+    themeOverrides: Object,
+    componentOptions: Object,
+    icons: Object,
+    breakpoints: Object,
+    disableInlineTheme: {
+        type: Boolean,
+        default: undefined
+    },
+    // deprecated
+    as: {
+        type: String,
+        validator: () => {
+            (0,_utils__WEBPACK_IMPORTED_MODULE_1__.warn)('config-provider', '`as` is deprecated, please use `tag` instead.');
+            return true;
+        },
+        default: undefined
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'ConfigProvider',
+    alias: ['App'],
+    props: configProviderProps,
+    setup(props) {
+        const NConfigProvider = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)(_context__WEBPACK_IMPORTED_MODULE_2__.configProviderInjectionKey, null);
+        const mergedThemeRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+            const { theme } = props;
+            if (theme === null)
+                return undefined;
+            const inheritedTheme = NConfigProvider === null || NConfigProvider === void 0 ? void 0 : NConfigProvider.mergedThemeRef.value;
+            return theme === undefined
+                ? inheritedTheme
+                : inheritedTheme === undefined
+                    ? theme
+                    : Object.assign({}, inheritedTheme, theme);
+        });
+        const mergedThemeOverridesRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+            const { themeOverrides } = props;
+            // stop inheriting themeOverrides
+            if (themeOverrides === null)
+                return undefined;
+            // use inherited themeOverrides
+            if (themeOverrides === undefined) {
+                return NConfigProvider === null || NConfigProvider === void 0 ? void 0 : NConfigProvider.mergedThemeOverridesRef.value;
+            }
+            else {
+                const inheritedThemeOverrides = NConfigProvider === null || NConfigProvider === void 0 ? void 0 : NConfigProvider.mergedThemeOverridesRef.value;
+                if (inheritedThemeOverrides === undefined) {
+                    // no inherited, use self overrides
+                    return themeOverrides;
+                }
+                else {
+                    // merge overrides
+                    return (0,lodash_es__WEBPACK_IMPORTED_MODULE_3__["default"])({}, inheritedThemeOverrides, themeOverrides);
+                }
+            }
+        });
+        const mergedNamespaceRef = (0,vooks__WEBPACK_IMPORTED_MODULE_4__["default"])(() => {
+            const { namespace } = props;
+            return namespace === undefined
+                ? NConfigProvider === null || NConfigProvider === void 0 ? void 0 : NConfigProvider.mergedNamespaceRef.value
+                : namespace;
+        });
+        const mergedBorderedRef = (0,vooks__WEBPACK_IMPORTED_MODULE_4__["default"])(() => {
+            const { bordered } = props;
+            return bordered === undefined
+                ? NConfigProvider === null || NConfigProvider === void 0 ? void 0 : NConfigProvider.mergedBorderedRef.value
+                : bordered;
+        });
+        const mergedIconsRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+            const { icons } = props;
+            return icons === undefined ? NConfigProvider === null || NConfigProvider === void 0 ? void 0 : NConfigProvider.mergedIconsRef.value : icons;
+        });
+        const mergedComponentPropsRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+            const { componentOptions } = props;
+            if (componentOptions !== undefined)
+                return componentOptions;
+            return NConfigProvider === null || NConfigProvider === void 0 ? void 0 : NConfigProvider.mergedComponentPropsRef.value;
+        });
+        const mergedClsPrefixRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+            const { clsPrefix } = props;
+            if (clsPrefix !== undefined)
+                return clsPrefix;
+            return NConfigProvider === null || NConfigProvider === void 0 ? void 0 : NConfigProvider.mergedClsPrefixRef.value;
+        });
+        const mergedRtlRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+            const { rtl } = props;
+            if (rtl === undefined) {
+                return NConfigProvider === null || NConfigProvider === void 0 ? void 0 : NConfigProvider.mergedRtlRef.value;
+            }
+            const rtlEnabledState = {};
+            for (const rtlInfo of rtl) {
+                rtlEnabledState[rtlInfo.name] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.markRaw)(rtlInfo);
+            }
+            return rtlEnabledState;
+        });
+        const mergedBreakpointsRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+            return props.breakpoints || (NConfigProvider === null || NConfigProvider === void 0 ? void 0 : NConfigProvider.mergedBreakpointsRef.value);
+        });
+        const disableInlineTheme = props.disableInlineTheme || (NConfigProvider === null || NConfigProvider === void 0 ? void 0 : NConfigProvider.disableInlineTheme);
+        const mergedThemeHashRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+            const { value: theme } = mergedThemeRef;
+            const { value: mergedThemeOverrides } = mergedThemeOverridesRef;
+            const hasThemeOverrides = mergedThemeOverrides && Object.keys(mergedThemeOverrides).length !== 0;
+            const themeName = theme === null || theme === void 0 ? void 0 : theme.name;
+            if (themeName) {
+                if (hasThemeOverrides) {
+                    return `${themeName}-${(0,css_render__WEBPACK_IMPORTED_MODULE_5__["default"])(JSON.stringify(mergedThemeOverridesRef.value))}`;
+                }
+                return themeName;
+            }
+            else {
+                if (hasThemeOverrides) {
+                    return (0,css_render__WEBPACK_IMPORTED_MODULE_5__["default"])(JSON.stringify(mergedThemeOverridesRef.value));
+                }
+                return '';
+            }
+        });
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)(_context__WEBPACK_IMPORTED_MODULE_2__.configProviderInjectionKey, {
+            mergedThemeHashRef,
+            mergedBreakpointsRef,
+            mergedRtlRef,
+            mergedIconsRef,
+            mergedComponentPropsRef,
+            mergedBorderedRef,
+            mergedNamespaceRef,
+            mergedClsPrefixRef,
+            mergedLocaleRef: (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+                const { locale } = props;
+                if (locale === null)
+                    return undefined;
+                return locale === undefined
+                    ? NConfigProvider === null || NConfigProvider === void 0 ? void 0 : NConfigProvider.mergedLocaleRef.value
+                    : locale;
+            }),
+            mergedDateLocaleRef: (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+                const { dateLocale } = props;
+                if (dateLocale === null)
+                    return undefined;
+                return dateLocale === undefined
+                    ? NConfigProvider === null || NConfigProvider === void 0 ? void 0 : NConfigProvider.mergedDateLocaleRef.value
+                    : dateLocale;
+            }),
+            mergedHljsRef: (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+                const { hljs } = props;
+                return hljs === undefined ? NConfigProvider === null || NConfigProvider === void 0 ? void 0 : NConfigProvider.mergedHljsRef.value : hljs;
+            }),
+            mergedThemeRef,
+            mergedThemeOverridesRef,
+            disableInlineTheme: disableInlineTheme || false
+        });
+        return {
+            mergedClsPrefix: mergedClsPrefixRef,
+            mergedBordered: mergedBorderedRef,
+            mergedNamespace: mergedNamespaceRef,
+            mergedTheme: mergedThemeRef,
+            mergedThemeOverrides: mergedThemeOverridesRef
+        };
+    },
+    render() {
+        var _a, _b, _c, _d;
+        return !this.abstract
+            ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(this.as || this.tag, {
+                class: `${this.mergedClsPrefix || _mixins__WEBPACK_IMPORTED_MODULE_6__.defaultClsPrefix}-config-provider`
+            }, (_b = (_a = this.$slots).default) === null || _b === void 0 ? void 0 : _b.call(_a))
+            : (_d = (_c = this.$slots).default) === null || _d === void 0 ? void 0 : _d.call(_c);
+    }
+}));
 
 
 /***/ }),
@@ -49613,6 +51548,487 @@ function create({ componentPrefix = 'N', components = [] } = {}) {
     };
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (create);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/data-table/styles/_common.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/naive-ui/es/data-table/styles/_common.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    thPaddingSmall: '8px',
+    thPaddingMedium: '12px',
+    thPaddingLarge: '12px',
+    tdPaddingSmall: '8px',
+    tdPaddingMedium: '12px',
+    tdPaddingLarge: '12px',
+    sorterSize: '15px',
+    filterSize: '15px',
+    paginationMargin: '12px 0 0 0',
+    emptyPadding: '48px 0',
+    actionPadding: '8px 12px',
+    actionButtonMargin: '0 8px 0 0'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/data-table/styles/dark.js":
+/*!************************************************************!*\
+  !*** ./node_modules/naive-ui/es/data-table/styles/dark.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _ellipsis_styles__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../ellipsis/styles */ "./node_modules/naive-ui/es/ellipsis/styles/dark.js");
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/dark.js");
+/* harmony import */ var _checkbox_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../checkbox/styles */ "./node_modules/naive-ui/es/checkbox/styles/dark.js");
+/* harmony import */ var _radio_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../radio/styles */ "./node_modules/naive-ui/es/radio/styles/dark.js");
+/* harmony import */ var _pagination_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../pagination/styles */ "./node_modules/naive-ui/es/pagination/styles/dark.js");
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/dark.js");
+/* harmony import */ var _popover_styles__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../popover/styles */ "./node_modules/naive-ui/es/popover/styles/dark.js");
+/* harmony import */ var _empty_styles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../empty/styles */ "./node_modules/naive-ui/es/empty/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/data-table/styles/light.js");
+
+
+
+
+
+
+
+
+
+
+const dataTableDark = {
+    name: 'DataTable',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        Checkbox: _checkbox_styles__WEBPACK_IMPORTED_MODULE_2__["default"],
+        Radio: _radio_styles__WEBPACK_IMPORTED_MODULE_3__["default"],
+        Pagination: _pagination_styles__WEBPACK_IMPORTED_MODULE_4__["default"],
+        Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_5__["default"],
+        Empty: _empty_styles__WEBPACK_IMPORTED_MODULE_6__["default"],
+        Popover: _popover_styles__WEBPACK_IMPORTED_MODULE_7__["default"],
+        Ellipsis: _ellipsis_styles__WEBPACK_IMPORTED_MODULE_8__["default"]
+    },
+    self(vars) {
+        const commonSelf = (0,_light__WEBPACK_IMPORTED_MODULE_9__.self)(vars);
+        commonSelf.boxShadowAfter = 'inset 12px 0 8px -12px rgba(0, 0, 0, .36)';
+        commonSelf.boxShadowBefore = 'inset -12px 0 8px -12px rgba(0, 0, 0, .36)';
+        return commonSelf;
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (dataTableDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/data-table/styles/light.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/naive-ui/es/data-table/styles/light.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/data-table/styles/_common.js");
+/* harmony import */ var _ellipsis_styles__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../ellipsis/styles */ "./node_modules/naive-ui/es/ellipsis/styles/light.js");
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/light.js");
+/* harmony import */ var _checkbox_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../checkbox/styles */ "./node_modules/naive-ui/es/checkbox/styles/light.js");
+/* harmony import */ var _radio_styles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../radio/styles */ "./node_modules/naive-ui/es/radio/styles/light.js");
+/* harmony import */ var _pagination_styles__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../pagination/styles */ "./node_modules/naive-ui/es/pagination/styles/light.js");
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/light.js");
+/* harmony import */ var _popover_styles__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../popover/styles */ "./node_modules/naive-ui/es/popover/styles/light.js");
+/* harmony import */ var _empty_styles__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../empty/styles */ "./node_modules/naive-ui/es/empty/styles/light.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+
+
+
+
+
+
+
+
+
+
+
+
+const self = (vars) => {
+    const { cardColor, modalColor, popoverColor, textColor2, textColor1, tableHeaderColor, tableColorHover, iconColor, primaryColor, fontWeightStrong, borderRadius, lineHeight, fontSizeSmall, fontSizeMedium, fontSizeLarge, dividerColor, heightSmall, opacityDisabled, tableColorStriped } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { actionDividerColor: dividerColor, lineHeight,
+        borderRadius,
+        fontSizeSmall,
+        fontSizeMedium,
+        fontSizeLarge, borderColor: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(cardColor, dividerColor), tdColorHover: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(cardColor, tableColorHover), tdColorStriped: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(cardColor, tableColorStriped), thColor: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(cardColor, tableHeaderColor), thColorHover: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)((0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(cardColor, tableHeaderColor), tableColorHover), tdColor: cardColor, tdTextColor: textColor2, thTextColor: textColor1, thFontWeight: fontWeightStrong, thButtonColorHover: tableColorHover, thIconColor: iconColor, thIconColorActive: primaryColor, 
+        // modal
+        borderColorModal: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(modalColor, dividerColor), tdColorHoverModal: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(modalColor, tableColorHover), tdColorStripedModal: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(modalColor, tableColorStriped), thColorModal: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(modalColor, tableHeaderColor), thColorHoverModal: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)((0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(modalColor, tableHeaderColor), tableColorHover), tdColorModal: modalColor, 
+        // popover
+        borderColorPopover: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(popoverColor, dividerColor), tdColorHoverPopover: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(popoverColor, tableColorHover), tdColorStripedPopover: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(popoverColor, tableColorStriped), thColorPopover: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(popoverColor, tableHeaderColor), thColorHoverPopover: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)((0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(popoverColor, tableHeaderColor), tableColorHover), tdColorPopover: popoverColor, boxShadowBefore: 'inset -12px 0 8px -12px rgba(0, 0, 0, .18)', boxShadowAfter: 'inset 12px 0 8px -12px rgba(0, 0, 0, .18)', 
+        // loading
+        loadingColor: primaryColor, loadingSize: heightSmall, opacityLoading: opacityDisabled });
+};
+const dataTableLight = (0,_mixins__WEBPACK_IMPORTED_MODULE_2__.createTheme)({
+    name: 'DataTable',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_3__["default"],
+    peers: {
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_4__["default"],
+        Checkbox: _checkbox_styles__WEBPACK_IMPORTED_MODULE_5__["default"],
+        Radio: _radio_styles__WEBPACK_IMPORTED_MODULE_6__["default"],
+        Pagination: _pagination_styles__WEBPACK_IMPORTED_MODULE_7__["default"],
+        Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_8__["default"],
+        Empty: _empty_styles__WEBPACK_IMPORTED_MODULE_9__["default"],
+        Popover: _popover_styles__WEBPACK_IMPORTED_MODULE_10__["default"],
+        Ellipsis: _ellipsis_styles__WEBPACK_IMPORTED_MODULE_11__["default"]
+    },
+    self
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (dataTableLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/date-picker/styles/_common.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/naive-ui/es/date-picker/styles/_common.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    itemSize: '24px',
+    itemCellWidth: '38px',
+    itemCellHeight: '32px',
+    scrollItemWidth: '80px',
+    scrollItemHeight: '40px',
+    panelExtraFooterPadding: '8px 12px',
+    panelActionPadding: '8px 12px',
+    calendarTitlePadding: '0',
+    calendarTitleHeight: '28px',
+    arrowSize: '14px',
+    panelHeaderPadding: '8px 12px',
+    calendarDaysHeight: '32px',
+    calendarTitleGridTempateColumns: '28px 28px 1fr 28px 28px',
+    // type
+    calendarLeftPaddingDate: '6px 12px 4px 12px',
+    calendarLeftPaddingDatetime: '4px 12px',
+    calendarLeftPaddingDaterange: '6px 12px 4px 12px',
+    calendarLeftPaddingDatetimerange: '4px 12px',
+    calendarLeftPaddingMonth: '0',
+    calendarLeftPaddingYear: '0',
+    calendarLeftPaddingQuarter: '0',
+    calendarRightPaddingDate: '6px 12px 4px 12px',
+    calendarRightPaddingDatetime: '4px 12px',
+    calendarRightPaddingDaterange: '6px 12px 4px 12px',
+    calendarRightPaddingDatetimerange: '4px 12px',
+    calendarRightPaddingMonth: '0',
+    calendarRightPaddingYear: '0',
+    calendarRightPaddingQuarter: '0'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/date-picker/styles/dark.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/naive-ui/es/date-picker/styles/dark.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _input_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../input/styles */ "./node_modules/naive-ui/es/input/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/dark.js");
+/* harmony import */ var _time_picker_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../time-picker/styles */ "./node_modules/naive-ui/es/time-picker/styles/dark.js");
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/date-picker/styles/light.js");
+
+
+
+
+
+
+
+const datePickerDark = {
+    name: 'DatePicker',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Input: _input_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_2__["default"],
+        TimePicker: _time_picker_styles__WEBPACK_IMPORTED_MODULE_3__["default"],
+        Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_4__["default"]
+    },
+    self(vars) {
+        const { popoverColor, hoverColor, primaryColor } = vars;
+        const commonSelf = (0,_light__WEBPACK_IMPORTED_MODULE_5__.self)(vars);
+        commonSelf.itemColorDisabled = (0,seemly__WEBPACK_IMPORTED_MODULE_6__.composite)(popoverColor, hoverColor);
+        commonSelf.itemColorIncluded = (0,seemly__WEBPACK_IMPORTED_MODULE_6__.changeColor)(primaryColor, { alpha: 0.15 });
+        commonSelf.itemColorHover = (0,seemly__WEBPACK_IMPORTED_MODULE_6__.composite)(popoverColor, hoverColor);
+        return commonSelf;
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (datePickerDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/date-picker/styles/light.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/naive-ui/es/date-picker/styles/light.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _input_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../input/styles */ "./node_modules/naive-ui/es/input/styles/light.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/light.js");
+/* harmony import */ var _time_picker_styles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../time-picker/styles */ "./node_modules/naive-ui/es/time-picker/styles/light.js");
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/light.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/date-picker/styles/_common.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+
+
+
+
+
+
+
+
+const self = (vars) => {
+    const { hoverColor, fontSize, textColor2, textColorDisabled, popoverColor, primaryColor, borderRadiusSmall, iconColor, iconColorDisabled, textColor1, dividerColor, boxShadow2, borderRadius, fontWeightStrong } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { itemFontSize: fontSize, calendarDaysFontSize: fontSize, calendarTitleFontSize: fontSize, itemTextColor: textColor2, itemTextColorDisabled: textColorDisabled, itemTextColorActive: popoverColor, itemTextColorCurrent: primaryColor, itemColorIncluded: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.changeColor)(primaryColor, { alpha: 0.1 }), itemColorHover: hoverColor, itemColorDisabled: hoverColor, itemColorActive: primaryColor, itemBorderRadius: borderRadiusSmall, panelColor: popoverColor, panelTextColor: textColor2, arrowColor: iconColor, calendarTitleTextColor: textColor1, calendarTitleColorHover: hoverColor, calendarDaysTextColor: textColor2, panelHeaderDividerColor: dividerColor, calendarDaysDividerColor: dividerColor, calendarDividerColor: dividerColor, panelActionDividerColor: dividerColor, panelBoxShadow: boxShadow2, panelBorderRadius: borderRadius, calendarTitleFontWeight: fontWeightStrong, scrollItemBorderRadius: borderRadius, iconColor,
+        iconColorDisabled });
+};
+const datePickerLight = (0,_mixins__WEBPACK_IMPORTED_MODULE_2__.createTheme)({
+    name: 'DatePicker',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_3__["default"],
+    peers: {
+        Input: _input_styles__WEBPACK_IMPORTED_MODULE_4__["default"],
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_5__["default"],
+        TimePicker: _time_picker_styles__WEBPACK_IMPORTED_MODULE_6__["default"],
+        Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_7__["default"]
+    },
+    self
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (datePickerLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/descriptions/styles/_common.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/naive-ui/es/descriptions/styles/_common.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    thPaddingBorderedSmall: '8px 12px',
+    thPaddingBorderedMedium: '12px 16px',
+    thPaddingBorderedLarge: '16px 24px',
+    thPaddingSmall: '0',
+    thPaddingMedium: '0',
+    thPaddingLarge: '0',
+    tdPaddingBorderedSmall: '8px 12px',
+    tdPaddingBorderedMedium: '12px 16px',
+    tdPaddingBorderedLarge: '16px 24px',
+    tdPaddingSmall: '0 0 8px 0',
+    tdPaddingMedium: '0 0 12px 0',
+    tdPaddingLarge: '0 0 16px 0'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/descriptions/styles/dark.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/naive-ui/es/descriptions/styles/dark.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/descriptions/styles/light.js");
+
+
+const descriptionsDark = {
+    name: 'Descriptions',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (descriptionsDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/descriptions/styles/light.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/naive-ui/es/descriptions/styles/light.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/descriptions/styles/_common.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+
+
+
+const self = (vars) => {
+    const { tableHeaderColor, textColor1, textColor2, cardColor, modalColor, popoverColor, dividerColor, borderRadius, fontWeightStrong, lineHeight, fontSizeSmall, fontSizeMedium, fontSizeLarge } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { lineHeight,
+        fontSizeSmall,
+        fontSizeMedium,
+        fontSizeLarge, thColor: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(cardColor, tableHeaderColor), thColorModal: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(modalColor, tableHeaderColor), thColorPopover: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(popoverColor, tableHeaderColor), thTextColor: textColor1, thFontWeight: fontWeightStrong, tdTextColor: textColor2, tdColor: cardColor, tdColorModal: modalColor, tdColorPopover: popoverColor, borderColor: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(cardColor, dividerColor), borderColorModal: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(modalColor, dividerColor), borderColorPopover: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(popoverColor, dividerColor), borderRadius: borderRadius });
+};
+const descriptionsLight = {
+    name: 'Descriptions',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_2__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (descriptionsLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/dialog/styles/_common.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/naive-ui/es/dialog/styles/_common.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    titleFontSize: '18px',
+    padding: '16px 28px 20px 28px',
+    iconSize: '28px',
+    actionSpace: '12px',
+    contentMargin: '8px 0 16px 0',
+    iconMargin: '0 4px 0 0',
+    iconMarginIconTop: '4px 0 8px 0',
+    closeSize: '18px',
+    closeMargin: '22px 28px 0 0',
+    closeMarginIconTop: '12px 18px 0 0'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/dialog/styles/dark.js":
+/*!********************************************************!*\
+  !*** ./node_modules/naive-ui/es/dialog/styles/dark.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/dialog/styles/light.js");
+
+
+
+const dialogDark = {
+    name: 'Dialog',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_1__["default"]
+    },
+    self: _light__WEBPACK_IMPORTED_MODULE_2__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (dialogDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/dialog/styles/light.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/naive-ui/es/dialog/styles/light.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/dialog/styles/_common.js");
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/light.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+
+
+
+
+const self = (vars) => {
+    const { textColor1, textColor2, modalColor, closeColor, closeColorHover, closeColorPressed, infoColor, successColor, warningColor, errorColor, primaryColor, dividerColor, borderRadius, fontWeightStrong, lineHeight, fontSize } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { fontSize,
+        lineHeight, border: `1px solid ${dividerColor}`, titleTextColor: textColor1, textColor: textColor2, color: modalColor, closeColor: closeColor, closeColorHover: closeColorHover, closeColorPressed: closeColorPressed, iconColor: primaryColor, iconColorInfo: infoColor, iconColorSuccess: successColor, iconColorWarning: warningColor, iconColorError: errorColor, borderRadius, titleFontWeight: fontWeightStrong });
+};
+const dialogLight = (0,_mixins__WEBPACK_IMPORTED_MODULE_1__.createTheme)({
+    name: 'Dialog',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_2__["default"],
+    peers: {
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_3__["default"]
+    },
+    self
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (dialogLight);
 
 
 /***/ }),
@@ -49751,6 +52167,31 @@ __webpack_require__.r(__webpack_exports__);
 })]), (0,_utils_cssr__WEBPACK_IMPORTED_MODULE_0__.cM)('vertical', {
   backgroundColor: 'var(--n-color)'
 })]));
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/divider/styles/dark.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/naive-ui/es/divider/styles/dark.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/divider/styles/light.js");
+
+
+const dividerDark = {
+    name: 'Divider',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (dividerDark);
+
 
 /***/ }),
 
@@ -50328,6 +52769,36 @@ __webpack_require__.r(__webpack_exports__);
   enterCubicBezier: 'var(--n-bezier-in)',
   leaveCubicBezier: 'var(--n-bezier-out)'
 })])]));
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/drawer/styles/dark.js":
+/*!********************************************************!*\
+  !*** ./node_modules/naive-ui/es/drawer/styles/dark.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/drawer/styles/light.js");
+
+
+
+const drawerDark = {
+    name: 'Drawer',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_1__["default"]
+    },
+    self: _light__WEBPACK_IMPORTED_MODULE_2__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (drawerDark);
+
 
 /***/ }),
 
@@ -51502,6 +53973,46 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/naive-ui/es/dropdown/styles/dark.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/naive-ui/es/dropdown/styles/dark.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _popover_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../popover/styles */ "./node_modules/naive-ui/es/popover/styles/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/dropdown/styles/light.js");
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+
+
+
+
+const dropdownDark = {
+    name: 'Dropdown',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Popover: _popover_styles__WEBPACK_IMPORTED_MODULE_1__["default"]
+    },
+    self(vars) {
+        const { primaryColorSuppl, primaryColor, popoverColor } = vars;
+        const commonSelf = (0,_light__WEBPACK_IMPORTED_MODULE_2__.self)(vars);
+        commonSelf.colorInverted = popoverColor;
+        commonSelf.optionColorActive = (0,seemly__WEBPACK_IMPORTED_MODULE_3__.changeColor)(primaryColor, { alpha: 0.15 });
+        commonSelf.optionColorActiveInverted = primaryColorSuppl;
+        commonSelf.optionColorHoverInverted = primaryColorSuppl;
+        return commonSelf;
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (dropdownDark);
+
+
+/***/ }),
+
 /***/ "./node_modules/naive-ui/es/dropdown/styles/light.js":
 /*!***********************************************************!*\
   !*** ./node_modules/naive-ui/es/dropdown/styles/light.js ***!
@@ -51545,6 +54056,444 @@ const dropdownLight = (0,_mixins_use_theme__WEBPACK_IMPORTED_MODULE_2__.createTh
     self
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (dropdownLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/dynamic-input/styles/_common.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/naive-ui/es/dynamic-input/styles/_common.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    actionMargin: '0 0 0 20px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/dynamic-input/styles/dark.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/naive-ui/es/dynamic-input/styles/dark.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _input_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../input/styles */ "./node_modules/naive-ui/es/input/styles/dark.js");
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/dynamic-input/styles/_common.js");
+
+
+
+
+const dynamicInputDark = {
+    name: 'DynamicInput',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Input: _input_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_2__["default"]
+    },
+    self() {
+        return _common__WEBPACK_IMPORTED_MODULE_3__["default"];
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (dynamicInputDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/dynamic-tags/styles/dark.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/naive-ui/es/dynamic-tags/styles/dark.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _tag_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../tag/styles */ "./node_modules/naive-ui/es/tag/styles/dark.js");
+/* harmony import */ var _input_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../input/styles */ "./node_modules/naive-ui/es/input/styles/dark.js");
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/dark.js");
+/* harmony import */ var _space_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../space/styles */ "./node_modules/naive-ui/es/space/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+
+
+
+
+
+const dynamicTagsDark = {
+    name: 'DynamicTags',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Input: _input_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_2__["default"],
+        Tag: _tag_styles__WEBPACK_IMPORTED_MODULE_3__["default"],
+        Space: _space_styles__WEBPACK_IMPORTED_MODULE_4__["default"]
+    },
+    self() {
+        return {
+            inputWidth: '64px'
+        };
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (dynamicTagsDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/element/styles/dark.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/naive-ui/es/element/styles/dark.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+
+const elementDark = {
+    name: 'Element',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"]
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (elementDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/ellipsis/styles/dark.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/naive-ui/es/ellipsis/styles/dark.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _tooltip_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tooltip/styles */ "./node_modules/naive-ui/es/tooltip/styles/dark.js");
+
+
+const ellipsisDark = {
+    name: 'Ellipsis',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Tooltip: _tooltip_styles__WEBPACK_IMPORTED_MODULE_1__["default"]
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ellipsisDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/ellipsis/styles/light.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/naive-ui/es/ellipsis/styles/light.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _tooltip_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../tooltip/styles */ "./node_modules/naive-ui/es/tooltip/styles/light.js");
+
+
+
+const ellipsisLight = (0,_mixins__WEBPACK_IMPORTED_MODULE_0__.createTheme)({
+    name: 'Ellipsis',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_1__["default"],
+    peers: {
+        Tooltip: _tooltip_styles__WEBPACK_IMPORTED_MODULE_2__["default"]
+    }
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ellipsisLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/empty/styles/_common.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/naive-ui/es/empty/styles/_common.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    iconSizeSmall: '34px',
+    iconSizeMedium: '40px',
+    iconSizeLarge: '46px',
+    iconSizeHuge: '52px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/empty/styles/dark.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/naive-ui/es/empty/styles/dark.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/empty/styles/light.js");
+
+
+const emptyDark = {
+    name: 'Empty',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (emptyDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/empty/styles/light.js":
+/*!********************************************************!*\
+  !*** ./node_modules/naive-ui/es/empty/styles/light.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/empty/styles/_common.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+
+
+const self = (vars) => {
+    const { textColorDisabled, iconColor, textColor2, fontSizeSmall, fontSizeMedium, fontSizeLarge, fontSizeHuge } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { fontSizeSmall,
+        fontSizeMedium,
+        fontSizeLarge,
+        fontSizeHuge, textColor: textColorDisabled, iconColor: iconColor, extraTextColor: textColor2 });
+};
+const emptyLight = {
+    name: 'Empty',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_1__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (emptyLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/form/styles/_common.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/naive-ui/es/form/styles/_common.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    feedbackPadding: '4px 0 0 2px',
+    feedbackHeightSmall: '24px',
+    feedbackHeightMedium: '24px',
+    feedbackHeightLarge: '26px',
+    feedbackFontSizeSmall: '13px',
+    feedbackFontSizeMedium: '14px',
+    feedbackFontSizeLarge: '14px',
+    labelFontSizeLeftSmall: '14px',
+    labelFontSizeLeftMedium: '14px',
+    labelFontSizeLeftLarge: '15px',
+    labelFontSizeTopSmall: '13px',
+    labelFontSizeTopMedium: '14px',
+    labelFontSizeTopLarge: '14px',
+    labelHeightSmall: '24px',
+    labelHeightMedium: '26px',
+    labelHeightLarge: '28px',
+    labelPaddingVertical: '0 0 8px 2px',
+    labelPaddingHorizontal: '0 12px 0 0',
+    labelTextAlignVertical: 'left',
+    labelTextAlignHorizontal: 'right'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/form/styles/dark.js":
+/*!******************************************************!*\
+  !*** ./node_modules/naive-ui/es/form/styles/dark.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/form/styles/light.js");
+
+
+const formItemDark = {
+    name: 'Form',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (formItemDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/form/styles/light.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/naive-ui/es/form/styles/light.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/form/styles/_common.js");
+
+
+const self = (vars) => {
+    const { heightSmall, heightMedium, heightLarge, textColor1, errorColor, warningColor, lineHeight, textColor3 } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { blankHeightSmall: heightSmall, blankHeightMedium: heightMedium, blankHeightLarge: heightLarge, lineHeight, labelTextColor: textColor1, asteriskColor: errorColor, feedbackTextColorError: errorColor, feedbackTextColorWarning: warningColor, feedbackTextColor: textColor3 });
+};
+const formLight = {
+    name: 'Form',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_1__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (formLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/gradient-text/styles/dark.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/naive-ui/es/gradient-text/styles/dark.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+
+const gradientTextDark = {
+    name: 'GradientText',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const { primaryColor, successColor, warningColor, errorColor, infoColor, primaryColorSuppl, successColorSuppl, warningColorSuppl, errorColorSuppl, infoColorSuppl, fontWeightStrong } = vars;
+        return {
+            fontWeight: fontWeightStrong,
+            rotate: '252deg',
+            colorStartPrimary: primaryColor,
+            colorEndPrimary: primaryColorSuppl,
+            colorStartInfo: infoColor,
+            colorEndInfo: infoColorSuppl,
+            colorStartWarning: warningColor,
+            colorEndWarning: warningColorSuppl,
+            colorStartError: errorColor,
+            colorEndError: errorColorSuppl,
+            colorStartSuccess: successColor,
+            colorEndSuccess: successColorSuppl
+        };
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (gradientTextDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/icon-wrapper/styles/dark.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/naive-ui/es/icon-wrapper/styles/dark.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/icon-wrapper/styles/light.js");
+
+
+const iconDark = {
+    name: 'IconWrapper',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (iconDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/icon-wrapper/styles/light.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/naive-ui/es/icon-wrapper/styles/light.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+
+const self = (vars) => {
+    const { primaryColor, baseColor } = vars;
+    return {
+        color: primaryColor,
+        iconColor: baseColor
+    };
+};
+const iconWrapperLight = {
+    name: 'IconWrapper',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (iconWrapperLight);
 
 
 /***/ }),
@@ -51669,6 +54618,31 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/naive-ui/es/icon/styles/dark.js":
+/*!******************************************************!*\
+  !*** ./node_modules/naive-ui/es/icon/styles/dark.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/icon/styles/light.js");
+
+
+const iconDark = {
+    name: 'Icon',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (iconDark);
+
+
+/***/ }),
+
 /***/ "./node_modules/naive-ui/es/icon/styles/light.js":
 /*!*******************************************************!*\
   !*** ./node_modules/naive-ui/es/icon/styles/light.js ***!
@@ -51700,6 +54674,77 @@ const iconLight = {
     self
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (iconLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/image/styles/dark.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/naive-ui/es/image/styles/dark.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "imageDark": () => (/* binding */ imageDark)
+/* harmony export */ });
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles */ "./node_modules/naive-ui/es/tooltip/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+
+
+const imageDark = {
+    name: 'Image',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Tooltip: _styles__WEBPACK_IMPORTED_MODULE_1__["default"]
+    },
+    self: (vars) => {
+        const { textColor2 } = vars;
+        return {
+            toolbarIconColor: textColor2,
+            toolbarColor: 'rgba(0, 0, 0, .35)',
+            toolbarBoxShadow: 'none',
+            toolbarBorderRadius: '24px'
+        };
+    }
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/input-number/styles/dark.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/naive-ui/es/input-number/styles/dark.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/dark.js");
+/* harmony import */ var _input_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../input/styles */ "./node_modules/naive-ui/es/input/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+
+
+
+const inputNumberDark = {
+    name: 'InputNumber',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        Input: _input_styles__WEBPACK_IMPORTED_MODULE_2__["default"]
+    },
+    self(vars) {
+        const { textColorDisabled } = vars;
+        return {
+            iconColorDisabled: textColorDisabled
+        };
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (inputNumberDark);
 
 
 /***/ }),
@@ -53052,6 +56097,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/naive-ui/es/input/styles/dark.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/naive-ui/es/input/styles/dark.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/input/styles/_common.js");
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+
+
+
+const inputDark = {
+    name: 'Input',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const { textColor2, textColor3, textColorDisabled, primaryColor, primaryColorHover, inputColor, inputColorDisabled, warningColor, warningColorHover, errorColor, errorColorHover, borderRadius, lineHeight, fontSizeTiny, fontSizeSmall, fontSizeMedium, fontSizeLarge, heightTiny, heightSmall, heightMedium, heightLarge, clearColor, clearColorHover, clearColorPressed, placeholderColor, placeholderColorDisabled, iconColor, iconColorDisabled, iconColorHover, iconColorPressed } = vars;
+        return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_1__["default"]), { countTextColor: textColor3, heightTiny,
+            heightSmall,
+            heightMedium,
+            heightLarge,
+            fontSizeTiny,
+            fontSizeSmall,
+            fontSizeMedium,
+            fontSizeLarge,
+            lineHeight, lineHeightTextarea: lineHeight, borderRadius, iconSize: '16px', groupLabelColor: inputColor, textColor: textColor2, textColorDisabled, textDecorationColor: textColor2, groupLabelTextColor: textColor2, caretColor: primaryColor, placeholderColor,
+            placeholderColorDisabled, color: inputColor, colorDisabled: inputColorDisabled, colorFocus: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(primaryColor, { alpha: 0.1 }), groupLabelBorder: '1px solid #0000', border: '1px solid #0000', borderHover: `1px solid ${primaryColorHover}`, borderDisabled: '1px solid #0000', borderFocus: `1px solid ${primaryColorHover}`, boxShadowFocus: `0 0 8px 0 ${(0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(primaryColor, { alpha: 0.3 })}`, loadingColor: primaryColor, 
+            // warning
+            loadingColorWarning: warningColor, borderWarning: `1px solid ${warningColor}`, borderHoverWarning: `1px solid ${warningColorHover}`, colorFocusWarning: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(warningColor, { alpha: 0.1 }), borderFocusWarning: `1px solid ${warningColorHover}`, boxShadowFocusWarning: `0 0 8px 0 ${(0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(warningColor, {
+                alpha: 0.3
+            })}`, caretColorWarning: warningColor, 
+            // error
+            loadingColorError: errorColor, borderError: `1px solid ${errorColor}`, borderHoverError: `1px solid ${errorColorHover}`, colorFocusError: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(errorColor, { alpha: 0.1 }), borderFocusError: `1px solid ${errorColorHover}`, boxShadowFocusError: `0 0 8px 0 ${(0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(errorColor, {
+                alpha: 0.3
+            })}`, caretColorError: errorColor, clearColor,
+            clearColorHover,
+            clearColorPressed,
+            iconColor,
+            iconColorDisabled,
+            iconColorHover,
+            iconColorPressed, suffixTextColor: textColor2 });
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (inputDark);
+
+
+/***/ }),
+
 /***/ "./node_modules/naive-ui/es/input/styles/light.js":
 /*!********************************************************!*\
   !*** ./node_modules/naive-ui/es/input/styles/light.js ***!
@@ -53988,6 +57086,63 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/naive-ui/es/layout/styles/dark.js":
+/*!********************************************************!*\
+  !*** ./node_modules/naive-ui/es/layout/styles/dark.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/dark.js");
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+
+
+
+const layoutDark = {
+    name: 'Layout',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_1__["default"]
+    },
+    self(vars) {
+        const { textColor2, bodyColor, popoverColor, cardColor, dividerColor, scrollbarColor, scrollbarColorHover } = vars;
+        return {
+            textColor: textColor2,
+            textColorInverted: textColor2,
+            color: bodyColor,
+            colorEmbedded: bodyColor,
+            headerColor: cardColor,
+            headerColorInverted: cardColor,
+            footerColor: cardColor,
+            footerColorInverted: cardColor,
+            headerBorderColor: dividerColor,
+            headerBorderColorInverted: dividerColor,
+            footerBorderColor: dividerColor,
+            footerBorderColorInverted: dividerColor,
+            siderBorderColor: dividerColor,
+            siderBorderColorInverted: dividerColor,
+            siderColor: cardColor,
+            siderColorInverted: cardColor,
+            siderToggleButtonBorder: '1px solid transparent',
+            siderToggleButtonColor: popoverColor,
+            siderToggleButtonIconColor: textColor2,
+            siderToggleButtonIconColorInverted: textColor2,
+            siderToggleBarColor: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.composite)(bodyColor, scrollbarColor),
+            siderToggleBarColorHover: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.composite)(bodyColor, scrollbarColorHover),
+            __invertScrollbar: 'false'
+        };
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (layoutDark);
+
+
+/***/ }),
+
 /***/ "./node_modules/naive-ui/es/layout/styles/light.js":
 /*!*********************************************************!*\
   !*** ./node_modules/naive-ui/es/layout/styles/light.js ***!
@@ -54046,6 +57201,101 @@ const layoutLight = (0,_mixins__WEBPACK_IMPORTED_MODULE_1__.createTheme)({
     self
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (layoutLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/list/styles/dark.js":
+/*!******************************************************!*\
+  !*** ./node_modules/naive-ui/es/list/styles/dark.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/list/styles/light.js");
+
+
+const listDark = {
+    name: 'List',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (listDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/list/styles/light.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/naive-ui/es/list/styles/light.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+
+
+const self = (vars) => {
+    const { textColor2, cardColor, modalColor, popoverColor, dividerColor, borderRadius, fontSize } = vars;
+    return {
+        textColor: textColor2,
+        color: cardColor,
+        colorModal: modalColor,
+        colorPopover: popoverColor,
+        borderColor: dividerColor,
+        borderColorModal: (0,seemly__WEBPACK_IMPORTED_MODULE_0__.composite)(modalColor, dividerColor),
+        borderColorPopover: (0,seemly__WEBPACK_IMPORTED_MODULE_0__.composite)(popoverColor, dividerColor),
+        borderRadius,
+        fontSize
+    };
+};
+const listLight = {
+    name: 'List',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_1__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (listLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/loading-bar/styles/dark.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/naive-ui/es/loading-bar/styles/dark.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+
+const loadingBarDark = {
+    name: 'LoadingBar',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const { primaryColor } = vars;
+        return {
+            colorError: 'red',
+            colorLoading: primaryColor,
+            height: '2px'
+        };
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadingBarDark);
 
 
 /***/ }),
@@ -54193,6 +57443,82 @@ const dateEnUs = {
     locale: date_fns_locale_en_US__WEBPACK_IMPORTED_MODULE_0__["default"]
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (dateEnUs);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/log/styles/dark.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/naive-ui/es/log/styles/dark.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _code_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../code/styles */ "./node_modules/naive-ui/es/code/styles/dark.js");
+
+
+
+const logDark = {
+    name: 'Log',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        Code: _code_styles__WEBPACK_IMPORTED_MODULE_2__["default"]
+    },
+    self(vars) {
+        const { textColor2, inputColor, fontSize, primaryColor } = vars;
+        return {
+            loaderFontSize: fontSize,
+            loaderTextColor: textColor2,
+            loaderColor: inputColor,
+            loaderBorder: '1px solid #0000',
+            loadingColor: primaryColor
+        };
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (logDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/mention/styles/dark.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/naive-ui/es/mention/styles/dark.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _internal_select_menu_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_internal/select-menu/styles */ "./node_modules/naive-ui/es/_internal/select-menu/styles/dark.js");
+/* harmony import */ var _input_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../input/styles */ "./node_modules/naive-ui/es/input/styles/dark.js");
+
+
+
+const listDark = {
+    name: 'Mention',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        InternalSelectMenu: _internal_select_menu_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        Input: _input_styles__WEBPACK_IMPORTED_MODULE_2__["default"]
+    },
+    self(vars) {
+        const { boxShadow2 } = vars;
+        return {
+            menuBoxShadow: boxShadow2
+        };
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (listDark);
 
 
 /***/ }),
@@ -55410,6 +58736,46 @@ function itemRenderer(tmNode, menuProps) {
 
 /***/ }),
 
+/***/ "./node_modules/naive-ui/es/menu/styles/dark.js":
+/*!******************************************************!*\
+  !*** ./node_modules/naive-ui/es/menu/styles/dark.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _tooltip_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tooltip/styles */ "./node_modules/naive-ui/es/tooltip/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/menu/styles/light.js");
+
+
+
+
+const menuDark = {
+    name: 'Menu',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Tooltip: _tooltip_styles__WEBPACK_IMPORTED_MODULE_1__["default"]
+    },
+    self(vars) {
+        const { primaryColor, primaryColorSuppl } = vars;
+        const commonSelf = (0,_light__WEBPACK_IMPORTED_MODULE_2__.self)(vars);
+        commonSelf.itemColorActive = (0,seemly__WEBPACK_IMPORTED_MODULE_3__.changeColor)(primaryColor, { alpha: 0.15 });
+        commonSelf.itemColorActiveInverted = primaryColorSuppl;
+        commonSelf.itemColorActiveCollapsedInverted = primaryColorSuppl;
+        commonSelf.colorInverted = '#0000';
+        return commonSelf;
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menuDark);
+
+
+/***/ }),
+
 /***/ "./node_modules/naive-ui/es/menu/styles/light.js":
 /*!*******************************************************!*\
   !*** ./node_modules/naive-ui/es/menu/styles/light.js ***!
@@ -55467,6 +58833,88 @@ const menuLight = (0,_mixins_use_theme__WEBPACK_IMPORTED_MODULE_1__.createTheme)
 
 /***/ }),
 
+/***/ "./node_modules/naive-ui/es/message/styles/_common.js":
+/*!************************************************************!*\
+  !*** ./node_modules/naive-ui/es/message/styles/_common.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    margin: '0 0 8px 0',
+    padding: '10px 20px',
+    maxWidth: '720px',
+    minWidth: '420px',
+    iconMargin: '0 10px 0 0',
+    closeMargin: '0 0 0 12px',
+    closeSize: '16px',
+    iconSize: '20px',
+    fontSize: '14px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/message/styles/dark.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/naive-ui/es/message/styles/dark.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/message/styles/light.js");
+
+
+const messageDark = {
+    name: 'Message',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (messageDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/message/styles/light.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/naive-ui/es/message/styles/light.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/message/styles/_common.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+
+
+const self = (vars) => {
+    const { textColor2, closeColor, closeColorHover, closeColorPressed, infoColor, successColor, errorColor, warningColor, popoverColor, boxShadow2, primaryColor, lineHeight, borderRadius } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { textColorInfo: textColor2, textColorSuccess: textColor2, textColorError: textColor2, textColorWarning: textColor2, textColorLoading: textColor2, colorInfo: popoverColor, colorSuccess: popoverColor, colorError: popoverColor, colorWarning: popoverColor, colorLoading: popoverColor, boxShadowInfo: boxShadow2, boxShadowSuccess: boxShadow2, boxShadowError: boxShadow2, boxShadowWarning: boxShadow2, boxShadowLoading: boxShadow2, iconColorInfo: infoColor, iconColorSuccess: successColor, iconColorWarning: warningColor, iconColorError: errorColor, iconColorLoading: primaryColor, closeColorInfo: closeColor, closeColorHoverInfo: closeColorHover, closeColorPressedInfo: closeColorPressed, closeColorSuccess: closeColor, closeColorHoverSuccess: closeColorHover, closeColorPressedSuccess: closeColorPressed, closeColorError: closeColor, closeColorHoverError: closeColorHover, closeColorPressedError: closeColorPressed, closeColorWarning: closeColor, closeColorHoverWarning: closeColorHover, closeColorPressedWarning: closeColorPressed, closeColorLoading: closeColor, closeColorHoverLoading: closeColorHover, closeColorPressedLoading: closeColorPressed, loadingColor: primaryColor, lineHeight,
+        borderRadius });
+};
+const messageLight = {
+    name: 'Message',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_1__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (messageLight);
+
+
+/***/ }),
+
 /***/ "./node_modules/naive-ui/es/modal/src/interface.js":
 /*!*********************************************************!*\
   !*** ./node_modules/naive-ui/es/modal/src/interface.js ***!
@@ -55483,6 +58931,454 @@ __webpack_require__.r(__webpack_exports__);
 
 const modalBodyInjectionKey = (0,_utils_vue_create_injection_key__WEBPACK_IMPORTED_MODULE_0__.createInjectionKey)('n-modal-body');
 const modalInjectionKey = (0,_utils_vue_create_injection_key__WEBPACK_IMPORTED_MODULE_0__.createInjectionKey)('n-modal');
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/modal/styles/dark.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/naive-ui/es/modal/styles/dark.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/dark.js");
+/* harmony import */ var _dialog_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../dialog/styles */ "./node_modules/naive-ui/es/dialog/styles/dark.js");
+/* harmony import */ var _card_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../card/styles */ "./node_modules/naive-ui/es/card/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/modal/styles/light.js");
+
+
+
+
+
+const modalDark = {
+    name: 'Modal',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        Dialog: _dialog_styles__WEBPACK_IMPORTED_MODULE_2__["default"],
+        Card: _card_styles__WEBPACK_IMPORTED_MODULE_3__["default"]
+    },
+    self: _light__WEBPACK_IMPORTED_MODULE_4__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (modalDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/modal/styles/light.js":
+/*!********************************************************!*\
+  !*** ./node_modules/naive-ui/es/modal/styles/light.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/light.js");
+/* harmony import */ var _dialog_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../dialog/styles */ "./node_modules/naive-ui/es/dialog/styles/light.js");
+/* harmony import */ var _card_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../card/styles */ "./node_modules/naive-ui/es/card/styles/light.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+
+
+
+
+
+const self = (vars) => {
+    const { modalColor, textColor2, boxShadow3 } = vars;
+    return {
+        color: modalColor,
+        textColor: textColor2,
+        boxShadow: boxShadow3
+    };
+};
+const modalLight = (0,_mixins__WEBPACK_IMPORTED_MODULE_0__.createTheme)({
+    name: 'Modal',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_1__["default"],
+    peers: {
+        Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_2__["default"],
+        Dialog: _dialog_styles__WEBPACK_IMPORTED_MODULE_3__["default"],
+        Card: _card_styles__WEBPACK_IMPORTED_MODULE_4__["default"]
+    },
+    self
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (modalLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/notification/styles/_common.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/naive-ui/es/notification/styles/_common.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    closeMargin: '18px 14px',
+    closeSize: '16px',
+    width: '365px',
+    padding: '16px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/notification/styles/dark.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/naive-ui/es/notification/styles/dark.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/notification/styles/light.js");
+
+
+
+const notificationDark = {
+    name: 'Notification',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_1__["default"]
+    },
+    self: _light__WEBPACK_IMPORTED_MODULE_2__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (notificationDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/notification/styles/light.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/naive-ui/es/notification/styles/light.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/light.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/notification/styles/_common.js");
+
+
+
+
+const self = (vars) => {
+    const { textColor2, successColor, infoColor, warningColor, errorColor, popoverColor, closeColor, closeColorHover, textColor1, textColor3, borderRadius, fontWeightStrong, boxShadow2, lineHeight, fontSize } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { borderRadius,
+        lineHeight,
+        fontSize, headerFontWeight: fontWeightStrong, iconColor: textColor2, iconColorSuccess: successColor, iconColorInfo: infoColor, iconColorWarning: warningColor, iconColorError: errorColor, color: popoverColor, textColor: textColor2, closeColor: closeColor, closeColorHover: closeColorHover, closeColorPressed: closeColor, headerTextColor: textColor1, descriptionTextColor: textColor3, actionTextColor: textColor2, boxShadow: boxShadow2 });
+};
+const notificationLight = (0,_mixins__WEBPACK_IMPORTED_MODULE_1__.createTheme)({
+    name: 'Notification',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_2__["default"],
+    peers: {
+        Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_3__["default"]
+    },
+    self
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (notificationLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/page-header/styles/_common.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/naive-ui/es/page-header/styles/_common.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    titleFontSize: '18px',
+    backSize: '22px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/page-header/styles/dark.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/naive-ui/es/page-header/styles/dark.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "pageHeaderDark": () => (/* binding */ pageHeaderDark)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/page-header/styles/light.js");
+
+
+const pageHeaderDark = {
+    name: 'PageHeader',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/page-header/styles/light.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/naive-ui/es/page-header/styles/light.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "pageHeaderLight": () => (/* binding */ pageHeaderLight)
+/* harmony export */ });
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/page-header/styles/_common.js");
+
+
+
+function self(vars) {
+    const { textColor1, textColor2, textColor3, fontSize, fontWeightStrong, primaryColorHover, primaryColorPressed } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { titleFontWeight: fontWeightStrong, fontSize, titleTextColor: textColor1, backColor: textColor2, backColorHover: primaryColorHover, backColorPressed: primaryColorPressed, subtitleTextColor: textColor3 });
+}
+const pageHeaderLight = (0,_mixins__WEBPACK_IMPORTED_MODULE_1__.createTheme)({
+    name: 'PageHeader',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_2__["default"],
+    self
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/pagination/styles/_common.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/naive-ui/es/pagination/styles/_common.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    itemSize: '28px',
+    itemPadding: '0 4px',
+    itemMargin: '0 0 0 8px',
+    buttonIconSize: '16px',
+    inputWidth: '60px',
+    selectWidth: 'unset',
+    inputMargin: '0 0 0 8px',
+    selectMargin: '0 0 0 8px',
+    prefixMargin: '0 8px 0 0',
+    suffixMargin: '0 0 0 8px',
+    jumperFontSize: '14px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/pagination/styles/dark.js":
+/*!************************************************************!*\
+  !*** ./node_modules/naive-ui/es/pagination/styles/dark.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _select_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../select/styles */ "./node_modules/naive-ui/es/select/styles/dark.js");
+/* harmony import */ var _input_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../input/styles */ "./node_modules/naive-ui/es/input/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/pagination/styles/light.js");
+
+
+
+
+
+const paginationDark = {
+    name: 'Pagination',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Select: _select_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        Input: _input_styles__WEBPACK_IMPORTED_MODULE_2__["default"]
+    },
+    self(vars) {
+        const { primaryColor, opacity3 } = vars;
+        const borderColorActive = (0,seemly__WEBPACK_IMPORTED_MODULE_3__.changeColor)(primaryColor, {
+            alpha: Number(opacity3)
+        });
+        const commonSelf = (0,_light__WEBPACK_IMPORTED_MODULE_4__.self)(vars);
+        commonSelf.itemBorderActive = `1px solid ${borderColorActive}`;
+        commonSelf.itemBorderDisabled = '1px solid #0000';
+        return commonSelf;
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (paginationDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/pagination/styles/light.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/naive-ui/es/pagination/styles/light.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _select_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../select/styles */ "./node_modules/naive-ui/es/select/styles/light.js");
+/* harmony import */ var _input_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../input/styles */ "./node_modules/naive-ui/es/input/styles/light.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/pagination/styles/_common.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+
+
+
+
+
+const self = (vars) => {
+    const { textColor2, primaryColor, primaryColorHover, primaryColorPressed, inputColorDisabled, textColorDisabled, borderColor, borderRadius, fontSize } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { buttonColor: '#0000', buttonColorHover: '#0000', buttonColorPressed: '#0000', buttonBorder: `1px solid ${borderColor}`, buttonBorderHover: `1px solid ${borderColor}`, buttonBorderPressed: `1px solid ${borderColor}`, buttonIconColor: textColor2, buttonIconColorHover: textColor2, buttonIconColorPressed: textColor2, itemTextColor: textColor2, itemTextColorHover: primaryColorHover, itemTextColorPressed: primaryColorPressed, itemTextColorActive: primaryColor, itemTextColorDisabled: textColorDisabled, itemColor: '#0000', itemColorHover: '#0000', itemColorPressed: '#0000', itemColorActive: '#0000', itemColorActiveHover: '#0000', itemColorDisabled: inputColorDisabled, itemBorder: '1px solid #0000', itemBorderHover: '1px solid #0000', itemBorderPressed: '1px solid #0000', itemBorderActive: `1px solid ${primaryColor}`, itemBorderDisabled: `1px solid ${borderColor}`, itemBorderRadius: borderRadius, itemFontSize: fontSize, jumperTextColor: textColor2, jumperTextColorDisabled: textColorDisabled });
+};
+const paginationLight = (0,_mixins__WEBPACK_IMPORTED_MODULE_1__.createTheme)({
+    name: 'Pagination',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_2__["default"],
+    peers: {
+        Select: _select_styles__WEBPACK_IMPORTED_MODULE_3__["default"],
+        Input: _input_styles__WEBPACK_IMPORTED_MODULE_4__["default"]
+    },
+    self
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (paginationLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/popconfirm/styles/_common.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/naive-ui/es/popconfirm/styles/_common.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    iconSize: '22px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/popconfirm/styles/dark.js":
+/*!************************************************************!*\
+  !*** ./node_modules/naive-ui/es/popconfirm/styles/dark.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/dark.js");
+/* harmony import */ var _popover_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../popover/styles */ "./node_modules/naive-ui/es/popover/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/popconfirm/styles/light.js");
+
+
+
+
+const popconfirmDark = {
+    name: 'Popconfirm',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        Popover: _popover_styles__WEBPACK_IMPORTED_MODULE_2__["default"]
+    },
+    self: _light__WEBPACK_IMPORTED_MODULE_3__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (popconfirmDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/popconfirm/styles/light.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/naive-ui/es/popconfirm/styles/light.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/light.js");
+/* harmony import */ var _popover_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../popover/styles */ "./node_modules/naive-ui/es/popover/styles/light.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/popconfirm/styles/_common.js");
+
+
+
+
+
+const self = (vars) => {
+    const { fontSize, warningColor } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { fontSize, iconColor: warningColor });
+};
+const popconfirmLight = (0,_mixins__WEBPACK_IMPORTED_MODULE_1__.createTheme)({
+    name: 'Popconfirm',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_2__["default"],
+    peers: {
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_3__["default"],
+        Popover: _popover_styles__WEBPACK_IMPORTED_MODULE_4__["default"]
+    },
+    self
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (popconfirmLight);
 
 
 /***/ }),
@@ -56420,6 +60316,31 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/naive-ui/es/popover/styles/dark.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/naive-ui/es/popover/styles/dark.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/popover/styles/light.js");
+
+
+const popoverDark = {
+    name: 'Popover',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (popoverDark);
+
+
+/***/ }),
+
 /***/ "./node_modules/naive-ui/es/popover/styles/light.js":
 /*!**********************************************************!*\
   !*** ./node_modules/naive-ui/es/popover/styles/light.js ***!
@@ -56447,6 +60368,481 @@ const popoverLight = {
     self
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (popoverLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/popselect/styles/dark.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/naive-ui/es/popselect/styles/dark.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _internal_select_menu_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_internal/select-menu/styles */ "./node_modules/naive-ui/es/_internal/select-menu/styles/dark.js");
+/* harmony import */ var _popover_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../popover/styles */ "./node_modules/naive-ui/es/popover/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+
+
+
+const popselect = {
+    name: 'Popselect',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Popover: _popover_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        InternalSelectMenu: _internal_select_menu_styles__WEBPACK_IMPORTED_MODULE_2__["default"]
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (popselect);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/progress/styles/dark.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/naive-ui/es/progress/styles/dark.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/progress/styles/light.js");
+
+
+const progressDark = {
+    name: 'Progress',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const commonSelf = (0,_light__WEBPACK_IMPORTED_MODULE_1__.self)(vars);
+        commonSelf.textColorLineInner = 'rgb(0, 0, 0)';
+        commonSelf.lineBgProcessing =
+            'linear-gradient(90deg, rgba(255, 255, 255, .3) 0%, rgba(255, 255, 255, .5) 100%)';
+        return commonSelf;
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (progressDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/progress/styles/light.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/naive-ui/es/progress/styles/light.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+
+const self = (vars) => {
+    const { infoColor, successColor, warningColor, errorColor, textColor2, progressRailColor, fontSize, fontWeight } = vars;
+    return {
+        fontSize,
+        fontSizeCircle: '28px',
+        fontWeightCircle: fontWeight,
+        railColor: progressRailColor,
+        railHeight: '8px',
+        iconSizeCircle: '36px',
+        iconSizeLine: '18px',
+        iconColor: infoColor,
+        iconColorInfo: infoColor,
+        iconColorSuccess: successColor,
+        iconColorWarning: warningColor,
+        iconColorError: errorColor,
+        textColorCircle: textColor2,
+        textColorLineInner: 'rgb(255, 255, 255)',
+        textColorLineOuter: textColor2,
+        fillColor: infoColor,
+        fillColorInfo: infoColor,
+        fillColorSuccess: successColor,
+        fillColorWarning: warningColor,
+        fillColorError: errorColor,
+        lineBgProcessing: 'linear-gradient(90deg, rgba(255, 255, 255, .3) 0%, rgba(255, 255, 255, .5) 100%)'
+    };
+};
+const progressLight = {
+    name: 'Progress',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (progressLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/radio/styles/_common.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/naive-ui/es/radio/styles/_common.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    radioSizeSmall: '14px',
+    radioSizeMedium: '16px',
+    radioSizeLarge: '18px',
+    labelPadding: '0 8px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/radio/styles/dark.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/naive-ui/es/radio/styles/dark.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/radio/styles/_common.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+
+
+
+const radioDark = {
+    name: 'Radio',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const { borderColor, primaryColor, baseColor, textColorDisabled, inputColorDisabled, textColor2, opacityDisabled, borderRadius, fontSizeSmall, fontSizeMedium, fontSizeLarge, heightSmall, heightMedium, heightLarge } = vars;
+        return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_1__["default"]), { buttonHeightSmall: heightSmall, buttonHeightMedium: heightMedium, buttonHeightLarge: heightLarge, fontSizeSmall,
+            fontSizeMedium,
+            fontSizeLarge, boxShadow: `inset 0 0 0 1px ${borderColor}`, boxShadowActive: `inset 0 0 0 1px ${primaryColor}`, boxShadowFocus: `inset 0 0 0 1px ${primaryColor}, 0 0 0 2px ${(0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(primaryColor, { alpha: 0.3 })}`, boxShadowHover: `inset 0 0 0 1px ${primaryColor}`, boxShadowDisabled: `inset 0 0 0 1px ${borderColor}`, color: '#0000', colorDisabled: inputColorDisabled, textColor: textColor2, textColorDisabled: textColorDisabled, dotColorActive: primaryColor, dotColorDisabled: borderColor, buttonBorderColor: borderColor, buttonBorderColorActive: primaryColor, buttonBorderColorHover: primaryColor, buttonColor: '#0000', buttonColorActive: primaryColor, buttonTextColor: textColor2, buttonTextColorActive: baseColor, buttonTextColorHover: primaryColor, opacityDisabled: opacityDisabled, buttonBoxShadowFocus: `inset 0 0 0 1px ${primaryColor}, 0 0 0 2px ${(0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(primaryColor, { alpha: 0.3 })}`, buttonBoxShadowHover: `inset 0 0 0 1px ${primaryColor}`, buttonBoxShadow: 'inset 0 0 0 1px #0000', buttonBorderRadius: borderRadius });
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (radioDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/radio/styles/light.js":
+/*!********************************************************!*\
+  !*** ./node_modules/naive-ui/es/radio/styles/light.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/radio/styles/_common.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+
+
+
+const self = (vars) => {
+    const { borderColor, primaryColor, baseColor, textColorDisabled, inputColorDisabled, textColor2, opacityDisabled, borderRadius, fontSizeSmall, fontSizeMedium, fontSizeLarge, heightSmall, heightMedium, heightLarge } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { buttonHeightSmall: heightSmall, buttonHeightMedium: heightMedium, buttonHeightLarge: heightLarge, fontSizeSmall,
+        fontSizeMedium,
+        fontSizeLarge, boxShadow: `inset 0 0 0 1px ${borderColor}`, boxShadowActive: `inset 0 0 0 1px ${primaryColor}`, boxShadowFocus: `inset 0 0 0 1px ${primaryColor}, 0 0 0 2px ${(0,seemly__WEBPACK_IMPORTED_MODULE_1__.changeColor)(primaryColor, { alpha: 0.2 })}`, boxShadowHover: `inset 0 0 0 1px ${primaryColor}`, boxShadowDisabled: `inset 0 0 0 1px ${borderColor}`, color: baseColor, colorDisabled: inputColorDisabled, textColor: textColor2, textColorDisabled: textColorDisabled, dotColorActive: primaryColor, dotColorDisabled: borderColor, buttonBorderColor: borderColor, buttonBorderColorActive: primaryColor, buttonBorderColorHover: borderColor, buttonColor: baseColor, buttonColorActive: baseColor, buttonTextColor: textColor2, buttonTextColorActive: primaryColor, buttonTextColorHover: primaryColor, opacityDisabled: opacityDisabled, buttonBoxShadowFocus: `inset 0 0 0 1px ${primaryColor}, 0 0 0 2px ${(0,seemly__WEBPACK_IMPORTED_MODULE_1__.changeColor)(primaryColor, { alpha: 0.3 })}`, buttonBoxShadowHover: 'inset 0 0 0 1px #0000', buttonBoxShadow: 'inset 0 0 0 1px #0000', buttonBorderRadius: borderRadius });
+};
+const radioLight = {
+    name: 'Radio',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_2__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (radioLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/rate/styles/dark.js":
+/*!******************************************************!*\
+  !*** ./node_modules/naive-ui/es/rate/styles/dark.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+
+const rateDark = {
+    name: 'Rate',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const { railColor } = vars;
+        return {
+            itemColor: railColor,
+            itemColorActive: '#CCAA33',
+            itemSize: '20px',
+            sizeSmall: '16px',
+            sizeMedium: '20px',
+            sizeLarge: '24px'
+        };
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (rateDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/result/styles/_common.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/naive-ui/es/result/styles/_common.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    titleFontSizeSmall: '26px',
+    titleFontSizeMedium: '32px',
+    titleFontSizeLarge: '40px',
+    titleFontSizeHuge: '48px',
+    fontSizeSmall: '14px',
+    fontSizeMedium: '14px',
+    fontSizeLarge: '15px',
+    fontSizeHuge: '16px',
+    iconSizeSmall: '64px',
+    iconSizeMedium: '80px',
+    iconSizeLarge: '100px',
+    iconSizeHuge: '125px',
+    iconColor418: undefined,
+    iconColor404: undefined,
+    iconColor403: undefined,
+    iconColor500: undefined
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/result/styles/dark.js":
+/*!********************************************************!*\
+  !*** ./node_modules/naive-ui/es/result/styles/dark.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/result/styles/light.js");
+
+
+const resultDark = {
+    name: 'Result',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (resultDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/result/styles/light.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/naive-ui/es/result/styles/light.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/result/styles/_common.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+
+
+const self = (vars) => {
+    const { textColor2, textColor1, errorColor, successColor, infoColor, warningColor, lineHeight, fontWeightStrong } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { lineHeight, titleFontWeight: fontWeightStrong, titleTextColor: textColor1, textColor: textColor2, iconColorError: errorColor, iconColorSuccess: successColor, iconColorInfo: infoColor, iconColorWarning: warningColor });
+};
+const resultLight = {
+    name: 'Result',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_1__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (resultLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/select/styles/dark.js":
+/*!********************************************************!*\
+  !*** ./node_modules/naive-ui/es/select/styles/dark.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _internal_selection_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_internal/selection/styles */ "./node_modules/naive-ui/es/_internal/selection/styles/dark.js");
+/* harmony import */ var _internal_select_menu_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_internal/select-menu/styles */ "./node_modules/naive-ui/es/_internal/select-menu/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/select/styles/light.js");
+
+
+
+
+const selectDark = {
+    name: 'Select',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        InternalSelection: _internal_selection_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        InternalSelectMenu: _internal_select_menu_styles__WEBPACK_IMPORTED_MODULE_2__["default"]
+    },
+    self: _light__WEBPACK_IMPORTED_MODULE_3__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (selectDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/select/styles/light.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/naive-ui/es/select/styles/light.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _internal_selection_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_internal/selection/styles */ "./node_modules/naive-ui/es/_internal/selection/styles/light.js");
+/* harmony import */ var _internal_select_menu_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../_internal/select-menu/styles */ "./node_modules/naive-ui/es/_internal/select-menu/styles/light.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+
+
+
+
+function self(vars) {
+    const { boxShadow2 } = vars;
+    return {
+        menuBoxShadow: boxShadow2
+    };
+}
+const selectLight = (0,_mixins__WEBPACK_IMPORTED_MODULE_0__.createTheme)({
+    name: 'Select',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_1__["default"],
+    peers: {
+        InternalSelection: _internal_selection_styles__WEBPACK_IMPORTED_MODULE_2__["default"],
+        InternalSelectMenu: _internal_select_menu_styles__WEBPACK_IMPORTED_MODULE_3__["default"]
+    },
+    self
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (selectLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/skeleton/styles/dark.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/naive-ui/es/skeleton/styles/dark.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "skeletonDark": () => (/* binding */ skeletonDark)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+
+const skeletonDark = {
+    name: 'Skeleton',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const { heightSmall, heightMedium, heightLarge, borderRadius } = vars;
+        return {
+            color: 'rgba(255, 255, 255, 0.12)',
+            colorEnd: 'rgba(255, 255, 255, 0.18)',
+            borderRadius,
+            heightSmall,
+            heightMedium,
+            heightLarge
+        };
+    }
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/slider/styles/_common.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/naive-ui/es/slider/styles/_common.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    railHeight: '4px',
+    railWidthVertical: '4px',
+    handleSize: '18px',
+    dotHeight: '8px',
+    dotWidth: '8px',
+    dotBorderRadius: '4px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/slider/styles/dark.js":
+/*!********************************************************!*\
+  !*** ./node_modules/naive-ui/es/slider/styles/dark.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/slider/styles/_common.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+
+
+const sliderDark = {
+    name: 'Slider',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const boxShadow = '0 2px 8px 0 rgba(0, 0, 0, 0.12)';
+        const { railColor, modalColor, primaryColorSuppl, popoverColor, textColor2, cardColor, borderRadius, fontSize, opacityDisabled } = vars;
+        return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_1__["default"]), { fontSize, railColor: railColor, railColorHover: railColor, fillColor: primaryColorSuppl, fillColorHover: primaryColorSuppl, opacityDisabled, handleColor: '#FFF', dotColor: cardColor, dotColorModal: modalColor, dotColorPopover: popoverColor, handleBoxShadow: '0px 2px 4px 0 rgba(0, 0, 0, 0.4)', handleBoxShadowHover: '0px 2px 4px 0 rgba(0, 0, 0, 0.4)', handleBoxShadowActive: '0px 2px 4px 0 rgba(0, 0, 0, 0.4)', handleBoxShadowFocus: '0px 2px 4px 0 rgba(0, 0, 0, 0.4)', indicatorColor: popoverColor, indicatorBoxShadow: boxShadow, indicatorTextColor: textColor2, indicatorBorderRadius: borderRadius, dotBorder: `2px solid ${railColor}`, dotBorderActive: `2px solid ${primaryColorSuppl}`, dotBoxShadow: '' });
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (sliderDark);
 
 
 /***/ }),
@@ -56589,6 +60985,30 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/naive-ui/es/space/styles/dark.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/naive-ui/es/space/styles/dark.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/space/styles/_common.js");
+
+const spaceDark = {
+    name: 'Space',
+    self() {
+        return _common__WEBPACK_IMPORTED_MODULE_0__["default"];
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (spaceDark);
+
+
+/***/ }),
+
 /***/ "./node_modules/naive-ui/es/space/styles/light.js":
 /*!********************************************************!*\
   !*** ./node_modules/naive-ui/es/space/styles/light.js ***!
@@ -56610,6 +61030,468 @@ const spaceLight = {
     self
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (spaceLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/spin/styles/dark.js":
+/*!******************************************************!*\
+  !*** ./node_modules/naive-ui/es/spin/styles/dark.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/spin/styles/light.js");
+
+
+const spinDark = {
+    name: 'Spin',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (spinDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/spin/styles/light.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/naive-ui/es/spin/styles/light.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+
+const self = (vars) => {
+    const { opacityDisabled, heightTiny, heightSmall, heightMedium, heightLarge, heightHuge, primaryColor, fontSize } = vars;
+    return {
+        fontSize,
+        textColor: primaryColor,
+        sizeTiny: heightTiny,
+        sizeSmall: heightSmall,
+        sizeMedium: heightMedium,
+        sizeLarge: heightLarge,
+        sizeHuge: heightHuge,
+        color: primaryColor,
+        opacitySpinning: opacityDisabled
+    };
+};
+const spinLight = {
+    name: 'Spin',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (spinLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/statistic/styles/dark.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/naive-ui/es/statistic/styles/dark.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/statistic/styles/light.js");
+
+
+const statisticDark = {
+    name: 'Statistic',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (statisticDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/statistic/styles/light.js":
+/*!************************************************************!*\
+  !*** ./node_modules/naive-ui/es/statistic/styles/light.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+
+const self = (vars) => {
+    const { textColor2, textColor3, fontSize, fontWeight } = vars;
+    return {
+        labelFontSize: fontSize,
+        labelFontWeight: fontWeight,
+        valueFontWeight: fontWeight,
+        labelTextColor: textColor3,
+        valuePrefixTextColor: textColor2,
+        valueSuffixTextColor: textColor2,
+        valueTextColor: textColor2
+    };
+};
+const statisticLight = {
+    name: 'Statistic',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (statisticLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/steps/styles/_common.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/naive-ui/es/steps/styles/_common.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    stepHeaderFontSizeSmall: '14px',
+    stepHeaderFontSizeMedium: '16px',
+    indicatorIndexFontSizeSmall: '14px',
+    indicatorIndexFontSizeMedium: '16px',
+    indicatorSizeSmall: '22px',
+    indicatorSizeMedium: '28px',
+    indicatorIconSizeSmall: '14px',
+    indicatorIconSizeMedium: '18px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/steps/styles/dark.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/naive-ui/es/steps/styles/dark.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/steps/styles/light.js");
+
+
+const stepsDark = {
+    name: 'Steps',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (stepsDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/steps/styles/light.js":
+/*!********************************************************!*\
+  !*** ./node_modules/naive-ui/es/steps/styles/light.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/steps/styles/_common.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+
+
+const self = (vars) => {
+    const { fontWeightStrong, baseColor, textColorDisabled, primaryColor, errorColor, textColor1, textColor2 } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { stepHeaderFontWeight: fontWeightStrong, indicatorTextColorProcess: baseColor, indicatorTextColorWait: textColorDisabled, indicatorTextColorFinish: primaryColor, indicatorTextColorError: errorColor, indicatorBorderColorProcess: primaryColor, indicatorBorderColorWait: textColorDisabled, indicatorBorderColorFinish: primaryColor, indicatorBorderColorError: errorColor, indicatorColorProcess: primaryColor, indicatorColorWait: '#0000', indicatorColorFinish: '#0000', indicatorColorError: '#0000', splitorColorProcess: textColorDisabled, splitorColorWait: textColorDisabled, splitorColorFinish: primaryColor, splitorColorError: textColorDisabled, headerTextColorProcess: textColor1, headerTextColorWait: textColorDisabled, headerTextColorFinish: textColorDisabled, headerTextColorError: errorColor, descriptionTextColorProcess: textColor2, descriptionTextColorWait: textColorDisabled, descriptionTextColorFinish: textColorDisabled, descriptionTextColorError: errorColor });
+};
+const stepsLight = {
+    name: 'Steps',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_1__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (stepsLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/switch/styles/_common.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/naive-ui/es/switch/styles/_common.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    buttonHeightSmall: '14px',
+    buttonHeightMedium: '18px',
+    buttonHeightLarge: '22px',
+    buttonWidthSmall: '14px',
+    buttonWidthMedium: '18px',
+    buttonWidthLarge: '22px',
+    buttonWidthPressedSmall: '20px',
+    buttonWidthPressedMedium: '24px',
+    buttonWidthPressedLarge: '28px',
+    railHeightSmall: '18px',
+    railHeightMedium: '22px',
+    railHeightLarge: '26px',
+    railWidthSmall: '32px',
+    railWidthMedium: '40px',
+    railWidthLarge: '48px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/switch/styles/dark.js":
+/*!********************************************************!*\
+  !*** ./node_modules/naive-ui/es/switch/styles/dark.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/switch/styles/_common.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+
+
+
+const switchDark = {
+    name: 'Switch',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const { primaryColorSuppl, opacityDisabled, borderRadius, primaryColor, textColor2 } = vars;
+        const railOverlayColor = 'rgba(255, 255, 255, .20)';
+        return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_1__["default"]), { textColor: textColor2, loadingColor: primaryColorSuppl, opacityDisabled, railColor: railOverlayColor, railColorActive: primaryColorSuppl, buttonBoxShadow: '0px 2px 4px 0 rgba(0, 0, 0, 0.4)', buttonColor: '#FFF', railBorderRadiusSmall: borderRadius, railBorderRadiusMedium: borderRadius, railBorderRadiusLarge: borderRadius, buttonBorderRadiusSmall: borderRadius, buttonBorderRadiusMedium: borderRadius, buttonBorderRadiusLarge: borderRadius, boxShadowFocus: `0 0 8px 0 ${(0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(primaryColor, { alpha: 0.3 })}` });
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (switchDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/table/styles/_common.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/naive-ui/es/table/styles/_common.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    thPaddingSmall: '6px',
+    thPaddingMedium: '12px',
+    thPaddingLarge: '12px',
+    tdPaddingSmall: '6px',
+    tdPaddingMedium: '12px',
+    tdPaddingLarge: '12px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/table/styles/dark.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/naive-ui/es/table/styles/dark.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/table/styles/light.js");
+
+
+const tableDark = {
+    name: 'Table',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tableDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/table/styles/light.js":
+/*!********************************************************!*\
+  !*** ./node_modules/naive-ui/es/table/styles/light.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/table/styles/_common.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+
+
+
+const self = (vars) => {
+    const { dividerColor, cardColor, modalColor, popoverColor, tableHeaderColor, tableColorStriped, textColor1, textColor2, borderRadius, fontWeightStrong, lineHeight, fontSizeSmall, fontSizeMedium, fontSizeLarge } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { fontSizeSmall,
+        fontSizeMedium,
+        fontSizeLarge,
+        lineHeight,
+        borderRadius, borderColor: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(cardColor, dividerColor), borderColorModal: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(modalColor, dividerColor), borderColorPopover: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(popoverColor, dividerColor), tdColor: cardColor, tdColorModal: modalColor, tdColorPopover: popoverColor, tdColorStriped: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(cardColor, tableColorStriped), tdColorStripedModal: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(modalColor, tableColorStriped), tdColorStripedPopover: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(popoverColor, tableColorStriped), thColor: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(cardColor, tableHeaderColor), thColorModal: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(modalColor, tableHeaderColor), thColorPopover: (0,seemly__WEBPACK_IMPORTED_MODULE_1__.composite)(popoverColor, tableHeaderColor), thTextColor: textColor1, tdTextColor: textColor2, thFontWeight: fontWeightStrong });
+};
+const tableLight = {
+    name: 'Table',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_2__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tableLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/tabs/styles/_common.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/naive-ui/es/tabs/styles/_common.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    tabFontSizeSmall: '14px',
+    tabFontSizeMedium: '14px',
+    tabFontSizeLarge: '16px',
+    tabGapSmallLine: '36px',
+    tabGapMediumLine: '36px',
+    tabGapLargeLine: '36px',
+    tabPaddingSmallLine: '6px 0',
+    tabPaddingMediumLine: '10px 0',
+    tabPaddingLargeLine: '14px 0',
+    tabGapSmallBar: '36px',
+    tabGapMediumBar: '36px',
+    tabGapLargeBar: '36px',
+    tabPaddingSmallBar: '4px 0',
+    tabPaddingMediumBar: '6px 0',
+    tabPaddingLargeBar: '10px 0',
+    tabGapSmallCard: '4px',
+    tabGapMediumCard: '4px',
+    tabGapLargeCard: '4px',
+    tabPaddingSmallCard: '6px 10px',
+    tabPaddingMediumCard: '8px 12px',
+    tabPaddingLargeCard: '8px 16px',
+    tabPaddingSmallSegment: '4px 0',
+    tabPaddingMediumSegment: '6px 0',
+    tabPaddingLargeSegment: '8px 0',
+    tabGapSmallSegment: '0',
+    tabGapMediumSegment: '0',
+    tabGapLargeSegment: '0',
+    panePaddingSmall: '8px 0 0 0',
+    panePaddingMedium: '12px 0 0 0',
+    panePaddingLarge: '16px 0 0 0'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/tabs/styles/dark.js":
+/*!******************************************************!*\
+  !*** ./node_modules/naive-ui/es/tabs/styles/dark.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/tabs/styles/light.js");
+
+
+const tabsDark = {
+    name: 'Tabs',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const commonSelf = (0,_light__WEBPACK_IMPORTED_MODULE_1__.self)(vars);
+        const { inputColor } = vars;
+        commonSelf.colorSegment = inputColor;
+        commonSelf.tabColorSegment = inputColor;
+        return commonSelf;
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tabsDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/tabs/styles/light.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/naive-ui/es/tabs/styles/light.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/tabs/styles/_common.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+
+
+const self = (vars) => {
+    const { textColor2, primaryColor, textColorDisabled, closeColor, closeColorHover, closeColorPressed, tabColor, baseColor, dividerColor, fontWeight, textColor1, borderRadius, fontSize, fontWeightStrong } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { colorSegment: tabColor, tabFontSizeCard: fontSize, tabTextColorLine: textColor1, tabTextColorActiveLine: primaryColor, tabTextColorHoverLine: primaryColor, tabTextColorDisabledLine: textColorDisabled, tabTextColorSegment: textColor1, tabTextColorActiveSegment: textColor2, tabTextColorHoverSegment: textColor2, tabTextColorDisabledSegment: textColorDisabled, tabTextColorBar: textColor1, tabTextColorActiveBar: primaryColor, tabTextColorHoverBar: primaryColor, tabTextColorDisabledBar: textColorDisabled, tabTextColorCard: textColor1, tabTextColorHoverCard: textColor1, tabTextColorActiveCard: primaryColor, tabTextColorDisabledCard: textColorDisabled, barColor: primaryColor, closeColor,
+        closeColorHover,
+        closeColorPressed,
+        tabColor, tabColorSegment: baseColor, tabBorderColor: dividerColor, tabFontWeightActive: fontWeight, tabFontWeight: fontWeight, tabBorderRadius: borderRadius, paneTextColor: textColor2, fontWeightStrong });
+};
+const tabsLight = {
+    name: 'Tabs',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_1__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tabsLight);
 
 
 /***/ }),
@@ -56941,6 +61823,41 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/naive-ui/es/tag/styles/dark.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/naive-ui/es/tag/styles/dark.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/tag/styles/_common.js");
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+
+
+
+const tagDark = {
+    name: 'Tag',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const { textColor2, primaryColorHover, primaryColorPressed, primaryColor, infoColor, successColor, warningColor, errorColor, baseColor, borderColor, opacityDisabled, closeColor, closeColorHover, closeColorPressed, borderRadiusSmall: borderRadius, fontSizeTiny, fontSizeSmall, fontSizeMedium, heightTiny, heightSmall, heightMedium } = vars;
+        return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_1__["default"]), { heightSmall: heightTiny, heightMedium: heightSmall, heightLarge: heightMedium, borderRadius,
+            opacityDisabled, fontSizeSmall: fontSizeTiny, fontSizeMedium: fontSizeSmall, fontSizeLarge: fontSizeMedium, 
+            // checked
+            textColorCheckable: textColor2, textColorHoverCheckable: primaryColorHover, textColorPressedCheckable: primaryColorPressed, textColorChecked: baseColor, colorCheckable: '#0000', colorHoverCheckable: '#0000', colorPressedCheckable: '#0000', colorChecked: primaryColor, colorCheckedHover: primaryColorHover, colorCheckedPressed: primaryColorPressed, 
+            // default
+            border: `1px solid ${borderColor}`, textColor: textColor2, color: '#0000', closeColor: closeColor, closeColorHover: closeColorHover, closeColorPressed: closeColorPressed, borderPrimary: `1px solid ${(0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(primaryColor, { alpha: 0.3 })}`, textColorPrimary: primaryColor, colorPrimary: '#0000', closeColorPrimary: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(primaryColor, { alpha: 0.7 }), closeColorHoverPrimary: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(primaryColor, { alpha: 0.85 }), closeColorPressedPrimary: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(primaryColor, { alpha: 0.57 }), borderInfo: `1px solid ${(0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(infoColor, { alpha: 0.3 })}`, textColorInfo: infoColor, colorInfo: '#0000', closeColorInfo: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(infoColor, { alpha: 0.7 }), closeColorHoverInfo: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(infoColor, { alpha: 0.85 }), closeColorPressedInfo: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(infoColor, { alpha: 0.57 }), borderSuccess: `1px solid ${(0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(successColor, { alpha: 0.3 })}`, textColorSuccess: successColor, colorSuccess: '#0000', closeColorSuccess: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(successColor, { alpha: 0.7 }), closeColorHoverSuccess: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(successColor, { alpha: 0.85 }), closeColorPressedSuccess: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(successColor, { alpha: 0.57 }), borderWarning: `1px solid ${(0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(warningColor, { alpha: 0.3 })}`, textColorWarning: warningColor, colorWarning: '#0000', closeColorWarning: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(warningColor, { alpha: 0.7 }), closeColorHoverWarning: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(warningColor, { alpha: 0.85 }), closeColorPressedWarning: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(warningColor, { alpha: 0.57 }), borderError: `1px solid ${(0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(errorColor, { alpha: 0.3 })}`, textColorError: errorColor, colorError: '#0000', closeColorError: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(errorColor, { alpha: 0.7 }), closeColorHoverError: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(errorColor, { alpha: 0.85 }), closeColorPressedError: (0,seemly__WEBPACK_IMPORTED_MODULE_2__.changeColor)(errorColor, { alpha: 0.57 }) });
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tagDark);
+
+
+/***/ }),
+
 /***/ "./node_modules/naive-ui/es/tag/styles/light.js":
 /*!******************************************************!*\
   !*** ./node_modules/naive-ui/es/tag/styles/light.js ***!
@@ -56973,6 +61890,463 @@ const tagLight = {
     self
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tagLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/themes/dark.js":
+/*!*************************************************!*\
+  !*** ./node_modules/naive-ui/es/themes/dark.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "darkTheme": () => (/* binding */ darkTheme)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _alert_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../alert/styles */ "./node_modules/naive-ui/es/alert/styles/dark.js");
+/* harmony import */ var _anchor_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../anchor/styles */ "./node_modules/naive-ui/es/anchor/styles/dark.js");
+/* harmony import */ var _auto_complete_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../auto-complete/styles */ "./node_modules/naive-ui/es/auto-complete/styles/dark.js");
+/* harmony import */ var _avatar_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../avatar/styles */ "./node_modules/naive-ui/es/avatar/styles/dark.js");
+/* harmony import */ var _back_top_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../back-top/styles */ "./node_modules/naive-ui/es/back-top/styles/dark.js");
+/* harmony import */ var _badge_styles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../badge/styles */ "./node_modules/naive-ui/es/badge/styles/dark.js");
+/* harmony import */ var _breadcrumb_styles__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../breadcrumb/styles */ "./node_modules/naive-ui/es/breadcrumb/styles/dark.js");
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../button/styles */ "./node_modules/naive-ui/es/button/styles/dark.js");
+/* harmony import */ var _calendar_styles__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../calendar/styles */ "./node_modules/naive-ui/es/calendar/styles/dark.js");
+/* harmony import */ var _card_styles__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../card/styles */ "./node_modules/naive-ui/es/card/styles/dark.js");
+/* harmony import */ var _carousel_styles__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../carousel/styles */ "./node_modules/naive-ui/es/carousel/styles/dark.js");
+/* harmony import */ var _cascader_styles__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../cascader/styles */ "./node_modules/naive-ui/es/cascader/styles/dark.js");
+/* harmony import */ var _checkbox_styles__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../checkbox/styles */ "./node_modules/naive-ui/es/checkbox/styles/dark.js");
+/* harmony import */ var _code_styles__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../code/styles */ "./node_modules/naive-ui/es/code/styles/dark.js");
+/* harmony import */ var _collapse_styles__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../collapse/styles */ "./node_modules/naive-ui/es/collapse/styles/dark.js");
+/* harmony import */ var _collapse_transition_styles__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../collapse-transition/styles */ "./node_modules/naive-ui/es/collapse-transition/styles/dark.js");
+/* harmony import */ var _color_picker_styles__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../color-picker/styles */ "./node_modules/naive-ui/es/color-picker/styles/dark.js");
+/* harmony import */ var _data_table_styles__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../data-table/styles */ "./node_modules/naive-ui/es/data-table/styles/dark.js");
+/* harmony import */ var _date_picker_styles__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../date-picker/styles */ "./node_modules/naive-ui/es/date-picker/styles/dark.js");
+/* harmony import */ var _descriptions_styles__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../descriptions/styles */ "./node_modules/naive-ui/es/descriptions/styles/dark.js");
+/* harmony import */ var _dialog_styles__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../dialog/styles */ "./node_modules/naive-ui/es/dialog/styles/dark.js");
+/* harmony import */ var _divider_styles__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../divider/styles */ "./node_modules/naive-ui/es/divider/styles/dark.js");
+/* harmony import */ var _drawer_styles__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../drawer/styles */ "./node_modules/naive-ui/es/drawer/styles/dark.js");
+/* harmony import */ var _dropdown_styles__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../dropdown/styles */ "./node_modules/naive-ui/es/dropdown/styles/dark.js");
+/* harmony import */ var _dynamic_input_styles__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../dynamic-input/styles */ "./node_modules/naive-ui/es/dynamic-input/styles/dark.js");
+/* harmony import */ var _dynamic_tags_styles__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../dynamic-tags/styles */ "./node_modules/naive-ui/es/dynamic-tags/styles/dark.js");
+/* harmony import */ var _element_styles__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../element/styles */ "./node_modules/naive-ui/es/element/styles/dark.js");
+/* harmony import */ var _ellipsis_styles__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../ellipsis/styles */ "./node_modules/naive-ui/es/ellipsis/styles/dark.js");
+/* harmony import */ var _empty_styles__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../empty/styles */ "./node_modules/naive-ui/es/empty/styles/dark.js");
+/* harmony import */ var _form_styles__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../form/styles */ "./node_modules/naive-ui/es/form/styles/dark.js");
+/* harmony import */ var _gradient_text_styles__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../gradient-text/styles */ "./node_modules/naive-ui/es/gradient-text/styles/dark.js");
+/* harmony import */ var _icon_styles__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../icon/styles */ "./node_modules/naive-ui/es/icon/styles/dark.js");
+/* harmony import */ var _icon_wrapper_styles__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../icon-wrapper/styles */ "./node_modules/naive-ui/es/icon-wrapper/styles/dark.js");
+/* harmony import */ var _image_styles__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../image/styles */ "./node_modules/naive-ui/es/image/styles/dark.js");
+/* harmony import */ var _input_styles__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../input/styles */ "./node_modules/naive-ui/es/input/styles/dark.js");
+/* harmony import */ var _input_number_styles__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../input-number/styles */ "./node_modules/naive-ui/es/input-number/styles/dark.js");
+/* harmony import */ var _layout_styles__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../layout/styles */ "./node_modules/naive-ui/es/layout/styles/dark.js");
+/* harmony import */ var _list_styles__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../list/styles */ "./node_modules/naive-ui/es/list/styles/dark.js");
+/* harmony import */ var _loading_bar_styles__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../loading-bar/styles */ "./node_modules/naive-ui/es/loading-bar/styles/dark.js");
+/* harmony import */ var _log_styles__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../log/styles */ "./node_modules/naive-ui/es/log/styles/dark.js");
+/* harmony import */ var _menu_styles__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../menu/styles */ "./node_modules/naive-ui/es/menu/styles/dark.js");
+/* harmony import */ var _mention_styles__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../mention/styles */ "./node_modules/naive-ui/es/mention/styles/dark.js");
+/* harmony import */ var _message_styles__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../message/styles */ "./node_modules/naive-ui/es/message/styles/dark.js");
+/* harmony import */ var _modal_styles__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../modal/styles */ "./node_modules/naive-ui/es/modal/styles/dark.js");
+/* harmony import */ var _notification_styles__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../notification/styles */ "./node_modules/naive-ui/es/notification/styles/dark.js");
+/* harmony import */ var _page_header_styles__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ../page-header/styles */ "./node_modules/naive-ui/es/page-header/styles/dark.js");
+/* harmony import */ var _pagination_styles__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ../pagination/styles */ "./node_modules/naive-ui/es/pagination/styles/dark.js");
+/* harmony import */ var _popconfirm_styles__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ../popconfirm/styles */ "./node_modules/naive-ui/es/popconfirm/styles/dark.js");
+/* harmony import */ var _popover_styles__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ../popover/styles */ "./node_modules/naive-ui/es/popover/styles/dark.js");
+/* harmony import */ var _popselect_styles__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ../popselect/styles */ "./node_modules/naive-ui/es/popselect/styles/dark.js");
+/* harmony import */ var _progress_styles__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ../progress/styles */ "./node_modules/naive-ui/es/progress/styles/dark.js");
+/* harmony import */ var _radio_styles__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ../radio/styles */ "./node_modules/naive-ui/es/radio/styles/dark.js");
+/* harmony import */ var _rate_styles__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ../rate/styles */ "./node_modules/naive-ui/es/rate/styles/dark.js");
+/* harmony import */ var _result_styles__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ../result/styles */ "./node_modules/naive-ui/es/result/styles/dark.js");
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/dark.js");
+/* harmony import */ var _select_styles__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ../select/styles */ "./node_modules/naive-ui/es/select/styles/dark.js");
+/* harmony import */ var _skeleton_styles__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ../skeleton/styles */ "./node_modules/naive-ui/es/skeleton/styles/dark.js");
+/* harmony import */ var _slider_styles__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ../slider/styles */ "./node_modules/naive-ui/es/slider/styles/dark.js");
+/* harmony import */ var _space_styles__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ../space/styles */ "./node_modules/naive-ui/es/space/styles/dark.js");
+/* harmony import */ var _spin_styles__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ../spin/styles */ "./node_modules/naive-ui/es/spin/styles/dark.js");
+/* harmony import */ var _statistic_styles__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ../statistic/styles */ "./node_modules/naive-ui/es/statistic/styles/dark.js");
+/* harmony import */ var _steps_styles__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ../steps/styles */ "./node_modules/naive-ui/es/steps/styles/dark.js");
+/* harmony import */ var _switch_styles__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ../switch/styles */ "./node_modules/naive-ui/es/switch/styles/dark.js");
+/* harmony import */ var _table_styles__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! ../table/styles */ "./node_modules/naive-ui/es/table/styles/dark.js");
+/* harmony import */ var _tabs_styles__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! ../tabs/styles */ "./node_modules/naive-ui/es/tabs/styles/dark.js");
+/* harmony import */ var _tag_styles__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! ../tag/styles */ "./node_modules/naive-ui/es/tag/styles/dark.js");
+/* harmony import */ var _thing_styles__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! ../thing/styles */ "./node_modules/naive-ui/es/thing/styles/dark.js");
+/* harmony import */ var _time_picker_styles__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! ../time-picker/styles */ "./node_modules/naive-ui/es/time-picker/styles/dark.js");
+/* harmony import */ var _timeline_styles__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! ../timeline/styles */ "./node_modules/naive-ui/es/timeline/styles/dark.js");
+/* harmony import */ var _tooltip_styles__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! ../tooltip/styles */ "./node_modules/naive-ui/es/tooltip/styles/dark.js");
+/* harmony import */ var _transfer_styles__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! ../transfer/styles */ "./node_modules/naive-ui/es/transfer/styles/dark.js");
+/* harmony import */ var _tree_select_styles__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! ../tree-select/styles */ "./node_modules/naive-ui/es/tree-select/styles/dark.js");
+/* harmony import */ var _typography_styles__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! ../typography/styles */ "./node_modules/naive-ui/es/typography/styles/dark.js");
+/* harmony import */ var _tree_styles__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! ../tree/styles */ "./node_modules/naive-ui/es/tree/styles/dark.js");
+/* harmony import */ var _upload_styles__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! ../upload/styles */ "./node_modules/naive-ui/es/upload/styles/dark.js");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const darkTheme = {
+    name: 'dark',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Alert: _alert_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+    Anchor: _anchor_styles__WEBPACK_IMPORTED_MODULE_2__["default"],
+    AutoComplete: _auto_complete_styles__WEBPACK_IMPORTED_MODULE_3__["default"],
+    Avatar: _avatar_styles__WEBPACK_IMPORTED_MODULE_4__["default"],
+    BackTop: _back_top_styles__WEBPACK_IMPORTED_MODULE_5__["default"],
+    Badge: _badge_styles__WEBPACK_IMPORTED_MODULE_6__["default"],
+    Breadcrumb: _breadcrumb_styles__WEBPACK_IMPORTED_MODULE_7__["default"],
+    Button: _button_styles__WEBPACK_IMPORTED_MODULE_8__["default"],
+    Calendar: _calendar_styles__WEBPACK_IMPORTED_MODULE_9__["default"],
+    Card: _card_styles__WEBPACK_IMPORTED_MODULE_10__["default"],
+    Carousel: _carousel_styles__WEBPACK_IMPORTED_MODULE_11__["default"],
+    Cascader: _cascader_styles__WEBPACK_IMPORTED_MODULE_12__["default"],
+    Checkbox: _checkbox_styles__WEBPACK_IMPORTED_MODULE_13__["default"],
+    Code: _code_styles__WEBPACK_IMPORTED_MODULE_14__["default"],
+    Collapse: _collapse_styles__WEBPACK_IMPORTED_MODULE_15__["default"],
+    CollapseTransition: _collapse_transition_styles__WEBPACK_IMPORTED_MODULE_16__["default"],
+    ColorPicker: _color_picker_styles__WEBPACK_IMPORTED_MODULE_17__["default"],
+    DataTable: _data_table_styles__WEBPACK_IMPORTED_MODULE_18__["default"],
+    DatePicker: _date_picker_styles__WEBPACK_IMPORTED_MODULE_19__["default"],
+    Descriptions: _descriptions_styles__WEBPACK_IMPORTED_MODULE_20__["default"],
+    Dialog: _dialog_styles__WEBPACK_IMPORTED_MODULE_21__["default"],
+    Divider: _divider_styles__WEBPACK_IMPORTED_MODULE_22__["default"],
+    Drawer: _drawer_styles__WEBPACK_IMPORTED_MODULE_23__["default"],
+    Dropdown: _dropdown_styles__WEBPACK_IMPORTED_MODULE_24__["default"],
+    DynamicInput: _dynamic_input_styles__WEBPACK_IMPORTED_MODULE_25__["default"],
+    DynamicTags: _dynamic_tags_styles__WEBPACK_IMPORTED_MODULE_26__["default"],
+    Element: _element_styles__WEBPACK_IMPORTED_MODULE_27__["default"],
+    Empty: _empty_styles__WEBPACK_IMPORTED_MODULE_28__["default"],
+    Ellipsis: _ellipsis_styles__WEBPACK_IMPORTED_MODULE_29__["default"],
+    Form: _form_styles__WEBPACK_IMPORTED_MODULE_30__["default"],
+    GradientText: _gradient_text_styles__WEBPACK_IMPORTED_MODULE_31__["default"],
+    Icon: _icon_styles__WEBPACK_IMPORTED_MODULE_32__["default"],
+    IconWrapper: _icon_wrapper_styles__WEBPACK_IMPORTED_MODULE_33__["default"],
+    Image: _image_styles__WEBPACK_IMPORTED_MODULE_34__.imageDark,
+    Input: _input_styles__WEBPACK_IMPORTED_MODULE_35__["default"],
+    InputNumber: _input_number_styles__WEBPACK_IMPORTED_MODULE_36__["default"],
+    Layout: _layout_styles__WEBPACK_IMPORTED_MODULE_37__["default"],
+    List: _list_styles__WEBPACK_IMPORTED_MODULE_38__["default"],
+    LoadingBar: _loading_bar_styles__WEBPACK_IMPORTED_MODULE_39__["default"],
+    Log: _log_styles__WEBPACK_IMPORTED_MODULE_40__["default"],
+    Menu: _menu_styles__WEBPACK_IMPORTED_MODULE_41__["default"],
+    Mention: _mention_styles__WEBPACK_IMPORTED_MODULE_42__["default"],
+    Message: _message_styles__WEBPACK_IMPORTED_MODULE_43__["default"],
+    Modal: _modal_styles__WEBPACK_IMPORTED_MODULE_44__["default"],
+    Notification: _notification_styles__WEBPACK_IMPORTED_MODULE_45__["default"],
+    PageHeader: _page_header_styles__WEBPACK_IMPORTED_MODULE_46__.pageHeaderDark,
+    Pagination: _pagination_styles__WEBPACK_IMPORTED_MODULE_47__["default"],
+    Popconfirm: _popconfirm_styles__WEBPACK_IMPORTED_MODULE_48__["default"],
+    Popover: _popover_styles__WEBPACK_IMPORTED_MODULE_49__["default"],
+    Popselect: _popselect_styles__WEBPACK_IMPORTED_MODULE_50__["default"],
+    Progress: _progress_styles__WEBPACK_IMPORTED_MODULE_51__["default"],
+    Radio: _radio_styles__WEBPACK_IMPORTED_MODULE_52__["default"],
+    Rate: _rate_styles__WEBPACK_IMPORTED_MODULE_53__["default"],
+    Result: _result_styles__WEBPACK_IMPORTED_MODULE_54__["default"],
+    Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_55__["default"],
+    Select: _select_styles__WEBPACK_IMPORTED_MODULE_56__["default"],
+    Skeleton: _skeleton_styles__WEBPACK_IMPORTED_MODULE_57__.skeletonDark,
+    Slider: _slider_styles__WEBPACK_IMPORTED_MODULE_58__["default"],
+    Space: _space_styles__WEBPACK_IMPORTED_MODULE_59__["default"],
+    Spin: _spin_styles__WEBPACK_IMPORTED_MODULE_60__["default"],
+    Statistic: _statistic_styles__WEBPACK_IMPORTED_MODULE_61__["default"],
+    Steps: _steps_styles__WEBPACK_IMPORTED_MODULE_62__["default"],
+    Switch: _switch_styles__WEBPACK_IMPORTED_MODULE_63__["default"],
+    Table: _table_styles__WEBPACK_IMPORTED_MODULE_64__["default"],
+    Tabs: _tabs_styles__WEBPACK_IMPORTED_MODULE_65__["default"],
+    Tag: _tag_styles__WEBPACK_IMPORTED_MODULE_66__["default"],
+    Thing: _thing_styles__WEBPACK_IMPORTED_MODULE_67__["default"],
+    TimePicker: _time_picker_styles__WEBPACK_IMPORTED_MODULE_68__["default"],
+    Timeline: _timeline_styles__WEBPACK_IMPORTED_MODULE_69__["default"],
+    Tooltip: _tooltip_styles__WEBPACK_IMPORTED_MODULE_70__["default"],
+    Transfer: _transfer_styles__WEBPACK_IMPORTED_MODULE_71__["default"],
+    Tree: _tree_styles__WEBPACK_IMPORTED_MODULE_72__["default"],
+    TreeSelect: _tree_select_styles__WEBPACK_IMPORTED_MODULE_73__["default"],
+    Typography: _typography_styles__WEBPACK_IMPORTED_MODULE_74__["default"],
+    Upload: _upload_styles__WEBPACK_IMPORTED_MODULE_75__["default"]
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/thing/styles/dark.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/naive-ui/es/thing/styles/dark.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/thing/styles/light.js");
+
+
+const thingDark = {
+    name: 'Thing',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (thingDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/thing/styles/light.js":
+/*!********************************************************!*\
+  !*** ./node_modules/naive-ui/es/thing/styles/light.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+
+const self = (vars) => {
+    const { textColor1, textColor2, fontWeightStrong, fontSize } = vars;
+    return {
+        fontSize,
+        titleTextColor: textColor1,
+        textColor: textColor2,
+        titleFontWeight: fontWeightStrong
+    };
+};
+const thingLight = {
+    name: 'Thing',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (thingLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/time-picker/styles/_common.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/naive-ui/es/time-picker/styles/_common.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    itemFontSize: '12px',
+    itemHeight: '36px',
+    itemWidth: '52px',
+    panelActionPadding: '8px 0'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/time-picker/styles/dark.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/naive-ui/es/time-picker/styles/dark.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/dark.js");
+/* harmony import */ var _input_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../input/styles */ "./node_modules/naive-ui/es/input/styles/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/time-picker/styles/light.js");
+
+
+
+
+
+const timePickerDark = {
+    name: 'TimePicker',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_2__["default"],
+        Input: _input_styles__WEBPACK_IMPORTED_MODULE_3__["default"]
+    },
+    self: _light__WEBPACK_IMPORTED_MODULE_4__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (timePickerDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/time-picker/styles/light.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/naive-ui/es/time-picker/styles/light.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/time-picker/styles/_common.js");
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/light.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/light.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+/* harmony import */ var _input_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../input/styles */ "./node_modules/naive-ui/es/input/styles/light.js");
+
+
+
+
+
+
+const self = (vars) => {
+    const { popoverColor, textColor2, primaryColor, hoverColor, dividerColor, opacityDisabled, boxShadow2, borderRadius, iconColor, iconColorDisabled } = vars;
+    return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_0__["default"]), { panelColor: popoverColor, panelBoxShadow: boxShadow2, panelDividerColor: dividerColor, itemTextColor: textColor2, itemTextColorActive: primaryColor, itemColorHover: hoverColor, itemOpacityDisabled: opacityDisabled, itemBorderRadius: borderRadius, borderRadius,
+        iconColor,
+        iconColorDisabled });
+};
+const timePickerLight = (0,_mixins__WEBPACK_IMPORTED_MODULE_1__.createTheme)({
+    name: 'TimePicker',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_2__["default"],
+    peers: {
+        Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_3__["default"],
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_4__["default"],
+        Input: _input_styles__WEBPACK_IMPORTED_MODULE_5__["default"]
+    },
+    self
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (timePickerLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/timeline/styles/_common.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/naive-ui/es/timeline/styles/_common.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    titleMarginMedium: 0,
+    titleMarginLarge: '-2px 0 0 0',
+    titleFontSizeMedium: '14px',
+    titleFontSizeLarge: '16px',
+    iconSizeMedium: '14px',
+    iconSizeLarge: '14px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/timeline/styles/dark.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/naive-ui/es/timeline/styles/dark.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/timeline/styles/_common.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+
+
+const timelineDark = {
+    name: 'Timeline',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self(vars) {
+        const { textColor3, infoColorSuppl, errorColorSuppl, successColorSuppl, warningColorSuppl, textColor1, textColor2, railColor, fontWeightStrong, fontSize } = vars;
+        return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_1__["default"]), { contentFontSize: fontSize, titleFontWeight: fontWeightStrong, circleBorder: `2px solid ${textColor3}`, circleBorderInfo: `2px solid ${infoColorSuppl}`, circleBorderError: `2px solid ${errorColorSuppl}`, circleBorderSuccess: `2px solid ${successColorSuppl}`, circleBorderWarning: `2px solid ${warningColorSuppl}`, iconColor: textColor3, iconColorInfo: infoColorSuppl, iconColorError: errorColorSuppl, iconColorSuccess: successColorSuppl, iconColorWarning: warningColorSuppl, titleTextColor: textColor1, contentTextColor: textColor2, metaTextColor: textColor3, lineColor: railColor });
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (timelineDark);
 
 
 /***/ }),
@@ -57047,6 +62421,39 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/naive-ui/es/tooltip/styles/dark.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/naive-ui/es/tooltip/styles/dark.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _popover_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../popover/styles */ "./node_modules/naive-ui/es/popover/styles/dark.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/tooltip/styles/_common.js");
+
+
+
+const tooltipDark = {
+    name: 'Tooltip',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Popover: _popover_styles__WEBPACK_IMPORTED_MODULE_1__["default"]
+    },
+    self(vars) {
+        const { borderRadius, boxShadow2, popoverColor, textColor2 } = vars;
+        return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_2__["default"]), { borderRadius: borderRadius, boxShadow: boxShadow2, color: popoverColor, textColor: textColor2 });
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tooltipDark);
+
+
+/***/ }),
+
 /***/ "./node_modules/naive-ui/es/tooltip/styles/light.js":
 /*!**********************************************************!*\
   !*** ./node_modules/naive-ui/es/tooltip/styles/light.js ***!
@@ -57079,6 +62486,198 @@ const tooltipLight = (0,_mixins_use_theme__WEBPACK_IMPORTED_MODULE_1__.createThe
     self
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tooltipLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/transfer/styles/_common.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/naive-ui/es/transfer/styles/_common.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    extraFontSize: '12px',
+    width: '440px'
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/transfer/styles/dark.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/naive-ui/es/transfer/styles/dark.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./_common */ "./node_modules/naive-ui/es/transfer/styles/_common.js");
+/* harmony import */ var _checkbox_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../checkbox/styles */ "./node_modules/naive-ui/es/checkbox/styles/dark.js");
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/dark.js");
+/* harmony import */ var _input_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../input/styles */ "./node_modules/naive-ui/es/input/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _empty_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../empty/styles */ "./node_modules/naive-ui/es/empty/styles/dark.js");
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/dark.js");
+
+
+
+
+
+
+
+const transferDark = {
+    name: 'Transfer',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Checkbox: _checkbox_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_2__["default"],
+        Input: _input_styles__WEBPACK_IMPORTED_MODULE_3__["default"],
+        Empty: _empty_styles__WEBPACK_IMPORTED_MODULE_4__["default"],
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_5__["default"]
+    },
+    self(vars) {
+        const { iconColorDisabled, iconColor, fontWeight, fontSizeLarge, fontSizeMedium, fontSizeSmall, heightLarge, heightMedium, heightSmall, borderRadius, inputColor, tableHeaderColor, textColor1, textColorDisabled, textColor2, hoverColor } = vars;
+        return Object.assign(Object.assign({}, _common__WEBPACK_IMPORTED_MODULE_6__["default"]), { itemHeightSmall: heightSmall, itemHeightMedium: heightMedium, itemHeightLarge: heightLarge, fontSizeSmall,
+            fontSizeMedium,
+            fontSizeLarge,
+            borderRadius, borderColor: '#0000', listColor: inputColor, headerColor: tableHeaderColor, titleTextColor: textColor1, titleTextColorDisabled: textColorDisabled, extraTextColor: textColor2, filterDividerColor: '#0000', itemTextColor: textColor2, itemTextColorDisabled: textColorDisabled, itemColorPending: hoverColor, titleFontWeight: fontWeight, iconColor,
+            iconColorDisabled });
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (transferDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/tree-select/styles/dark.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/naive-ui/es/tree-select/styles/dark.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _empty_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../empty/styles */ "./node_modules/naive-ui/es/empty/styles/dark.js");
+/* harmony import */ var _tree_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tree/styles */ "./node_modules/naive-ui/es/tree/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _internal_selection_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../_internal/selection/styles */ "./node_modules/naive-ui/es/_internal/selection/styles/dark.js");
+
+
+
+
+const treeSelectDark = {
+    name: 'TreeSelect',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Tree: _tree_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        Empty: _empty_styles__WEBPACK_IMPORTED_MODULE_2__["default"],
+        InternalSelection: _internal_selection_styles__WEBPACK_IMPORTED_MODULE_3__["default"]
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (treeSelectDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/tree/styles/dark.js":
+/*!******************************************************!*\
+  !*** ./node_modules/naive-ui/es/tree/styles/dark.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _checkbox_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../checkbox/styles */ "./node_modules/naive-ui/es/checkbox/styles/dark.js");
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/tree/styles/light.js");
+
+
+
+
+
+const treeDark = {
+    name: 'Tree',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Checkbox: _checkbox_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_2__["default"]
+    },
+    self(vars) {
+        const { primaryColor } = vars;
+        const commonSelf = (0,_light__WEBPACK_IMPORTED_MODULE_3__.self)(vars);
+        commonSelf.nodeColorActive = (0,seemly__WEBPACK_IMPORTED_MODULE_4__.changeColor)(primaryColor, { alpha: 0.15 });
+        return commonSelf;
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (treeDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/tree/styles/light.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/naive-ui/es/tree/styles/light.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _checkbox_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../checkbox/styles */ "./node_modules/naive-ui/es/checkbox/styles/light.js");
+/* harmony import */ var _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../_internal/scrollbar/styles */ "./node_modules/naive-ui/es/_internal/scrollbar/styles/light.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _mixins_use_theme__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_mixins/use-theme */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+
+
+
+
+
+const self = (vars) => {
+    const { borderRadiusSmall, hoverColor, pressedColor, primaryColor, textColor3, textColor2, textColorDisabled, fontSize } = vars;
+    return {
+        fontSize,
+        nodeBorderRadius: borderRadiusSmall,
+        nodeColorHover: hoverColor,
+        nodeColorPressed: pressedColor,
+        nodeColorActive: (0,seemly__WEBPACK_IMPORTED_MODULE_0__.changeColor)(primaryColor, { alpha: 0.1 }),
+        arrowColor: textColor3,
+        nodeTextColor: textColor2,
+        nodeTextColorDisabled: textColorDisabled,
+        loadingColor: primaryColor,
+        dropMarkColor: primaryColor
+    };
+};
+const treeLight = (0,_mixins_use_theme__WEBPACK_IMPORTED_MODULE_1__.createTheme)({
+    name: 'Tree',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_2__["default"],
+    peers: {
+        Checkbox: _checkbox_styles__WEBPACK_IMPORTED_MODULE_3__["default"],
+        Scrollbar: _internal_scrollbar_styles__WEBPACK_IMPORTED_MODULE_4__["default"]
+    },
+    self
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (treeLight);
 
 
 /***/ }),
@@ -57409,6 +63008,146 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/naive-ui/es/typography/src/styles/text.cssr.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/naive-ui/es/typography/src/styles/text.cssr.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _utils_cssr__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../_utils/cssr */ "./node_modules/naive-ui/es/_utils/cssr/index.js");
+ // vars:
+// --n-text-color
+// --n-font-weight-strong
+// --n-font-famliy-mono
+// --n-code-border-radius
+// --n-code-text-color
+// --n-code-color
+// --n-code-border
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_cssr__WEBPACK_IMPORTED_MODULE_0__.cB)('text', `
+ transition: color .3s var(--n-bezier);
+ color: var(--n-text-color);
+`, [(0,_utils_cssr__WEBPACK_IMPORTED_MODULE_0__.cM)('strong', `
+ font-weight: var(--n-font-weight-strong);
+ `), (0,_utils_cssr__WEBPACK_IMPORTED_MODULE_0__.cM)('italic', {
+  fontStyle: 'italic'
+}), (0,_utils_cssr__WEBPACK_IMPORTED_MODULE_0__.cM)('underline', {
+  textDecoration: 'underline'
+}), (0,_utils_cssr__WEBPACK_IMPORTED_MODULE_0__.cM)('code', `
+ line-height: 1.4;
+ display: inline-block;
+ font-family: var(--n-font-famliy-mono);
+ transition: 
+ color .3s var(--n-bezier),
+ border-color .3s var(--n-bezier),
+ background-color .3s var(--n-bezier);
+ box-sizing: border-box;
+ padding: .05em .35em 0 .35em;
+ border-radius: var(--n-code-border-radius);
+ font-size: .9em;
+ color: var(--n-code-text-color);
+ background-color: var(--n-code-color);
+ border: var(--n-code-border);
+ `)]));
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/typography/src/text.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/naive-ui/es/typography/src/text.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var vooks__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vooks */ "./node_modules/vooks/es/use-compitable.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-config.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_utils */ "./node_modules/naive-ui/es/_utils/naive/warn.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../_utils */ "./node_modules/naive-ui/es/_utils/cssr/create-key.js");
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles */ "./node_modules/naive-ui/es/typography/styles/light.js");
+/* harmony import */ var _styles_text_cssr__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/text.cssr */ "./node_modules/naive-ui/es/typography/src/styles/text.cssr.js");
+
+
+
+
+
+
+const textProps = Object.assign(Object.assign({}, _mixins__WEBPACK_IMPORTED_MODULE_1__["default"].props), { code: Boolean, type: {
+        type: String,
+        default: 'default'
+    }, delete: Boolean, strong: Boolean, italic: Boolean, underline: Boolean, depth: [String, Number], tag: String, 
+    // deprecated
+    as: {
+        type: String,
+        validator: () => {
+            if (true) {
+                (0,_utils__WEBPACK_IMPORTED_MODULE_2__.warn)('text', '`as` is deprecated, please use `tag` instead.');
+            }
+            return true;
+        },
+        default: undefined
+    } });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'Text',
+    props: textProps,
+    setup(props) {
+        const { mergedClsPrefixRef } = (0,_mixins__WEBPACK_IMPORTED_MODULE_3__["default"])(props);
+        const themeRef = (0,_mixins__WEBPACK_IMPORTED_MODULE_1__["default"])('Typography', '-text', _styles_text_cssr__WEBPACK_IMPORTED_MODULE_4__["default"], _styles__WEBPACK_IMPORTED_MODULE_5__["default"], props, mergedClsPrefixRef);
+        return {
+            mergedClsPrefix: mergedClsPrefixRef,
+            compitableTag: (0,vooks__WEBPACK_IMPORTED_MODULE_6__["default"])(props, ['as', 'tag']),
+            cssVars: (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
+                const { depth, type } = props;
+                const textColorKey = type === 'default'
+                    ? depth === undefined
+                        ? 'textColor'
+                        : `textColor${depth}Depth`
+                    : (0,_utils__WEBPACK_IMPORTED_MODULE_7__.createKey)('textColor', type);
+                const { common: { fontWeightStrong, fontFamilyMono, cubicBezierEaseInOut }, self: { codeTextColor, codeBorderRadius, codeColor, codeBorder, [textColorKey]: textColor } } = themeRef.value;
+                return {
+                    '--n-bezier': cubicBezierEaseInOut,
+                    '--n-text-color': textColor,
+                    '--n-font-weight-strong': fontWeightStrong,
+                    '--n-font-famliy-mono': fontFamilyMono,
+                    '--n-code-border-radius': codeBorderRadius,
+                    '--n-code-text-color': codeTextColor,
+                    '--n-code-color': codeColor,
+                    '--n-code-border': codeBorder
+                };
+            })
+        };
+    },
+    render() {
+        var _a, _b;
+        const { mergedClsPrefix } = this;
+        const textClass = [
+            `${mergedClsPrefix}-text`,
+            {
+                [`${mergedClsPrefix}-text--code`]: this.code,
+                [`${mergedClsPrefix}-text--delete`]: this.delete,
+                [`${mergedClsPrefix}-text--strong`]: this.strong,
+                [`${mergedClsPrefix}-text--italic`]: this.italic,
+                [`${mergedClsPrefix}-text--underline`]: this.underline
+            }
+        ];
+        const children = (_b = (_a = this.$slots).default) === null || _b === void 0 ? void 0 : _b.call(_a);
+        return this.code ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.h)("code", { class: textClass, style: this.cssVars }, this.delete ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)("del", null, children) : children)) : this.delete ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.h)("del", { class: textClass, style: this.cssVars }, children)) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(this.compitableTag || 'span', { class: textClass, style: this.cssVars }, children));
+    }
+}));
+
+
+/***/ }),
+
 /***/ "./node_modules/naive-ui/es/typography/styles/_common.js":
 /*!***************************************************************!*\
   !*** ./node_modules/naive-ui/es/typography/styles/_common.js ***!
@@ -57454,6 +63193,31 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/naive-ui/es/typography/styles/dark.js":
+/*!************************************************************!*\
+  !*** ./node_modules/naive-ui/es/typography/styles/dark.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/typography/styles/light.js");
+
+
+const typographyDark = {
+    name: 'Typography',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    self: _light__WEBPACK_IMPORTED_MODULE_1__.self
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (typographyDark);
+
+
+/***/ }),
+
 /***/ "./node_modules/naive-ui/es/typography/styles/light.js":
 /*!*************************************************************!*\
   !*** ./node_modules/naive-ui/es/typography/styles/light.js ***!
@@ -57480,6 +63244,106 @@ const typographyLight = {
     self
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (typographyLight);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/upload/styles/dark.js":
+/*!********************************************************!*\
+  !*** ./node_modules/naive-ui/es/upload/styles/dark.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/dark.js");
+/* harmony import */ var _progress_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../progress/styles */ "./node_modules/naive-ui/es/progress/styles/dark.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/dark.js");
+/* harmony import */ var _light__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./light */ "./node_modules/naive-ui/es/upload/styles/light.js");
+
+
+
+
+
+const uploadDark = {
+    name: 'Upload',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_0__["default"],
+    peers: {
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_1__["default"],
+        Progress: _progress_styles__WEBPACK_IMPORTED_MODULE_2__["default"]
+    },
+    self(vars) {
+        const { errorColor } = vars;
+        const commonSelf = (0,_light__WEBPACK_IMPORTED_MODULE_3__.self)(vars);
+        commonSelf.itemColorHoverError = (0,seemly__WEBPACK_IMPORTED_MODULE_4__.changeColor)(errorColor, {
+            alpha: 0.09
+        });
+        return commonSelf;
+    }
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (uploadDark);
+
+
+/***/ }),
+
+/***/ "./node_modules/naive-ui/es/upload/styles/light.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/naive-ui/es/upload/styles/light.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "self": () => (/* binding */ self),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var seemly__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! seemly */ "./node_modules/seemly/es/color/index.js");
+/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../button/styles */ "./node_modules/naive-ui/es/button/styles/light.js");
+/* harmony import */ var _progress_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../progress/styles */ "./node_modules/naive-ui/es/progress/styles/light.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../_styles/common */ "./node_modules/naive-ui/es/_styles/common/light.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../_mixins */ "./node_modules/naive-ui/es/_mixins/use-theme.js");
+
+
+
+
+
+const self = (vars) => {
+    const { iconColor, primaryColor, errorColor, textColor2, successColor, opacityDisabled, actionColor, borderColor, hoverColor, lineHeight, borderRadius, fontSize } = vars;
+    return {
+        fontSize,
+        lineHeight,
+        borderRadius,
+        draggerColor: actionColor,
+        draggerBorder: `1px dashed ${borderColor}`,
+        draggerBorderHover: `1px dashed ${primaryColor}`,
+        itemColorHover: hoverColor,
+        itemColorHoverError: (0,seemly__WEBPACK_IMPORTED_MODULE_0__.changeColor)(errorColor, {
+            alpha: 0.06
+        }),
+        itemTextColor: textColor2,
+        itemTextColorError: errorColor,
+        itemTextColorSuccess: successColor,
+        itemIconColor: iconColor,
+        itemDisabledOpacity: opacityDisabled,
+        itemBorderImageCardError: `1px solid ${errorColor}`,
+        itemBorderImageCard: `1px solid ${borderColor}`
+    };
+};
+const uploadLight = (0,_mixins__WEBPACK_IMPORTED_MODULE_1__.createTheme)({
+    name: 'Upload',
+    common: _styles_common__WEBPACK_IMPORTED_MODULE_2__["default"],
+    peers: {
+        Button: _button_styles__WEBPACK_IMPORTED_MODULE_3__["default"],
+        Progress: _progress_styles__WEBPACK_IMPORTED_MODULE_4__["default"]
+    },
+    self
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (uploadLight);
 
 
 /***/ }),
