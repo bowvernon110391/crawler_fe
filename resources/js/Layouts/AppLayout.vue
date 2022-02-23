@@ -18,11 +18,16 @@
                 @collapse="menuCollapsed = true"
                 @expand="menuCollapsed = false"
             >
+                <div v-if="!menuCollapsed">
+                    <!-- app badge here -->
+                    <AppBadge/>
+                </div>
                 <n-menu
                     :collapsed-width="64"
                     :collapsed-icon-size="22"
                     :options="appMenu"
                     :collapsed="menuCollapsed"
+                    accordion
                 />
             </n-layout-sider>
 
@@ -34,10 +39,15 @@
                 placement="left"
             >
                 <n-drawer-content body-content-style="padding:0;">
+                    <!-- Put badge too? -->
+                    <div>
+                        <AppBadge/>
+                    </div>
                     <!-- the menu on drawer. close drawer on select -->
                     <n-menu
                         :options="appMenu"
                         @update:value="handleDrawerMenuClick"
+                        accordion
                     />
                 </n-drawer-content>
             </n-drawer>
@@ -66,7 +76,7 @@
                         <n-popover
                             trigger="click"
                             placement="bottom-end"
-                            style="padding: 0; margin-right: var(--default-margin);"
+                            style="padding: 0; margin-right: var(--default-margin, 0.5rem);"
                         >
                             <!-- the trigger -->
                             <template #trigger>
@@ -149,6 +159,7 @@ import { useScreen } from '../Composables/screen'
 import { useMenu } from '../Composables/menu'
 
 import Breadcrumbs from '../Components/Breadcrumbs.vue'
+import AppBadge from '../Components/AppBadge.vue'
 
 import {
     MenuSharp
@@ -157,7 +168,8 @@ import {
 export default {
     components: {
         Breadcrumbs,
-        MenuSharp
+        MenuSharp,
+        AppBadge
     },
     setup() {
 
@@ -172,13 +184,15 @@ export default {
             menuCollapsed.value = !menuCollapsed.value
         }
 
+        // console.log('image', app_icon)
+
         return {
             isMobile,
             menuCollapsed,
             appMenu, 
             userMenu,
             theme,
-            handleDrawerMenuClick
+            handleDrawerMenuClick,
         }
     },
 };
@@ -215,5 +229,19 @@ export default {
 .flexed {
     display: flex;
     align-items: center;
+}
+</style>
+
+<style scoped>
+.n-layout-sider {
+    /* --n-text-color: rgba(255, 255, 255, 0.82), */
+
+    /* background-color: rgb(10, 10, 50); */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#27272f+0,0a0a14+100 */
+    background: rgb(39,39,47); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(39,39,47,1) 0%, rgba(10,10,20,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(39,39,47,1) 0%,rgba(10,10,20,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(39,39,47,1) 0%,rgba(10,10,20,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27272f', endColorstr='#0a0a14',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 </style>
