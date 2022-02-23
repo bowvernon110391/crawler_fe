@@ -10,7 +10,9 @@
 </head>
 
 <body>
-    @inertia
+    <main>
+        @inertia
+    </main>
 </body>
 
 </html>

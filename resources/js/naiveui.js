@@ -3,7 +3,7 @@
 import 'vfonts/FiraCode.css'
 
 // vue helper
-import { h, resolveComponent } from 'vue'
+import { h } from 'vue'
 
 // initialize naive ui shit?
 import {
@@ -11,13 +11,15 @@ import {
     // components
     NButton, NSpace, NDivider, NLayout, NLayoutSider, NLayoutHeader, NLayoutContent,
     NLayoutFooter, NMenu, NH1, NH2, NH3, NH4, NH5, NH6, NP, NBlockquote, NInput, NInputGroupLabel,
-    NDrawer, NDrawerContent, NAvatar, NConfigProvider, NText, NPopover
+    NDrawer, NDrawerContent, NAvatar, NConfigProvider, NText, NPopover, NCard,
+    NBreadcrumb, NBreadcrumbItem
 } from 'naive-ui'
 
 const components = [
     NButton, NSpace, NDivider, NLayout, NLayoutSider, NLayoutHeader, NLayoutContent,
     NLayoutFooter, NMenu, NH1, NH2, NH3, NH4, NH5, NH6, NP, NBlockquote, NInput, NInputGroupLabel,
-    NDrawer, NDrawerContent, NAvatar, NConfigProvider, NText, NPopover
+    NDrawer, NDrawerContent, NAvatar, NConfigProvider, NText, NPopover, NCard,
+    NBreadcrumb, NBreadcrumbItem
 ]
 
 // Icon utils?
@@ -27,11 +29,11 @@ import {
 
 // icons 
 import {
-    MailOpen, Archive, TrashOutline, Trash, Pencil, Rocket
+    MailOpen, Archive, TrashOutline, Trash, Pencil, Rocket, MenuSharp, ChevronDown, Power
 } from '@vicons/ionicons5'
 
 const icons = [
-    MailOpen, Archive, TrashOutline, Trash, Pencil, Rocket
+    MailOpen, Archive, TrashOutline, Trash, Pencil, Rocket, MenuSharp, ChevronDown, Power
 ]
 
 //========================EXPORTS=====================================================

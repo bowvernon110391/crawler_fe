@@ -2,6 +2,7 @@
 
 namespace App\Exceptions;
 
+use Barryvdh\Debugbar\Facades\Debugbar;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Inertia\Inertia;
 use Throwable;

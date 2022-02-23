@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\SSO\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -33,7 +34,8 @@ Route::get('/', function () {
             "This is the first paragraph. I don't know if it's gonna be rendered just fine",
             "This is the second paragraph. I don't know if it's gonna be rendered just fine",
             "This is the third paragraph. I don't know if it's gonna be rendered just fine"
-        ]
+        ],
+        'user' => User::paginate(10)
     ]);
 });
 

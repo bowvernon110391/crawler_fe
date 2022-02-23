@@ -3,7 +3,6 @@
 namespace App\Providers;
 
 use App\Models\SSO\User;
-use App\Services\Auth\SSOGuard;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -30,6 +29,9 @@ class AuthServiceProvider extends ServiceProvider {
         // if the token is unrecognized, it will not be authenticated
         Auth::viaRequest('sso-token', function (Request $request) {
             $user = User::byToken($request->bearerToken())->first();
+
+            debug('Auth User', $user);
+            
             logger('sso-token: ', [
                 'user' => $user
             ]);
