@@ -54,7 +54,7 @@
         </n-config-provider>
 
         <!-- content goes here -->
-        <n-layout style="height: 100vh">
+        <n-layout style="height: 100vh" class="appbg">
 
             <n-layout-header
                 style="top: 0; position: sticky; z-index: 1;"
@@ -82,7 +82,7 @@
                             <template #trigger>
                                 <div style="padding: 1rem 1rem; display: inline-flex; justify-content: flex-end; align-items: center; cursor: pointer;">
                                     <div style="font-weight: 400; margin-right: var(--default-margin);">
-                                        Bow Vernon
+                                        {{ $page.props.user.nama }}
                                         <Icon>
                                             <ChevronDown />
                                         </Icon>
@@ -108,26 +108,28 @@
                     style="padding: var(--default-margin); border-top: 1px solid var(--n-border-color);"
                     class="flexed"
                 >
-                    <div style="font-size: 1.2rem; font-weight: 500;">
-                        Home Page
-                    </div>
-                    <n-divider vertical />
+                    <template v-if="$page.props.title">
+                        <div style="font-size: 1.2rem; font-weight: 500;">
+                            {{ $page.props.title }}
+                        </div>
+                        <n-divider vertical />
+                    </template>
                     <Breadcrumbs />
                 </div>
             </n-layout-header>
 
             <n-layout-content
                 :style="{
-                    padding: isMobile ? 0 : 'var(--default-margin)'
+                    padding: isMobile ? 0 : 'var(--default-margin)',
+                    background: 'inherit'
                 }"
-                class="appbg"
             >
                 <!-- if mobile, show header+breadcrumb here instead -->
                 <!-- wrap contents in card -->
                 <n-card
                     header-style="padding: var(--default-margin)"
                     :content-style="isMobile ? {
-                        padding: 'var(--default-margin)'
+                        padding: 'var(--default-margin)',
                     } : {}"
                 >
                     <template
@@ -135,8 +137,8 @@
                         v-if="isMobile"
                     >
                         <div style="padding: 0;">
-                            <div style="font-size: 1.2rem; font-weight: 500;">
-                                Home Page
+                            <div style="font-size: 1.2rem; font-weight: 500;" v-if="$page.props.title">
+                                {{ $page.props.title }}
                             </div>
                             <Breadcrumbs />
                         </div>
@@ -166,6 +168,9 @@ import {
 } from '@vicons/ionicons5'
 
 export default {
+    props: {
+    },
+
     components: {
         Breadcrumbs,
         MenuSharp,

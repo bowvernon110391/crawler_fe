@@ -6,8 +6,8 @@
             </Link>
         </n-breadcrumb-item>
         <n-breadcrumb-item>
-            <Link href="/mail/2/boost">
-                <Icon><Archive/></Icon> Boost
+            <Link href="/about">
+                <Icon><Archive/></Icon> About
             </Link>
         </n-breadcrumb-item>
         <n-breadcrumb-item>

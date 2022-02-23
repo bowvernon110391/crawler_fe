@@ -22,18 +22,21 @@ Route::get('/login', function () {
     return Inertia::location(config('sso.login_url'));
 })->name('login');
 
-Route::get('/abuud', function () {
-    return Inertia::render('About');
+Route::get('/about', function () {
+    return Inertia::render('About', [
+        'title' => 'About Crawler'
+    ]);
 })->middleware('auth');
 
 Route::get('/', function () {
     // return view('welcome');
     return Inertia::render('Home', [
-        'title' => 'Hello, welcome to inertia',
+        'title' => 'Homepage',
         'contents' => [
             "This is the first paragraph. I don't know if it's gonna be rendered just fine",
             "This is the second paragraph. I don't know if it's gonna be rendered just fine",
-            "This is the third paragraph. I don't know if it's gonna be rendered just fine"
+            "This is the third paragraph. I don't know if it's gonna be rendered just fine",
+            
         ],
         'user' => User::paginate(10)
     ]);

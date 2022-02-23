@@ -39,11 +39,6 @@ class HandleInertiaRequests extends Middleware
         logger('Inertia: ' . $request->fullUrl());
         return array_merge(parent::share($request), [
             // some shared data
-            'sso' => [
-                'url' => env('SSO_URL'),
-                'broker' => env('SSO_BROKER'),
-                'secret' => env('SSO_SECRET'),
-            ],
             'user' => $request->user(),
             'token' => $request->user()->last_token ?? null
         ]);
