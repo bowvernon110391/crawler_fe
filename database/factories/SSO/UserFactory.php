@@ -24,7 +24,13 @@ class UserFactory extends Factory
             'kantor_id' => $this->faker->postcode,
             'kantor_level' => $this->faker->randomElement(['es2', 'es3', 'propinsi', 'kota_kab']),
             'kode_eselon2' => $this->faker->postcode,
-            'eselon2' => $this->faker->company
+            'eselon2' => $this->faker->company,
+
+            // role string, pick between 3
+            'role' => implode(
+                ',',
+                $this->faker->randomElements(['administrator','user'], $this->faker->numberBetween(1,2))
+            )
         ];
     }
 }

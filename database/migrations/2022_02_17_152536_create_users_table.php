@@ -31,7 +31,7 @@ class CreateUsersTable extends Migration
             $table->string('eselon3')->nullable();
 
             // add role, nullable? nope. must be empty
-            $table->string('role_string')->default('');
+            $table->string('role')->default('');
 
             $table->timestamps();
         });

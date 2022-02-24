@@ -21570,9 +21570,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* TEXT */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
     href: "#",
-    onClick: $setup.goBack,
-    as: "button",
-    type: "button"
+    onClick: $setup.goBack
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_3];
@@ -21581,9 +21579,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     /* STABLE */
 
   }), _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
-    href: "/",
-    as: "button",
-    type: "button"
+    href: "/"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_5];
@@ -21795,10 +21791,10 @@ var useMenu = function useMenu(user) {
   }
 
   var appMenu = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(menuItems);
-  var userMenu = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)([mi_Container('User Management', 'u-1', null, [mi_Url('Profile', 'profile', 'https://intra.siroleg.xyz', _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__["default"]), mi_Divider('div-user'), mi_Link('Logout', 'logout', '/logout', _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  var userMenu = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)([mi_Url('Profile', 'profile', 'https://intra.siroleg.xyz', _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__["default"]), mi_Divider('div-user'), mi_Link('Logout', 'logout', '/logout', _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_4__["default"], {
     as: 'div',
     method: 'post'
-  })])]);
+  })]);
   return {
     appMenu: appMenu,
     userMenu: userMenu

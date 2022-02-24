@@ -38,7 +38,7 @@ Route::get('/', function () {
             "This is the third paragraph. I don't know if it's gonna be rendered just fine",
             
         ],
-        'user' => User::paginate(10)
+        'users' => User::paginate(10)
     ]);
 });
 

@@ -18,6 +18,10 @@ class User extends AuthUser
         'last_token'
     ];
 
+    protected $appends = [
+        'roles'
+    ];
+
     // disable token
     public function disableToken() {
         // make our last_token unusable by adding marker at the beginning?
@@ -31,51 +35,32 @@ class User extends AuthUser
         return $q->where('last_token', $token);
     }
 
-    // helper
+    // attributes
+    public function getRolesAttribute(): array {
+        return array_filter( explode(',', $this->role), fn($e) => $e );
+    }
+
     /**
-     * Update or create new user
+     * check if we have such roles
      */
-    /* {
-        "username": "tri.mulyadi",
-        "id": "2",
-        "group": "beacukai",
-        "status": "enabled",
-        "detil": {
-            "nama": "Tri Mulyadi Wibowo",
-            "nip": "199103112012101001",
-            "pangkat": "Penata Muda - III/a",
-            "kode_eselon2": "005000",
-            "eselon2": "Direktorat P2",
-            "kode_eselon3": null,
-            "eselon3": null,
-            "kantor": "Direktorat P2",
-            "kantor_id": "005000",
-            "kantor_level": "eselon2"
-        },
-        "roleInfo": {
-            "siroleg": [
-                {
-                    "role": "siroleg.administrator",
-                    "role_name": "Administrator",
-                    "name": "siroleg",
-                    "domains": "siroleg.beacukai.go.id",
-                    "description": "Siroleg",
-                    "icon": null
-                }
-            ],
-            "appsmanager": [
-                {
-                    "role": "bc.administrator",
-                    "role_name": "Administrator Beacukai",
-                    "name": "appsmanager",
-                    "domains": "app.siroleg.xyz",
-                    "description": null,
-                    "icon": null
-                }
-            ]
+    public function hasRole($roles, bool $exact = false): bool {
+        // just make sure it's an array
+        if (!is_array($roles)) {
+            $roles = [$roles];
         }
-    } */
+
+        // if we're not doing exact comparison, just return true when any matches found
+        // otherwise the intersection count must be equal to criterions length
+        return count(array_intersect($this->roles, $roles)) > ($exact ? count($roles) : 0);
+    }
+
+    // cache user data from sso
     public static function cacheUserObject($u, string $token): ?User {
+        // build role string
+        $role = $u['roleInfo']['crawler'] ?? [];
+        $role_string = implode(',', array_map(fn($e) => preg_replace('/^crawler\./', '', $e['role']), $role) );
+
+        // then, either update or create new user
         $user = User::updateOrCreate([
             'id' => $u['id'],
         ], [
@@ -92,7 +77,9 @@ class User extends AuthUser
             'kode_eselon2' => $u['detil']['kode_eselon2'],
             'eselon2' => $u['detil']['eselon2'],
             'kode_eselon3' => $u['detil']['kode_eselon3'],
-            'eselon3' => $u['detil']['eselon3']
+            'eselon3' => $u['detil']['eselon3'],
+            // role string as comma separated value, explode in attribute
+            'role' => $role_string
         ]);
 
         return $user;

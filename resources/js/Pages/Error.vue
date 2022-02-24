@@ -32,9 +32,9 @@ const goBack = function() {
         <h1>Error {{ status }}</h1>
         <div>{{ messageText }}</div>
         <div style="margin: 0.5rem auto">
-            <Link href="#" @click="goBack" as="button" type="button">Go Back</Link>
+            <Link href="#" @click="goBack" >Go Back</Link>
             |
-            <Link href="/" as="button" type="button">Go Home</Link>
+            <Link href="/" >Go Home</Link>
         </div>
     </div>
 </template>

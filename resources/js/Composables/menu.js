@@ -108,11 +108,9 @@ export const useMenu = (user) => {
     const appMenu = ref(menuItems);
 
     const userMenu = ref([
-        mi_Container('User Management', 'u-1', null, [
-            mi_Url('Profile', 'profile', 'https://intra.siroleg.xyz', IdCard),
-            mi_Divider('div-user'),
-            mi_Link('Logout', 'logout', '/logout', Power, { as: 'div', method: 'post' })        
-        ])
+        mi_Url('Profile', 'profile', 'https://intra.siroleg.xyz', IdCard),
+        mi_Divider('div-user'),
+        mi_Link('Logout', 'logout', '/logout', Power, { as: 'div', method: 'post' })
     ])
 
     return {
