@@ -73,7 +73,10 @@
                         </Icon>
                     </n-button>
                     <div style="flex-grow: 1; text-align: right;">
+
+                        <!-- Popover for user menu (only if logged in) -->
                         <n-popover
+                            v-if="$page.props.user"
                             trigger="click"
                             placement="bottom-end"
                             style="padding: 0; margin-right: var(--default-margin, 0.5rem);"
@@ -101,6 +104,11 @@
                                 style="min-width: 160px;"
                             />
                         </n-popover>
+
+                        <!-- Login button otherwise -->
+                        <div v-else style="margin: var(--default-margin, 0.5rem);">
+                            <n-button type="info" tertiary @click="gotoLoginPage">Login</n-button>
+                        </div>
                     </div>
                 </div>
                 <div
@@ -154,7 +162,7 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref, toRefs } from 'vue'
 import { darkTheme } from "naive-ui"
 
 import { useScreen } from '../Composables/screen'
@@ -169,6 +177,14 @@ import {
 
 export default {
     props: {
+        sso_login_url: {
+            type: String,
+            default: ''
+        },
+        user: {
+            type: Object,
+            default: null
+        }
     },
 
     components: {
@@ -176,7 +192,7 @@ export default {
         MenuSharp,
         AppBadge
     },
-    setup() {
+    setup(props) {
 
         const { isMobile } = useScreen()
         const menuCollapsed = ref(false)
@@ -189,6 +205,14 @@ export default {
             menuCollapsed.value = !menuCollapsed.value
         }
 
+        const { sso_login_url } = toRefs(props)
+
+        const gotoLoginPage = () => {
+            console.log(`login_url`, sso_login_url.value)
+            if (sso_login_url.value)
+                window.location.href = sso_login_url.value
+        }
+
         // console.log('image', app_icon)
 
         return {
@@ -198,6 +222,7 @@ export default {
             userMenu,
             theme,
             handleDrawerMenuClick,
+            gotoLoginPage
         }
     },
 };

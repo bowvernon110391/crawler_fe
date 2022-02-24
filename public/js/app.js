@@ -20822,13 +20822,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: {},
+  props: {
+    sso_login_url: {
+      type: String,
+      "default": ''
+    },
+    user: {
+      type: Object,
+      "default": null
+    }
+  },
   components: {
     Breadcrumbs: _Components_Breadcrumbs_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
     MenuSharp: _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_5__["default"],
     AppBadge: _Components_AppBadge_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
   },
-  setup: function setup() {
+  setup: function setup(props) {
     var _useScreen = (0,_Composables_screen__WEBPACK_IMPORTED_MODULE_1__.useScreen)(),
         isMobile = _useScreen.isMobile;
 
@@ -20842,6 +20851,14 @@ __webpack_require__.r(__webpack_exports__);
 
     var handleDrawerMenuClick = function handleDrawerMenuClick() {
       menuCollapsed.value = !menuCollapsed.value;
+    };
+
+    var _toRefs = (0,vue__WEBPACK_IMPORTED_MODULE_0__.toRefs)(props),
+        sso_login_url = _toRefs.sso_login_url;
+
+    var gotoLoginPage = function gotoLoginPage() {
+      console.log("login_url", sso_login_url.value);
+      if (sso_login_url.value) window.location.href = sso_login_url.value;
     }; // console.log('image', app_icon)
 
 
@@ -20851,7 +20868,8 @@ __webpack_require__.r(__webpack_exports__);
       appMenu: appMenu,
       userMenu: userMenu,
       theme: theme,
-      handleDrawerMenuClick: handleDrawerMenuClick
+      handleDrawerMenuClick: handleDrawerMenuClick,
+      gotoLoginPage: gotoLoginPage
     };
   }
 });
@@ -21187,6 +21205,14 @@ var _hoisted_5 = {
   }
 };
 var _hoisted_6 = {
+  style: {
+    "margin": "var(--default-margin, 0.5rem)"
+  }
+};
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Login");
+
+var _hoisted_8 = {
   key: 0,
   style: {
     "padding": "var(--default-margin)",
@@ -21194,18 +21220,18 @@ var _hoisted_6 = {
   },
   "class": "flexed"
 };
-var _hoisted_7 = {
+var _hoisted_9 = {
   style: {
     "font-size": "1.2rem",
     "font-weight": "500"
   }
 };
-var _hoisted_8 = {
+var _hoisted_10 = {
   style: {
     "padding": "0"
   }
 };
-var _hoisted_9 = {
+var _hoisted_11 = {
   key: 0,
   style: {
     "font-size": "1.2rem",
@@ -21373,7 +21399,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
                 _: 1
                 /* STABLE */
 
-              })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_popover, {
+              })) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Popover for user menu (only if logged in) "), _ctx.$page.props.user ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_n_popover, {
+                key: 0,
                 trigger: "click",
                 placement: "bottom-end",
                 style: {
@@ -21411,9 +21438,26 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
                 _: 1
                 /* STABLE */
 
-              })])]), !$setup.isMobile ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, [_ctx.$page.props.title ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+              })) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                key: 1
+              }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Login button otherwise "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_button, {
+                type: "info",
+                tertiary: "",
+                onClick: $setup.gotoLoginPage
+              }, {
+                "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+                  return [_hoisted_7];
+                }),
+                _: 1
+                /* STABLE */
+
+              }, 8
+              /* PROPS */
+              , ["onClick"])])], 2112
+              /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
+              ))])]), !$setup.isMobile ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_8, [_ctx.$page.props.title ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
                 key: 0
-              }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$page.props.title), 1
+              }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$page.props.title), 1
               /* TEXT */
               ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_divider, {
                 vertical: ""
@@ -21446,7 +21490,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
               }, [$setup.isMobile ? {
                 name: "header",
                 fn: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-                  return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [_ctx.$page.props.title ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$page.props.title), 1
+                  return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [_ctx.$page.props.title ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$page.props.title), 1
                   /* TEXT */
                   )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Breadcrumbs)])];
                 })

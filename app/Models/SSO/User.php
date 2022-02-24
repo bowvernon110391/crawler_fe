@@ -2,12 +2,14 @@
 
 namespace App\Models\SSO;
 
+use App\Traits\StandardDate;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as AuthUser;
 
 class User extends AuthUser
 {
     use HasFactory;
+    use StandardDate;
 
     protected $guarded = [
         'created_at',
@@ -15,11 +17,15 @@ class User extends AuthUser
     ];
 
     protected $hidden = [
-        'last_token'
+        'last_token',
+        'role'
     ];
 
     protected $appends = [
         'roles'
+    ];
+
+    protected $casts = [
     ];
 
     // disable token

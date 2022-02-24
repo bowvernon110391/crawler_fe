@@ -36,11 +36,11 @@ Route::get('/', function () {
             "This is the first paragraph. I don't know if it's gonna be rendered just fine",
             "This is the second paragraph. I don't know if it's gonna be rendered just fine",
             "This is the third paragraph. I don't know if it's gonna be rendered just fine",
-            
+            Auth::check() ? "You're logged in" : "You're not logged in though"
         ],
         'users' => User::paginate(10)
     ]);
-});
+});//->middleware('auth');
 
 Route::get('/test', function () {
     abort(403);
@@ -48,17 +48,18 @@ Route::get('/test', function () {
 
 Route::post('/logout', function (Request $request, \Jasny\SSO\Broker\Broker $broker) {
     // simply call our broker instance?
-    $broker->request('POST', '/api/logout.php');
+    // $broker->request('POST', '/api/logout.php');
 
-    // make our token unusable
-    $user = $request->user();
-    $user->disableToken();
+    // // make our token unusable
+    // $user = $request->user();
+    // $user->disableToken();
 
-    // log our user out
-    Auth::logout();
+    // // log our user out
+    // Auth::logout();
 
-    // redirect
-    // return redirect('/');
-    // use external redirect to force mounting
-    return Inertia::location(url('/'));
+    // // redirect
+    // // return redirect('/');
+    // // use external redirect to force mounting
+    // return Inertia::location(url('/'));
+    return Inertia::location('https://sso.siroleg.xyz/user/logout');
 })->middleware('auth');

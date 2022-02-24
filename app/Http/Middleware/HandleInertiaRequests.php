@@ -40,7 +40,9 @@ class HandleInertiaRequests extends Middleware
         return array_merge(parent::share($request), [
             // some shared data
             'user' => $request->user(),
-            'token' => $request->user()->last_token ?? null
+            'token' => optional($request->user())->last_token
+        ], $request->user() ? [] : [
+            'sso_login_url' => config('sso.login_url')
         ]);
     }
 }
