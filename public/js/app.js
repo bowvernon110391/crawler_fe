@@ -442,6 +442,45 @@ const _hoisted_3 = [_hoisted_2]
 
 /***/ }),
 
+/***/ "./node_modules/@vicons/ionicons5/es/LockClosed.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@vicons/ionicons5/es/LockClosed.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+const _hoisted_1 = {
+  xmlns: 'http://www.w3.org/2000/svg',
+  'xmlns:xlink': 'http://www.w3.org/1999/xlink',
+  viewBox: '0 0 512 512'
+}
+const _hoisted_2 = /*#__PURE__*/ (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)(
+  'path',
+  {
+    d: 'M368 192h-16v-80a96 96 0 1 0-192 0v80h-16a64.07 64.07 0 0 0-64 64v176a64.07 64.07 0 0 0 64 64h224a64.07 64.07 0 0 0 64-64V256a64.07 64.07 0 0 0-64-64zm-48 0H192v-80a64 64 0 1 1 128 0z',
+    fill: 'currentColor'
+  },
+  null,
+  -1
+  /* HOISTED */
+)
+const _hoisted_3 = [_hoisted_2]
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  name: 'LockClosed',
+  render: function render(_ctx, _cache) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)('svg', _hoisted_1, _hoisted_3)
+  }
+}));
+
+
+/***/ }),
+
 /***/ "./node_modules/@vicons/ionicons5/es/MailOpen.js":
 /*!*******************************************************!*\
   !*** ./node_modules/@vicons/ionicons5/es/MailOpen.js ***!
@@ -20897,14 +20936,40 @@ var traverse = function traverse(menu, fn) {
   }
 };
 
-var useMenu = function useMenu(user) {
-  var menuConfig = (__webpack_require__(/*! ../Configs/menu */ "./resources/js/Configs/menu.js")["default"]); // console.log(`menuConfig`, menuConfig)
+var userCheck = function userCheck(item, user) {
+  console.log("checking item: ", item, "against user roles", user);
+
+  if (item && item.role && user) {
+    var result = user.filter(function (e) {
+      return item.role.includes(e);
+    }).length;
+    console.log('intersection_test', item.role, user, 'result', result); // if resulting intersection contain something, mark as pass
+
+    return result > 0;
+  } // by default, allow it
 
 
-  var appMenu = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(generateMenu(menuConfig)); // console.log(appMenu.value)
+  return true;
+};
 
+var useMenu = function useMenu() {
   var _usePage = (0,_inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_2__.usePage)(),
-      url = _usePage.url;
+      url = _usePage.url,
+      props = _usePage.props; // console.log(`Got User `, user, `is it a ref #${user.id}? `, isRef(user), 'roles? ', user.roles, 'isreadtive?', isReactive(user))
+  // console.log(`username`, user.username, `1st roles? `, user.roles[0], 'roles? ', toRaw( user.roles) )
+
+
+  var menuConfig = (__webpack_require__(/*! ../Configs/menu */ "./resources/js/Configs/menu.js")["default"]); // console.log(`menuConfig`, menuConfig)
+  // const userRef = toRef(user)
+  // const appMenu = computed(()_=> generateMenu( menuConfig, (item) => userCheck(item, userRef.value) ) )
+
+
+  var appMenu = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(function () {
+    console.log('User exist? ', props.value.user);
+    return generateMenu(menuConfig, function (item) {
+      return userCheck(item, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toRaw)(props.value.user.roles));
+    });
+  }); // console.log(appMenu.value) 
 
   var activeItem = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(null);
   var expandedKeys = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)([]);
@@ -20924,7 +20989,12 @@ var useMenu = function useMenu(user) {
     });
     console.log('activeItem', activeItem.value);
     console.log('expandedKeys', expandedKeys.value);
-  });
+  }); // watch user?
+
+  /* watchEffect(() => {
+      console.log(`menu-user`, user.username)
+  }) */
+
   var userMenu = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)([mi_Url('Profile', 'profile', 'https://intra.siroleg.xyz', _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__["default"]), mi_Divider('div-user'), mi_Link('Logout', 'logout', '/logout', _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_4__["default"], {
     as: 'div',
     method: 'post'
@@ -20992,8 +21062,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/IdCard.js");
-/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Power.js");
-/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Archive.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/LockClosed.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Power.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Archive.js");
 // icons to use
  // our menu structure
 
@@ -21003,37 +21074,44 @@ var menus = [// simple item (Link)
   "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_0__["default"],
   "href": "/about",
   "key": "/about"
+}, {
+  "text": "User Privacy",
+  "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_1__["default"],
+  "url": "https://lmgtfy.app?q=shit+take",
+  "key": "user-privacy",
+  "role": ["user"]
 }, // a group, it had to point to base url of a resource, or something 
 // otherwise the auto expand menu won't work
 {
   "text": "Messages",
-  "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_1__["default"],
+  "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_2__["default"],
   "key": "/dummy",
+  "role": ["user", "administrator"],
   "children": [{
     "text": "Info",
     "href": "/dummy/1",
     "key": "/dummy/1",
-    "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_1__["default"]
+    "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_2__["default"]
   }, {
     "text": "Warning",
-    "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_1__["default"],
+    "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_2__["default"],
     "href": "/dummy/2",
     "key": "/dummy/2"
   }, {
     "text": "Success",
-    "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_1__["default"],
+    "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_2__["default"],
     "href": "/dummy/3",
     "key": "/dummy/3"
   }, {
     "text": "Error",
-    "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_1__["default"],
+    "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_2__["default"],
     "href": "/dummy/4",
     "key": "/dummy/4"
   }]
 }, // a link to external site
 {
   "text": "Secret Files",
-  "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_2__["default"],
+  "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__["default"],
   "url": "https://www.google.com?q=bokep",
   "key": "secret-files"
 }];

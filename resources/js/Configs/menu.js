@@ -2,7 +2,8 @@
 import {
     IdCard,
     Power,
-    Archive
+    Archive,
+    LockClosed
 } from '@vicons/ionicons5'
 
 
@@ -13,7 +14,14 @@ const menus = [
         "text": "About Page",
         "icon": IdCard,
         "href": "/about",
-        "key": "/about"
+        "key": "/about",
+    },
+    {
+        "text": "User Privacy",
+        "icon": LockClosed,
+        "url": "https://lmgtfy.app?q=shit+take",
+        "key": "user-privacy",
+        "role": [ "user" ]
     },
     // a group, it had to point to base url of a resource, or something 
     // otherwise the auto expand menu won't work
@@ -21,6 +29,7 @@ const menus = [
         "text": "Messages",
         "icon":Power,
         "key": "/dummy",
+        "role": ["user", "administrator"],
         "children": [
             {
                 "text": "Info",
@@ -32,7 +41,7 @@ const menus = [
                 "text": "Warning",
                 "icon": Power,
                 "href": "/dummy/2",
-                "key": "/dummy/2"
+                "key": "/dummy/2",
             },
             {
                 "text": "Success",

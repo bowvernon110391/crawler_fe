@@ -1,4 +1,4 @@
-import { ref, h, watchEffect } from 'vue';
+import { ref, h, watchEffect, toRef, computed, unref, isRef, isReactive, toRaw } from 'vue';
 import { renderIcon } from '../naiveui'
 import { Link } from '@inertiajs/inertia-vue3'
 import { IdCard, Power } from '@vicons/ionicons5'
@@ -145,16 +145,44 @@ const traverse = (menu, fn) => {
     }
 }
 
-export const useMenu = (user) => {
+const userCheck = (item, user) => {
+    console.log(`checking item: `, item, `against user roles`, user)
+    if (item && item.role && user) {
+        let result = user.filter(e => item.role.includes(e)).length
+        console.log('intersection_test', item.role, user, 'result', result)
+        
+        // if resulting intersection contain something, mark as pass
+        return result > 0
+    }
+    // by default, allow it
+    return true
+}
+
+export const useMenu = () => {
+    const { 
+        url, 
+        props
+    } = usePage()
+    // console.log(`Got User `, user, `is it a ref #${user.id}? `, isRef(user), 'roles? ', user.roles, 'isreadtive?', isReactive(user))
+    // console.log(`username`, user.username, `1st roles? `, user.roles[0], 'roles? ', toRaw( user.roles) )
+
     let menuConfig = require('../Configs/menu').default
     // console.log(`menuConfig`, menuConfig)
+    // const userRef = toRef(user)
 
-    const appMenu = ref(
-        generateMenu(menuConfig)
-    )
-    // console.log(appMenu.value)
+    // const appMenu = computed(()_=> generateMenu( menuConfig, (item) => userCheck(item, userRef.value) ) )
+    const appMenu = computed(() => {
+        console.log('User exist? ', props.value.user)
+        return generateMenu(
+            menuConfig, 
+            item => userCheck(
+                item, 
+                toRaw(props.value.user.roles)
+            )
+        )
+    })
+    // console.log(appMenu.value) 
     
-    const { url } = usePage()
 
     const activeItem = ref(null)
     const expandedKeys = ref([])
@@ -179,6 +207,11 @@ export const useMenu = (user) => {
         console.log('activeItem', activeItem.value)
         console.log('expandedKeys', expandedKeys.value)
     })
+
+    // watch user?
+    /* watchEffect(() => {
+        console.log(`menu-user`, user.username)
+    }) */
 
     const userMenu = ref([
         mi_Url('Profile', 'profile', 'https://intra.siroleg.xyz', IdCard),
