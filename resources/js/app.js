@@ -5,7 +5,7 @@ import { createInertiaApp } from '@inertiajs/inertia-vue3'
 import { InertiaProgress } from '@inertiajs/progress'
 
 // import naive ui components
-import { naiveUiSetup, iconPlugin } from './naiveui'
+import { naiveUiSetup } from './naiveui'
 // some nav components
 import { Link, Head } from '@inertiajs/inertia-vue3'
 // default layout
@@ -47,7 +47,6 @@ createInertiaApp({
         // register plugins
             .use(plugin)
             .use(naiveUiSetup)
-            .use(iconPlugin)
             .mount(el);
     }
 });

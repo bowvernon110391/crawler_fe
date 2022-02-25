@@ -2,17 +2,17 @@
     <n-breadcrumb>
         <n-breadcrumb-item>
             <Link href="/mail/2">
-                <Icon><MailOpen/></Icon> Identity
+                <NIcon><MailOpen/></NIcon> Identity
             </Link>
         </n-breadcrumb-item>
         <n-breadcrumb-item>
             <Link href="/about">
-                <Icon><Archive/></Icon> About
+                <NIcon><Archive/></NIcon> About
             </Link>
         </n-breadcrumb-item>
         <n-breadcrumb-item>
             <Link href="#">
-                <Icon><Pencil/></Icon> Boost
+                <NIcon><Pencil/></NIcon> Boost
             </Link>
         </n-breadcrumb-item>
     </n-breadcrumb>
@@ -20,11 +20,13 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Link } from '@inertiajs/inertia-vue3'
+import {
+    MailOpen, Archive, Pencil
+} from '@vicons/ionicons5'
 
 export default defineComponent({
     components: {
-        Link
+        MailOpen, Archive, Pencil
     },
     setup() {
         

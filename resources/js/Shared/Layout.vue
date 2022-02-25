@@ -87,7 +87,7 @@ import { ref, toRefs, watchEffect } from "vue";
 import { useScreen } from "../Composables/screen";
 import { useMenu } from "../Composables/menu";
 
-import Breadcrumbs from "../Components/Breadcrumbs.vue";
+import Breadcrumbs from "./Breadcrumbs.vue";
 import Menu from "./Menu.vue";
 import NavBar from "./NavBar.vue";
 

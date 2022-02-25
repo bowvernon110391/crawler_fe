@@ -1,10 +1,7 @@
 import { ref, h } from 'vue';
 import { renderIcon } from '../naiveui'
 import { Link } from '@inertiajs/inertia-vue3'
-import {
-    IdCard,
-    Power
-} from '@vicons/ionicons5'
+import { IdCard, Power } from '@vicons/ionicons5'
 
 /**
  * 
