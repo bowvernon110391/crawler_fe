@@ -10,6 +10,8 @@
             :menu="appMenu"
             :handleDrawerMenuClick="handleDrawerMenuClick"
             @menu-toggle="(e) => menuCollapsed = e"
+            :activeItem="activeItem"
+            :expandedKeys="expandedKeys"
         />
 
         <!-- content goes here -->
@@ -125,7 +127,7 @@ export default {
         const { isMobile } = useScreen();
         const menuCollapsed = ref(false);
 
-        const { appMenu, userMenu } = useMenu();
+        const { appMenu, userMenu, activeItem, expandedKeys } = useMenu();
 
         const handleDrawerMenuClick = () => {
             menuCollapsed.value = !menuCollapsed.value;
@@ -153,6 +155,8 @@ export default {
             menuCollapsed,
             appMenu,
             userMenu,
+            activeItem,
+            expandedKeys,
 
             handleDrawerMenuClick,
             gotoLoginPage,

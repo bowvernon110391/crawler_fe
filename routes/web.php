@@ -46,7 +46,7 @@ Route::get('/dummy/{id}', function ($id) {
     ];
 
     return Inertia::render('Dummy', [
-        'id' => $id
+        'id' => (int) $id
     ])
     ->with([
         'message' => "Dummy #{$id} is checked",

@@ -19979,7 +19979,9 @@ __webpack_require__.r(__webpack_exports__);
 
     var _useMenu = (0,_Composables_menu__WEBPACK_IMPORTED_MODULE_2__.useMenu)(),
         appMenu = _useMenu.appMenu,
-        userMenu = _useMenu.userMenu;
+        userMenu = _useMenu.userMenu,
+        activeItem = _useMenu.activeItem,
+        expandedKeys = _useMenu.expandedKeys;
 
     var handleDrawerMenuClick = function handleDrawerMenuClick() {
       menuCollapsed.value = !menuCollapsed.value;
@@ -20007,6 +20009,8 @@ __webpack_require__.r(__webpack_exports__);
       menuCollapsed: menuCollapsed,
       appMenu: appMenu,
       userMenu: userMenu,
+      activeItem: activeItem,
+      expandedKeys: expandedKeys,
       handleDrawerMenuClick: handleDrawerMenuClick,
       gotoLoginPage: gotoLoginPage
     };
@@ -20037,17 +20041,26 @@ __webpack_require__.r(__webpack_exports__);
     handleDrawerMenuClick: Function,
     isMobile: Boolean,
     menuCollapsed: Boolean,
-    menu: Array
+    menu: Array,
+    activeItem: String,
+    expandedKeys: Array
   },
   setup: function setup(__props, _ref) {
     var expose = _ref.expose;
     expose();
     var props = __props; // theme
 
-    var theme = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(naive_ui__WEBPACK_IMPORTED_MODULE_2__.darkTheme);
+    var theme = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(naive_ui__WEBPACK_IMPORTED_MODULE_2__.darkTheme); // for the expanded keys, just copy and manage it ourselves
+
+    var localKeys = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(props.expandedKeys); // gotta watch props then
+
+    (0,vue__WEBPACK_IMPORTED_MODULE_0__.watchEffect)(function () {
+      localKeys.value = props.expandedKeys;
+    });
     var __returned__ = {
       props: props,
       theme: theme,
+      localKeys: localKeys,
       darkTheme: naive_ui__WEBPACK_IMPORTED_MODULE_2__.darkTheme,
       ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref,
       watchEffect: vue__WEBPACK_IMPORTED_MODULE_0__.watchEffect,
@@ -20340,10 +20353,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         handleDrawerMenuClick: $setup.handleDrawerMenuClick,
         onMenuToggle: _cache[0] || (_cache[0] = function (e) {
           return $setup.menuCollapsed = e;
-        })
+        }),
+        activeItem: $setup.activeItem,
+        expandedKeys: $setup.expandedKeys
       }, null, 8
       /* PROPS */
-      , ["menuCollapsed", "isMobile", "menu", "handleDrawerMenuClick"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" content goes here "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_layout, {
+      , ["menuCollapsed", "isMobile", "menu", "handleDrawerMenuClick", "activeItem", "expandedKeys"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" content goes here "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_layout, {
         style: {
           "height": "100vh"
         },
@@ -20476,10 +20491,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         },
         "show-trigger": !$props.isMobile,
         collapsed: $props.menuCollapsed,
-        onCollapse: _cache[0] || (_cache[0] = function ($event) {
+        onCollapse: _cache[1] || (_cache[1] = function ($event) {
           return _ctx.$emit('menu-toggle', true);
         }),
-        onExpand: _cache[1] || (_cache[1] = function ($event) {
+        onExpand: _cache[2] || (_cache[2] = function ($event) {
           return _ctx.$emit('menu-toggle', false);
         })
       }, {
@@ -20489,10 +20504,15 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
             "collapsed-icon-size": 22,
             options: $props.menu,
             collapsed: $props.menuCollapsed,
-            accordion: ""
+            accordion: "",
+            value: $props.activeItem,
+            "expanded-keys": $setup.localKeys,
+            "onUpdate:expanded-keys": _cache[0] || (_cache[0] = function ($event) {
+              return $setup.localKeys = $event;
+            })
           }, null, 8
           /* PROPS */
-          , ["options", "collapsed"])];
+          , ["options", "collapsed", "value", "expanded-keys"])];
         }),
         _: 1
         /* STABLE */
@@ -20502,7 +20522,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       , ["show-trigger", "collapsed"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" otherwise? use drawer :) "), $props.isMobile ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_n_drawer, {
         key: 1,
         show: $props.menuCollapsed,
-        "onUpdate:show": _cache[2] || (_cache[2] = function (e) {
+        "onUpdate:show": _cache[4] || (_cache[4] = function (e) {
           return $props.handleDrawerMenuClick(e);
         }),
         width: 240,
@@ -20516,10 +20536,15 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
               return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Put badge too? "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["AppBadge"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" the menu on drawer. close drawer on select "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_menu, {
                 options: $props.menu,
                 "onUpdate:value": $props.handleDrawerMenuClick,
-                accordion: ""
+                accordion: "",
+                value: $props.activeItem,
+                "expanded-keys": $setup.localKeys,
+                "onUpdate:expanded-keys": _cache[3] || (_cache[3] = function ($event) {
+                  return $setup.localKeys = $event;
+                })
               }, null, 8
               /* PROPS */
-              , ["options", "onUpdate:value"])];
+              , ["options", "onUpdate:value", "value", "expanded-keys"])];
             }),
             _: 1
             /* STABLE */
@@ -20718,6 +20743,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
 /**
  * 
  * @param {String} text teks menu
@@ -20855,20 +20881,59 @@ function mi_Container(text, key, icon, children) {
   };
 }
 
-var useMenu = function useMenu(user) {
-  var menuConfig = (__webpack_require__(/*! ../Configs/menu */ "./resources/js/Configs/menu.js")["default"]);
+var traverse = function traverse(menu, fn) {
+  // root or group
+  if (Array.isArray(menu)) {
+    menu.forEach(function (e) {
+      return traverse(e, fn);
+    });
+    return;
+  }
 
-  console.log("menuConfig", menuConfig);
-  var appMenu = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(generateMenu(menuConfig) // []
-  );
-  console.log(appMenu.value);
+  fn(menu);
+
+  if (menu.children) {
+    traverse(menu.children, fn);
+  }
+};
+
+var useMenu = function useMenu(user) {
+  var menuConfig = (__webpack_require__(/*! ../Configs/menu */ "./resources/js/Configs/menu.js")["default"]); // console.log(`menuConfig`, menuConfig)
+
+
+  var appMenu = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(generateMenu(menuConfig)); // console.log(appMenu.value)
+
+  var _usePage = (0,_inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_2__.usePage)(),
+      url = _usePage.url;
+
+  var activeItem = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(null);
+  var expandedKeys = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)([]);
+  (0,vue__WEBPACK_IMPORTED_MODULE_0__.watchEffect)(function () {
+    // watch url change
+    console.log("Page Url", url.value); // reset data
+
+    activeItem.value = null;
+    expandedKeys.value = []; // ok, search for menu with correct spec
+
+    traverse(menuConfig, function (e) {
+      if (e.href && url.value.startsWith(e.href)) {
+        activeItem.value = e.key;
+      } else if (e.children && url.value.startsWith(e.key)) {
+        expandedKeys.value.push(e.key);
+      }
+    });
+    console.log('activeItem', activeItem.value);
+    console.log('expandedKeys', expandedKeys.value);
+  });
   var userMenu = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)([mi_Url('Profile', 'profile', 'https://intra.siroleg.xyz', _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__["default"]), mi_Divider('div-user'), mi_Link('Logout', 'logout', '/logout', _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_4__["default"], {
     as: 'div',
     method: 'post'
   })]);
   return {
     appMenu: appMenu,
-    userMenu: userMenu
+    userMenu: userMenu,
+    activeItem: activeItem,
+    expandedKeys: expandedKeys
   };
 };
 

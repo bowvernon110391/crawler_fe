@@ -24,6 +24,9 @@
                 :options="menu"
                 :collapsed="menuCollapsed"
                 accordion
+
+                :value="activeItem"
+                v-model:expanded-keys="localKeys"
             />
         </n-layout-sider>
 
@@ -45,6 +48,9 @@
                     :options="menu"
                     @update:value="handleDrawerMenuClick"
                     accordion
+
+                    :value="activeItem"
+                    v-model:expanded-keys="localKeys"
                 />
             </n-drawer-content>
         </n-drawer>
@@ -61,9 +67,19 @@ const props = defineProps({
     isMobile: Boolean,
     menuCollapsed: Boolean,
     menu: Array,
+    activeItem: String,
+    expandedKeys: Array
 })
 
 // theme
 const theme = ref(darkTheme)
+
+// for the expanded keys, just copy and manage it ourselves
+const localKeys = ref(props.expandedKeys)
+
+// gotta watch props then
+watchEffect(() => {
+    localKeys.value = props.expandedKeys
+})
 
 </script>

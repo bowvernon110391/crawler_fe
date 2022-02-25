@@ -1,7 +1,8 @@
-import { ref, h } from 'vue';
+import { ref, h, watchEffect } from 'vue';
 import { renderIcon } from '../naiveui'
 import { Link } from '@inertiajs/inertia-vue3'
 import { IdCard, Power } from '@vicons/ionicons5'
+import { usePage } from '@inertiajs/inertia-vue3'
 
 /**
  * 
@@ -131,17 +132,53 @@ function mi_Container(text, key, icon, children) {
     }
 }
 
+const traverse = (menu, fn) => {
+    // root or group
+    if (Array.isArray(menu)) {
+        menu.forEach(e => traverse(e, fn))
+        return
+    }
+
+    fn(menu)
+    if (menu.children) {
+        traverse(menu.children, fn)
+    }
+}
+
 export const useMenu = (user) => {
     let menuConfig = require('../Configs/menu').default
-
-    console.log(`menuConfig`, menuConfig)
+    // console.log(`menuConfig`, menuConfig)
 
     const appMenu = ref(
         generateMenu(menuConfig)
-        // []
     )
+    // console.log(appMenu.value)
+    
+    const { url } = usePage()
 
-    console.log(appMenu.value)
+    const activeItem = ref(null)
+    const expandedKeys = ref([])
+    
+    watchEffect(() => {
+        // watch url change
+        console.log(`Page Url`, url.value)
+
+        // reset data
+        activeItem.value = null
+        expandedKeys.value = []
+
+        // ok, search for menu with correct spec
+        traverse(menuConfig, (e) => {
+            if (e.href && url.value.startsWith(e.href)) {
+                activeItem.value = e.key
+            } else if (e.children && url.value.startsWith(e.key)) {
+                expandedKeys.value.push(e.key)
+            }
+        })
+
+        console.log('activeItem', activeItem.value)
+        console.log('expandedKeys', expandedKeys.value)
+    })
 
     const userMenu = ref([
         mi_Url('Profile', 'profile', 'https://intra.siroleg.xyz', IdCard),
@@ -151,6 +188,8 @@ export const useMenu = (user) => {
 
     return {
         appMenu,
-        userMenu
+        userMenu,
+        activeItem,
+        expandedKeys
     }
 }
