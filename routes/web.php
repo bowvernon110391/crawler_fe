@@ -17,16 +17,40 @@ use Inertia\Inertia;
 |
 */
 
+// Use setiadi's sso to handle login + logout
 Route::get('/login', function () {
     // simply redirect to sso login url
     return Inertia::location(config('sso.login_url'));
 })->name('login');
 
+// logout only possible if we're auth-ed
+Route::post('/logout', function () {
+    // simply redirect to sso logout url
+    return Inertia::location('https://sso.siroleg.xyz/user/logout');
+})->middleware('auth')->name('logout');
+
+// sample pages
 Route::get('/about', function () {
     return Inertia::render('About', [
         'title' => 'About Crawler'
     ]);
 })->middleware('auth');
+
+Route::get('/dummy/{id}', function ($id) {
+    $type = [
+        2 => 'warning',
+        3 => 'success',
+        4 => 'error',
+    ];
+
+    return Inertia::render('Dummy', [
+        'id' => $id
+    ])
+    ->with([
+        'message' => "Dummy #{$id} is checked",
+        'messageType' => $type[$id] ?? 'info' 
+    ]);
+});
 
 Route::get('/', function () {
     // return view('welcome');
@@ -46,20 +70,3 @@ Route::get('/test', function () {
     abort(403);
 });
 
-Route::post('/logout', function (Request $request, \Jasny\SSO\Broker\Broker $broker) {
-    // simply call our broker instance?
-    // $broker->request('POST', '/api/logout.php');
-
-    // // make our token unusable
-    // $user = $request->user();
-    // $user->disableToken();
-
-    // // log our user out
-    // Auth::logout();
-
-    // // redirect
-    // // return redirect('/');
-    // // use external redirect to force mounting
-    // return Inertia::location(url('/'));
-    return Inertia::location('https://sso.siroleg.xyz/user/logout');
-})->middleware('auth');

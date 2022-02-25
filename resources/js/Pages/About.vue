@@ -10,20 +10,6 @@
     </div>
 </template>
 
-<script>
-import { Link, Head } from '@inertiajs/inertia-vue3'
-import AppLayout from '../Layouts/AppLayout.vue'
-
-export default {
-    components: {
-        Link,
-        Head
-    },
-
-    layout: AppLayout
-};
-</script>
-
 <style scoped>
 .margin-auto {
     margin: 0 1.2rem;

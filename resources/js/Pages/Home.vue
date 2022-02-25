@@ -4,28 +4,19 @@
         <n-p v-for="(c, id) in contents" :key="id">
             {{ c }}
         </n-p>
-        <Link href="http://localhost:8000/about">About Page</Link>
+        <div style="display: flex; justify-content: space-around;">
+            <Link href="/about">About Page</Link>
+            <Link href="/dummy/1">Flash Info</Link>
+            <Link href="/dummy/2">Flash Warning</Link>
+            <Link href="/dummy/3">Flash Success</Link>
+            <Link href="/dummy/4">Flash Error</Link>
+        </div>
     </div>
 </template>
 
-<script>
-import AppLayout from "../Layouts/AppLayout.vue";
-import { Link } from '@inertiajs/inertia-vue3'
-
-export default {
-    components: {
-        AppLayout,
-        Link
-    },
-
-    layout: AppLayout,
-
-    props: {
-        title: String,
-        contents: [Object, Array],
-    },
-
-    setup() {
-    },
-};
+<script setup>
+defineProps({
+    title: String,
+    contents: Array
+})
 </script>

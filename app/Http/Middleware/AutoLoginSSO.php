@@ -45,6 +45,8 @@ class AutoLoginSSO {
             }
             // the mockup user exist. login using that
             Auth::login($user);
+            // log
+            logger('Mock Auth with', [ 'user' => $user ]);
             // continue chain
             return $next($request);
         }

@@ -6,13 +6,40 @@ import { InertiaProgress } from '@inertiajs/progress'
 
 // import naive ui components
 import { naiveUiSetup, iconPlugin } from './naiveui'
+// some nav components
+import { Link, Head } from '@inertiajs/inertia-vue3'
+// default layout
+import Layout from './Shared/Layout'
+import { NMessageProvider } from 'naive-ui';
 
 InertiaProgress.init();
 
 createInertiaApp({
-    resolve: (name) => require(`./Pages/${name}`),
+    resolve: async (name) => {
+        let page = (await import(`./Pages/${name}`)).default
+        
+        // only and only if layout is undefined 
+        // do we inject the default layout
+        if (typeof page.layout === 'undefined') {
+            page.layout = Layout
+        }
+
+        return page
+    },
     setup({ el, app, props, plugin }) {
-        createApp({ render: () => h(app, props) })
+        createApp({ render: () => 
+            h(
+                NMessageProvider,
+                [
+                    h(app, props)
+                ]
+            )
+            // h(app, props) 
+        })
+        // register components
+            .component('Link', Link)
+            .component('Head', Head)
+        // register plugins
             .use(plugin)
             .use(naiveUiSetup)
             .use(iconPlugin)
