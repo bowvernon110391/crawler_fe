@@ -71,6 +71,56 @@ function mi_Group(text, key, icon, children) {
     }
 }
 
+function processItem(json, fnCheck) {
+    // check first, if we can't pass 
+    // return null
+    if (fnCheck && fnCheck(json) === false) {
+        return null
+    }
+
+    // check type
+    if (json.href) {
+        // if it's a simple href
+        return mi_Link(
+            json.text, json.key, json.href, json.icon, json.props
+        )
+    } else if (json.url) {
+        // it's a simple url
+        return mi_Url(
+            json.text, json.key, json.href, json.icon
+        )
+    } else if (json.children) {
+        let children = generateMenu(json.children, fnCheck)
+
+        return mi_Group(
+            json.text, json.key, json.icon, children
+        )
+    }
+
+    return null
+}
+
+/**
+ * 
+ * @param {Array} json 
+ * @param {Function} fnCheck 
+ * @returns 
+ */
+function generateMenu(json, fnCheck) {
+    let items = []
+
+    json.forEach(e => {
+        let item = processItem(e, fnCheck)
+        if (item) {
+            items.push(
+                item
+            )
+        }
+    })
+
+    return items
+}
+
 function mi_Container(text, key, icon, children) {
     return {
         label: text,
@@ -82,27 +132,16 @@ function mi_Container(text, key, icon, children) {
 }
 
 export const useMenu = (user) => {
-    let menuItems = [
-        mi_Link('Edit Profile', 'edit-profile', '/user/2/edit', IdCard),
-        mi_Link('Matikan Service', 'shutdown', '/shutdown', Power)
-    ]
+    let menuConfig = require('../Configs/menu').default
 
-    let tmpItems = []
-    for (var i=0; i<20; i++) {
-        
-        tmpItems.push(
-            mi_Link(`Artikel #${i}`, `article-${i}`, `/article/${i}`, IdCard)
-        )
+    console.log(`menuConfig`, menuConfig)
 
-        if (i % 5 == 4) {
-            menuItems.push(
-                mi_Group(`Batch Items`, `batch-${i}`, Power, tmpItems)
-            )
-            tmpItems = []
-        }
-    }
+    const appMenu = ref(
+        generateMenu(menuConfig)
+        // []
+    )
 
-    const appMenu = ref(menuItems);
+    console.log(appMenu.value)
 
     const userMenu = ref([
         mi_Url('Profile', 'profile', 'https://intra.siroleg.xyz', IdCard),

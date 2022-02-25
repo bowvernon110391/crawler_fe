@@ -20804,6 +20804,47 @@ function mi_Group(text, key, icon, children) {
   };
 }
 
+function processItem(json, fnCheck) {
+  // check first, if we can't pass 
+  // return null
+  if (fnCheck && fnCheck(json) === false) {
+    return null;
+  } // check type
+
+
+  if (json.href) {
+    // if it's a simple href
+    return mi_Link(json.text, json.key, json.href, json.icon, json.props);
+  } else if (json.url) {
+    // it's a simple url
+    return mi_Url(json.text, json.key, json.href, json.icon);
+  } else if (json.children) {
+    var children = generateMenu(json.children, fnCheck);
+    return mi_Group(json.text, json.key, json.icon, children);
+  }
+
+  return null;
+}
+/**
+ * 
+ * @param {Array} json 
+ * @param {Function} fnCheck 
+ * @returns 
+ */
+
+
+function generateMenu(json, fnCheck) {
+  var items = [];
+  json.forEach(function (e) {
+    var item = processItem(e, fnCheck);
+
+    if (item) {
+      items.push(item);
+    }
+  });
+  return items;
+}
+
 function mi_Container(text, key, icon, children) {
   return {
     label: text,
@@ -20815,19 +20856,12 @@ function mi_Container(text, key, icon, children) {
 }
 
 var useMenu = function useMenu(user) {
-  var menuItems = [mi_Link('Edit Profile', 'edit-profile', '/user/2/edit', _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__["default"]), mi_Link('Matikan Service', 'shutdown', '/shutdown', _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_4__["default"])];
-  var tmpItems = [];
+  var menuConfig = (__webpack_require__(/*! ../Configs/menu */ "./resources/js/Configs/menu.js")["default"]);
 
-  for (var i = 0; i < 20; i++) {
-    tmpItems.push(mi_Link("Artikel #".concat(i), "article-".concat(i), "/article/".concat(i), _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__["default"]));
-
-    if (i % 5 == 4) {
-      menuItems.push(mi_Group("Batch Items", "batch-".concat(i), _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_4__["default"], tmpItems));
-      tmpItems = [];
-    }
-  }
-
-  var appMenu = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(menuItems);
+  console.log("menuConfig", menuConfig);
+  var appMenu = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(generateMenu(menuConfig) // []
+  );
+  console.log(appMenu.value);
   var userMenu = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)([mi_Url('Profile', 'profile', 'https://intra.siroleg.xyz', _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__["default"]), mi_Divider('div-user'), mi_Link('Logout', 'logout', '/logout', _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_4__["default"], {
     as: 'div',
     method: 'post'
@@ -20878,6 +20912,67 @@ var useScreen = function useScreen(mobileBreakpoint) {
     isMobile: isMobile
   };
 };
+
+/***/ }),
+
+/***/ "./resources/js/Configs/menu.js":
+/*!**************************************!*\
+  !*** ./resources/js/Configs/menu.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/IdCard.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Power.js");
+/* harmony import */ var _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @vicons/ionicons5 */ "./node_modules/@vicons/ionicons5/es/Archive.js");
+// icons to use
+ // our menu structure
+
+var menus = [// simple item (Link)
+{
+  "text": "About Page",
+  "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_0__["default"],
+  "href": "/about",
+  "key": "/about"
+}, // a group, it had to point to base url of a resource, or something 
+// otherwise the auto expand menu won't work
+{
+  "text": "Messages",
+  "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_1__["default"],
+  "key": "/dummy",
+  "children": [{
+    "text": "Info",
+    "href": "/dummy/1",
+    "key": "/dummy/1",
+    "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_1__["default"]
+  }, {
+    "text": "Warning",
+    "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_1__["default"],
+    "href": "/dummy/2",
+    "key": "/dummy/2"
+  }, {
+    "text": "Success",
+    "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_1__["default"],
+    "href": "/dummy/3",
+    "key": "/dummy/3"
+  }, {
+    "text": "Error",
+    "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_1__["default"],
+    "href": "/dummy/4",
+    "key": "/dummy/4"
+  }]
+}, // a link to external site
+{
+  "text": "Secret Files",
+  "icon": _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_2__["default"],
+  "url": "https://www.google.com?q=bokep",
+  "key": "secret-files"
+}];
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menus);
 
 /***/ }),
 
