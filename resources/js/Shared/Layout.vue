@@ -27,6 +27,7 @@
                     @menu-toggle="menuCollapsed = !menuCollapsed"
                     @login="gotoLoginPage"
                     :menu="userMenu"
+                    :isMobile="isMobile"
                 />
 
                 <!-- page title + breadcrumbs -->

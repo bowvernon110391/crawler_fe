@@ -30,7 +30,8 @@
         <!-- otherwise? use drawer :) -->
         <n-drawer
             v-if="isMobile"
-            v-model:show="menuCollapsed"
+            :show="menuCollapsed"
+            @update:show="e => handleDrawerMenuClick(e)"
             :width="240"
             placement="left"
         >
@@ -41,7 +42,7 @@
                 </div>
                 <!-- the menu on drawer. close drawer on select -->
                 <n-menu
-                    :options="appMenu"
+                    :options="menu"
                     @update:value="handleDrawerMenuClick"
                     accordion
                 />
@@ -52,10 +53,10 @@
 
 <script setup>
 import { darkTheme } from "naive-ui"
-import { ref } from "vue"
-import AppBadge from '../Components/AppBadge.vue'
+import { ref, watchEffect } from "vue"
+import AppBadge from './AppBadge.vue'
 
-defineProps({
+const props = defineProps({
     handleDrawerMenuClick: Function,
     isMobile: Boolean,
     menuCollapsed: Boolean,

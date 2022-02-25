@@ -8,9 +8,9 @@
             tertiary
             style="margin: var(--default-margin)"
         >
-            <Icon>
+            <NIcon>
                 <MenuSharp />
-            </Icon>
+            </NIcon>
         </n-button>
         <div style="flex-grow: 1; text-align: right;">
 
@@ -26,9 +26,9 @@
                     <div style="padding: 1rem 1rem; display: inline-flex; justify-content: flex-end; align-items: center; cursor: pointer;">
                         <div style="font-weight: 400; margin-right: var(--default-margin);">
                             {{ $page.props.user.nama }}
-                            <Icon>
+                            <NIcon>
                                 <ChevronDown />
-                            </Icon>
+                            </NIcon>
                         </div>
                         <n-avatar
                             src="https://i.pravatar.cc/48"
@@ -61,7 +61,11 @@
 </template>
 
 <script setup>
+import { MenuSharp, ChevronDown } from '@vicons/ionicons5'
+
 defineProps({
-    menu: Array
+    menu: Array,
+    isMobile: Boolean,
+
 })
 </script>

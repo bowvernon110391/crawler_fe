@@ -35,9 +35,9 @@ createInertiaApp({
             // we wrap our inertia root in NMessageProvider
             h(
                 NMessageProvider,
-                [
-                    h(app, props)
-                ]
+                null, {
+                    default: () => h(app, props)
+                }
             )
             // h(app, props) 
         })
