@@ -15,6 +15,9 @@ import { NMessageProvider } from 'naive-ui';
 InertiaProgress.init();
 
 createInertiaApp({
+    // title resolution
+    title: (title) => title.length > 1 ? `Crawler - ${title}` : 'Crawler',
+    // resolve page by name
     resolve: async (name) => {
         let page = (await import(`./Pages/${name}`)).default
         
@@ -26,8 +29,10 @@ createInertiaApp({
 
         return page
     },
+    // setup
     setup({ el, app, props, plugin }) {
         createApp({ render: () => 
+            // we wrap our inertia root in NMessageProvider
             h(
                 NMessageProvider,
                 [

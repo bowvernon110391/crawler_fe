@@ -21798,6 +21798,11 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 _inertiajs_progress__WEBPACK_IMPORTED_MODULE_3__.InertiaProgress.init();
 (0,_inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_2__.createInertiaApp)({
+  // title resolution
+  title: function title(_title) {
+    return _title.length > 1 ? "Crawler - ".concat(_title) : 'Crawler';
+  },
+  // resolve page by name
   resolve: function () {
     var _resolve = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee(name) {
       var page;
@@ -21833,6 +21838,7 @@ _inertiajs_progress__WEBPACK_IMPORTED_MODULE_3__.InertiaProgress.init();
 
     return resolve;
   }(),
+  // setup
   setup: function setup(_ref) {
     var el = _ref.el,
         app = _ref.app,
@@ -21840,7 +21846,9 @@ _inertiajs_progress__WEBPACK_IMPORTED_MODULE_3__.InertiaProgress.init();
         plugin = _ref.plugin;
     (0,vue__WEBPACK_IMPORTED_MODULE_1__.createApp)({
       render: function render() {
-        return (0,vue__WEBPACK_IMPORTED_MODULE_1__.h)(naive_ui__WEBPACK_IMPORTED_MODULE_6__["default"], [(0,vue__WEBPACK_IMPORTED_MODULE_1__.h)(app, props)]);
+        return (// we wrap our inertia root in NMessageProvider
+          (0,vue__WEBPACK_IMPORTED_MODULE_1__.h)(naive_ui__WEBPACK_IMPORTED_MODULE_6__["default"], [(0,vue__WEBPACK_IMPORTED_MODULE_1__.h)(app, props)])
+        );
       } // h(app, props) 
 
     }) // register components
@@ -78226,7 +78234,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Pages_About_vue":"69742ce024432e37","resources_js_Pages_Dummy_vue":"8731dabfb70ec935","resources_js_Pages_Error_vue":"a2950da5b304f153","resources_js_Pages_Home_vue":"6da7981ef71680c9"}[chunkId] + "";
+/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Pages_About_vue":"69742ce024432e37","resources_js_Pages_Dummy_vue":"8731dabfb70ec935","resources_js_Pages_Error_vue":"a2950da5b304f153","resources_js_Pages_Home_vue":"db060318efe5523a"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	

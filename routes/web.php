@@ -37,6 +37,8 @@ Route::get('/about', function () {
 })->middleware('auth');
 
 Route::get('/dummy/{id}', function ($id) {
+    sleep(random_int(0, 5));
+
     $type = [
         2 => 'warning',
         3 => 'success',

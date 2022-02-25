@@ -1,5 +1,6 @@
 <template>
     <div>
+        <Head title="#"/>
         <n-h1>{{ title }}</n-h1>
         <n-p v-for="(c, id) in contents" :key="id">
             {{ c }}
