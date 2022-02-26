@@ -4,7 +4,7 @@
         <n-h1>About</n-h1>
         <div>
             This is about page, let's go back
-            <Link href="/">Home</Link>
+            <Link href="/" class="btn btn-blue">Home</Link>
         </div>
         <pre>{{ JSON.stringify($page, null, 2) }}</pre>
     </div>
