@@ -20163,6 +20163,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _app_icon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/app_icon.png */ "./resources/assets/app_icon.png");
+
 
 
 var _withScopeId = function _withScopeId(n) {
@@ -20173,7 +20175,7 @@ var _hoisted_1 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "app-badge"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-    src: "/img/app_icon.png",
+    src: _app_icon_png__WEBPACK_IMPORTED_MODULE_1__["default"],
     width: "32",
     style: {
       "margin-right": "0.5rem"
@@ -21443,7 +21445,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.app-badge[data-v-24d35344] {\n\n    color: var(--n-text-color);\n    /* background-color: #fff; */\n    border-bottom: 1px solid var(--n-border-color, rgba(255, 255, 255, 0.09));\n\n    padding: 1rem;\n    font-size: 1.2rem;\n    font-weight: 300;\n\n    display: flex;\n    align-items: center;\n\n    cursor: pointer;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.app-badge[data-v-24d35344] {\n    color: var(--n-text-color);\n    /* background-color: #fff; */\n    border-bottom: 1px solid var(--n-border-color, rgba(255, 255, 255, 0.09));\n\n    padding: 1rem;\n    font-size: 1.2rem;\n    font-weight: 300;\n\n    display: flex;\n    align-items: center;\n\n    cursor: pointer;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -23330,6 +23332,21 @@ function trapOff(name, el, handler, options) {
 }
 
 
+
+/***/ }),
+
+/***/ "./resources/assets/app_icon.png":
+/*!***************************************!*\
+  !*** ./resources/assets/app_icon.png ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/app_icon.png?0cbeefe01b30b8b56b7a2271c6852108");
 
 /***/ }),
 

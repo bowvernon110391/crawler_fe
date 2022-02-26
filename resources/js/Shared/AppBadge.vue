@@ -2,7 +2,7 @@
     <Link href="/" as="div">
         <div class="app-badge">
             <img
-                src="/img/app_icon.png"
+                src="@/app_icon.png"
                 width="32"
                 style="margin-right: 0.5rem;"
             />
@@ -23,7 +23,6 @@ export default {
 
 <style scoped>
 .app-badge {
-
     color: var(--n-text-color);
     /* background-color: #fff; */
     border-bottom: 1px solid var(--n-border-color, rgba(255, 255, 255, 0.09));
