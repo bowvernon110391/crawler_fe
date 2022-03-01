@@ -18,11 +18,13 @@
         <n-layout
             style="height: 100vh"
             class="appbg"
+            scroll-region
         >
 
             <n-layout-header
-                style="top: 0; position: sticky; z-index: 1;"
+                style="top: 0; position: sticky; z-index: 13;"
                 bordered
+                class="shadow-md"
             >
                 <!-- navbar -->
                 <NavBar
@@ -76,6 +78,7 @@
                     </template>
 
                     <!-- default goes here -->
+                    
                     <slot></slot>
 
                 </n-card>

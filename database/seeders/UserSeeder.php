@@ -20,6 +20,6 @@ class UserSeeder extends Seeder
         
         User::factory()->count($numSeed)->create();
 
-        echo "Done Seeding users.\n";
+        // echo "Done Seeding users.\n";
     }
 }

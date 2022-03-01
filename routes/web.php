@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CrawlingJobController;
 use App\Models\SSO\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -70,5 +71,11 @@ Route::get('/', function () {
 
 Route::get('/test', function () {
     abort(403);
+});
+
+// resource controller
+Route::middleware('auth')->group(function() {
+    // crawling jobs
+    Route::resource('jobs', CrawlingJobController::class);
 });
 

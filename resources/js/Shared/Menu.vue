@@ -57,7 +57,7 @@
 
 <script>
 import { darkTheme } from "naive-ui"
-import { ref, watchEffect } from "vue"
+import { defineComponent, ref, watchEffect } from "vue"
 import AppBadge from "./AppBadge.vue"
 
 export default defineComponent({

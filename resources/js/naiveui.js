@@ -12,14 +12,18 @@ import {
     NButton, NSpace, NDivider, NLayout, NLayoutSider, NLayoutHeader, NLayoutContent,
     NLayoutFooter, NMenu, NH1, NH2, NH3, NH4, NH5, NH6, NP, NBlockquote, NInput, NInputGroupLabel,
     NDrawer, NDrawerContent, NAvatar, NConfigProvider, NText, NPopover, NCard,
-    NBreadcrumb, NBreadcrumbItem, NIcon
+    NBreadcrumb, NBreadcrumbItem, NIcon, NTable, NForm, NInputGroup, NDynamicTags, NFormItem, 
+    NFormItemCol, NFormItemGridItem, NFormItemRow, NDataTable, NButtonGroup, NPagination, NAlert,
+    NSwitch, NDatePicker, NSelect
 } from 'naive-ui'
 
 const components = [
     NButton, NSpace, NDivider, NLayout, NLayoutSider, NLayoutHeader, NLayoutContent,
     NLayoutFooter, NMenu, NH1, NH2, NH3, NH4, NH5, NH6, NP, NBlockquote, NInput, NInputGroupLabel,
     NDrawer, NDrawerContent, NAvatar, NConfigProvider, NText, NPopover, NCard,
-    NBreadcrumb, NBreadcrumbItem, NIcon
+    NBreadcrumb, NBreadcrumbItem, NIcon, NTable, NForm, NInputGroup, NDynamicTags, NFormItem, 
+    NFormItemCol, NFormItemGridItem, NFormItemRow, NDataTable, NButtonGroup, NPagination,NAlert,
+    NSwitch, NDatePicker, NSelect
 ]
 
 //========================EXPORTS=====================================================
