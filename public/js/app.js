@@ -19920,13 +19920,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  components: {
-    Link: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.Link
-  }
-});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({}));
 
 /***/ }),
 
@@ -20058,10 +20054,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Shared/Menu.vue?vue&type=script&setup=true&lang=js":
-/*!*****************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Shared/Menu.vue?vue&type=script&setup=true&lang=js ***!
-  \*****************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Shared/Menu.vue?vue&type=script&lang=js":
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Shared/Menu.vue?vue&type=script&lang=js ***!
+  \******************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20075,7 +20071,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (defineComponent({
+  components: {
+    AppBadge: _AppBadge_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
   props: {
     handleDrawerMenuClick: Function,
     isMobile: Boolean,
@@ -20084,11 +20083,8 @@ __webpack_require__.r(__webpack_exports__);
     activeItem: String,
     expandedKeys: Array
   },
-  setup: function setup(__props, _ref) {
-    var expose = _ref.expose;
-    expose();
-    var props = __props; // theme
-
+  setup: function setup(props) {
+    // theme
     var theme = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(naive_ui__WEBPACK_IMPORTED_MODULE_2__.darkTheme); // for the expanded keys, just copy and manage it ourselves
 
     var localKeys = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(props.expandedKeys); // gotta watch props then
@@ -20096,22 +20092,12 @@ __webpack_require__.r(__webpack_exports__);
     (0,vue__WEBPACK_IMPORTED_MODULE_0__.watchEffect)(function () {
       localKeys.value = props.expandedKeys;
     });
-    var __returned__ = {
-      props: props,
+    return {
       theme: theme,
-      localKeys: localKeys,
-      darkTheme: naive_ui__WEBPACK_IMPORTED_MODULE_2__.darkTheme,
-      ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref,
-      watchEffect: vue__WEBPACK_IMPORTED_MODULE_0__.watchEffect,
-      AppBadge: _AppBadge_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+      localKeys: localKeys
     };
-    Object.defineProperty(__returned__, '__isScriptSetup', {
-      enumerable: false,
-      value: true
-    });
-    return __returned__;
   }
-});
+}));
 
 /***/ }),
 
@@ -20506,6 +20492,8 @@ var _hoisted_1 = {
   key: 0
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_AppBadge = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("AppBadge");
+
   var _component_n_menu = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("n-menu");
 
   var _component_n_layout_sider = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("n-layout-sider");
@@ -20517,10 +20505,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_n_config_provider = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("n-config-provider");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" menu goes here "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_config_provider, {
-    theme: $setup.theme
+    theme: _ctx.theme
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [!$props.isMobile ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_n_layout_sider, {
+      return [!_ctx.isMobile ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_n_layout_sider, {
         key: 0,
         bordered: "",
         "collapse-mode": "width",
@@ -20530,8 +20518,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         style: {
           "height": "100vh"
         },
-        "show-trigger": !$props.isMobile,
-        collapsed: $props.menuCollapsed,
+        "show-trigger": !_ctx.isMobile,
+        collapsed: _ctx.menuCollapsed,
         onCollapse: _cache[1] || (_cache[1] = function ($event) {
           return _ctx.$emit('menu-toggle', true);
         }),
@@ -20540,16 +20528,16 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         })
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [!$props.menuCollapsed ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" app badge here "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["AppBadge"])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_menu, {
+          return [!_ctx.menuCollapsed ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" app badge here "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AppBadge)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_menu, {
             "collapsed-width": 64,
             "collapsed-icon-size": 22,
-            options: $props.menu,
-            collapsed: $props.menuCollapsed,
+            options: _ctx.menu,
+            collapsed: _ctx.menuCollapsed,
             accordion: "",
-            value: $props.activeItem,
-            "expanded-keys": $setup.localKeys,
+            value: _ctx.activeItem,
+            "expanded-keys": _ctx.localKeys,
             "onUpdate:expanded-keys": _cache[0] || (_cache[0] = function ($event) {
-              return $setup.localKeys = $event;
+              return _ctx.localKeys = $event;
             })
           }, null, 8
           /* PROPS */
@@ -20560,11 +20548,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
       }, 8
       /* PROPS */
-      , ["show-trigger", "collapsed"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" otherwise? use drawer :) "), $props.isMobile ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_n_drawer, {
+      , ["show-trigger", "collapsed"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" otherwise? use drawer :) "), _ctx.isMobile ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_n_drawer, {
         key: 1,
-        show: $props.menuCollapsed,
+        show: _ctx.menuCollapsed,
         "onUpdate:show": _cache[4] || (_cache[4] = function (e) {
-          return $props.handleDrawerMenuClick(e);
+          return _ctx.handleDrawerMenuClick(e);
         }),
         width: 240,
         placement: "left"
@@ -20574,14 +20562,14 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
             "body-content-style": "padding:0;"
           }, {
             "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-              return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Put badge too? "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["AppBadge"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" the menu on drawer. close drawer on select "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_menu, {
-                options: $props.menu,
-                "onUpdate:value": $props.handleDrawerMenuClick,
+              return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Put badge too? "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AppBadge)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" the menu on drawer. close drawer on select "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_menu, {
+                options: _ctx.menu,
+                "onUpdate:value": _ctx.handleDrawerMenuClick,
                 accordion: "",
-                value: $props.activeItem,
-                "expanded-keys": $setup.localKeys,
+                value: _ctx.activeItem,
+                "expanded-keys": _ctx.localKeys,
                 "onUpdate:expanded-keys": _cache[3] || (_cache[3] = function ($event) {
-                  return $setup.localKeys = $event;
+                  return _ctx.localKeys = $event;
                 })
               }, null, 8
               /* PROPS */
@@ -70793,14 +70781,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Menu_vue_vue_type_template_id_7dbc193b__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Menu.vue?vue&type=template&id=7dbc193b */ "./resources/js/Shared/Menu.vue?vue&type=template&id=7dbc193b");
-/* harmony import */ var _Menu_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Menu.vue?vue&type=script&setup=true&lang=js */ "./resources/js/Shared/Menu.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _Menu_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Menu.vue?vue&type=script&lang=js */ "./resources/js/Shared/Menu.vue?vue&type=script&lang=js");
 /* harmony import */ var _home_bowie_Projects_crawlerfe_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_bowie_Projects_crawlerfe_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Menu_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Menu_vue_vue_type_template_id_7dbc193b__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Shared/Menu.vue"]])
+const __exports__ = /*#__PURE__*/(0,_home_bowie_Projects_crawlerfe_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Menu_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Menu_vue_vue_type_template_id_7dbc193b__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Shared/Menu.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -70885,18 +70873,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Shared/Menu.vue?vue&type=script&setup=true&lang=js":
-/*!*************************************************************************!*\
-  !*** ./resources/js/Shared/Menu.vue?vue&type=script&setup=true&lang=js ***!
-  \*************************************************************************/
+/***/ "./resources/js/Shared/Menu.vue?vue&type=script&lang=js":
+/*!**************************************************************!*\
+  !*** ./resources/js/Shared/Menu.vue?vue&type=script&lang=js ***!
+  \**************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Menu_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Menu_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Menu_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Menu.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Shared/Menu.vue?vue&type=script&setup=true&lang=js");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Menu_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Menu.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Shared/Menu.vue?vue&type=script&lang=js");
  
 
 /***/ }),
@@ -77587,7 +77575,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Pages_About_vue":"e6fb6cb1a36c88c7","resources_js_Pages_Dummy_vue":"053e182440df223f","resources_js_Pages_Error_vue":"a2950da5b304f153","resources_js_Pages_Home_vue":"c63b137951cd6b90"}[chunkId] + "";
+/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Pages_About_vue":"e6fb6cb1a36c88c7","resources_js_Pages_Dummy_vue":"053e182440df223f","resources_js_Pages_Error_vue":"a2950da5b304f153","resources_js_Pages_Home_vue":"dfce39c4f329517a"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	

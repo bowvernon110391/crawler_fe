@@ -12,13 +12,10 @@
 </template>
 
 <script>
-import { Link } from '@inertiajs/inertia-vue3'
+import { defineComponent } from "vue";
 
-export default {
-    components: {
-        Link
-    }
-}
+export default defineComponent({
+})
 </script>
 
 <style scoped>

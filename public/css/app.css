@@ -521,6 +521,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-center {
   justify-content: center;
 }
+.justify-around {
+  justify-content: space-around;
+}
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
 .overflow-hidden {
   overflow: hidden;
 }

@@ -24,7 +24,6 @@
                 :options="menu"
                 :collapsed="menuCollapsed"
                 accordion
-
                 :value="activeItem"
                 v-model:expanded-keys="localKeys"
             />
@@ -48,7 +47,6 @@
                     :options="menu"
                     @update:value="handleDrawerMenuClick"
                     accordion
-
                     :value="activeItem"
                     v-model:expanded-keys="localKeys"
                 />
@@ -57,29 +55,41 @@
     </n-config-provider>
 </template>
 
-<script setup>
+<script>
 import { darkTheme } from "naive-ui"
 import { ref, watchEffect } from "vue"
-import AppBadge from './AppBadge.vue'
+import AppBadge from "./AppBadge.vue"
 
-const props = defineProps({
-    handleDrawerMenuClick: Function,
-    isMobile: Boolean,
-    menuCollapsed: Boolean,
-    menu: Array,
-    activeItem: String,
-    expandedKeys: Array
-})
+export default defineComponent({
+    components: {
+        AppBadge
+    },
 
-// theme
-const theme = ref(darkTheme)
+    props: {
+        handleDrawerMenuClick: Function,
+        isMobile: Boolean,
+        menuCollapsed: Boolean,
+        menu: Array,
+        activeItem: String,
+        expandedKeys: Array
+    },
 
-// for the expanded keys, just copy and manage it ourselves
-const localKeys = ref(props.expandedKeys)
+    setup(props) {
+        // theme
+        const theme = ref(darkTheme)
 
-// gotta watch props then
-watchEffect(() => {
-    localKeys.value = props.expandedKeys
+        // for the expanded keys, just copy and manage it ourselves
+        const localKeys = ref(props.expandedKeys)
+
+        // gotta watch props then
+        watchEffect(() => {
+            localKeys.value = props.expandedKeys
+        })
+
+        return {
+            theme, localKeys
+        }
+    }
 })
 
 </script>
