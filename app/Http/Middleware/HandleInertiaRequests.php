@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use Diglactic\Breadcrumbs\Breadcrumbs;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
 
@@ -37,12 +38,29 @@ class HandleInertiaRequests extends Middleware
     public function share(Request $request): array
     {
         logger('Inertia: ' . $request->fullUrl());
-        return array_merge(parent::share($request), [
-            // some shared data
-            'user' => $request->user(),
-            'token' => optional($request->user())->last_token
-        ], $request->user() ? [] : [
-            'sso_login_url' => config('sso.login_url')
-        ]);
+        return array_merge(
+            // parent data
+            parent::share($request), 
+            // our app shared data
+            [
+                // some shared data
+                'user' => $request->user(),
+                'token' => optional($request->user())->last_token
+            ], 
+            // login url
+            $request->user() ? [] : [
+                'sso_login_url' => config('sso.login_url')
+            ],
+            // route data
+            [
+                'route' => [
+                    'name' => $request->route()->getName(),
+                    'breadcrumbs' => Breadcrumbs::generate(
+                        $request->route()->getName(),
+                        ...$request->route()->parameters()
+                    )
+                ]
+            ]
+        );
     }
 }

@@ -35,7 +35,7 @@ Route::get('/about', function () {
     return Inertia::render('About', [
         'title' => 'About Crawler'
     ]);
-})->middleware('auth');
+})->middleware('auth')->name('about');
 
 Route::get('/dummy/{id}', function ($id) {
     sleep(random_int(0, 5));
@@ -67,7 +67,7 @@ Route::get('/', function () {
         ],
         'users' => User::paginate(10)
     ]);
-});//->middleware('auth');
+})->name('home');//->middleware('auth');
 
 Route::get('/test', function () {
     abort(403);

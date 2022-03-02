@@ -46,7 +46,7 @@
                         </div>
                         <n-divider vertical />
                     </template>
-                    <Breadcrumbs />
+                    <Breadcrumbs :data="$page.props.route.breadcrumbs" />
                 </div>
             </n-layout-header>
 

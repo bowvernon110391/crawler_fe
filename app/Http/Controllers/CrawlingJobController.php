@@ -68,7 +68,13 @@ class CrawlingJobController extends Controller
      */
     public function create()
     {
-        //
+        // let's create some shit?
+        return Inertia::render(
+            'CrawlingJobs/Create',
+            [
+                'title' => 'Create New Job'
+            ]
+        );
     }
 
     /**
