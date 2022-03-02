@@ -5,12 +5,19 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreCrawlingJobRequest;
 use App\Http\Requests\UpdateCrawlingJobRequest;
 use App\Models\CrawlingJob;
+use App\Services\CrawlingJobService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Inertia\Inertia;
 
 class CrawlingJobController extends Controller
 {
+    protected $crawlingJobService;
+
+    public function __construct(CrawlingJobService $svc)
+    {    
+        $this->crawlingJobService = $svc;
+    }
     /**
      * Display a listing of the resource.
      *
@@ -18,41 +25,21 @@ class CrawlingJobController extends Controller
      */
     public function index(Request $request)
     {
+        // grab auth
         $user = $request->user();
 
         // url query
         $q = $request->input('q');
         $page = $request->input('page', 1);
         $number = $request->input('number', 10);
+        $from = $request->input('from');
+        $to = $request->input('to');
 
         // admin mode?
         $admin_mode = $user->hasRole('administrator');
-        $scoped = $request->input('scoped') == 'true';
+        $scoped = $request->input('scoped') == 'true' || !$admin_mode;
 
-        // show some shiet?
-        $query = CrawlingJob::with('user:id,username,nama')
-                ->when($q, function ($qWild) use ($q) {
-                    $qWild->byWildcard($q);
-                })
-                ->when(!$admin_mode || $scoped, function ($qUser) use ($user) {
-                    $qUser->byUserId($user->id);
-                })
-                ->orderBy('updated_at', 'DESC');
-
-        // paginator + url?
-        $paginator = $query
-            ->paginate($number)
-            ->withQueryString();
-
-        // append some data for auth check on frontend
-        $paginator->map(function ($item) use ($user) {
-            $item->can = [
-                'view' => $user->can('view', $item),
-                'edit' => $user->can('update', $item),
-                'delete' => $user->can('delete', $item)
-            ];
-            return $item;
-        });
+        $result = $this->crawlingJobService->queryJobs($q, $from, $to, $user, $scoped, $number);
 
         // dd($request->all());
 
@@ -60,10 +47,13 @@ class CrawlingJobController extends Controller
             'CrawlingJobs/Index',
             [
                 'title' => 'Crawling Jobs',
-                'data' => $paginator,
+                'data' => $result,
 
                 'filter' => [ 
-                    'q' => $q 
+                    'q' => $q,
+                    'from' => $from,
+                    'to' => $to,
+                    'scoped' => $scoped
                 ],
 
                 'adminMode' => $admin_mode
@@ -89,7 +79,7 @@ class CrawlingJobController extends Controller
      */
     public function store(StoreCrawlingJobRequest $request)
     {
-        //
+        // use validated data only
     }
 
     /**

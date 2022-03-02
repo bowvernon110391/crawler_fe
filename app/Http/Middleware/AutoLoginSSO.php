@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use App\Models\SSO\User;
+use App\Services\SSO\UserService;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -17,10 +18,12 @@ use Jasny\SSO\Broker\Broker;
 class AutoLoginSSO {
     // the broker instance
     protected $broker;
+    protected $userService;
 
     // Use dependency injection to get broker...
-    public function __construct(Broker $broker) {
+    public function __construct(Broker $broker, UserService $userService) {
         $this->broker = $broker;
+        $this->userService = $userService;
     }
 
     /**
@@ -92,10 +95,10 @@ class AutoLoginSSO {
             ]);
 
             // cache user + login
-            $userModel = User::cacheUserObject($user, $this->broker->getBearerToken());
+            $userModel = $this->userService->cacheUserObject($user, $this->broker->getBearerToken()); //User::cacheUserObject($user, $this->broker->getBearerToken());
 
             // check user (enabled?)
-            if ($userModel->status == 'enabled') {
+            if ($userModel && $userModel->status == 'enabled') {
                 logger('SSOLogin: LOGGING IN!', [
                     'userModel' => $userModel
                 ]);

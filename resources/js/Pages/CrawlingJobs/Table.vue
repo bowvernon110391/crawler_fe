@@ -6,6 +6,7 @@
                     <th>Name</th>
                     <th>Keywords</th>
                     <th>Author</th>
+                    <th>Created at</th>
                     <th>Status</th>
                     <th></th>
                 </tr>
@@ -19,6 +20,9 @@
                         </td>
                         <td>
                             {{ d.user.nama }}
+                        </td>
+                        <td>
+                            {{ d.created_at }}
                         </td>
                         <td>
                             {{ d.status }}
@@ -67,7 +71,7 @@
 </template>
 
 <script>
-import { Pencil, Eye, Trash } from '@vicons/ionicons5'
+import { Search, Pencil, Eye, Trash } from '@vicons/ionicons5'
 
 export default {
     props: {
@@ -75,7 +79,7 @@ export default {
     },
     setup() {      
         return {
-            Pencil, Eye, Trash
+            Pencil, Eye, Trash, Search
         }
     },
 }

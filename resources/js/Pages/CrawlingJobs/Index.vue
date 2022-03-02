@@ -28,10 +28,10 @@
                     <n-switch v-model:value="scoped" />
                 </n-form-item>
                 <n-form-item>
-                    <n-date-picker value-format="yyyy-MM-dd" type="date" class="w-32" placeholder="Dari Tgl..." clearable/>
+                    <n-date-picker v-model:formatted-value="dateStart" value-format="yyyy-MM-dd" type="date" class="w-32" placeholder="Dari Tgl..." clearable/>
                 </n-form-item>
                 <n-form-item>
-                    <n-date-picker value-format="yyyy-MM-dd" type="date" class="w-32" placeholder="Sampai..." clearable/>
+                    <n-date-picker v-model:formatted-value="dateEnd" value-format="yyyy-MM-dd" type="date" class="w-32" placeholder="Sampai..." clearable/>
                 </n-form-item>
                 <n-form-item>
                     <n-input v-model:value="q" type="text" placeholder="Nama/Keyword/Author..." clearable>
@@ -78,19 +78,27 @@ export default {
         const q = ref(filter.q || '')
         const number = ref(Number(data.per_page) || 10)
         const page = ref(data.current_page || 1)
-        const scoped = ref(false)
+        const scoped = ref(filter.scoped || false)
+        const dateStart = ref(filter.from)
+        const dateEnd = ref(filter.to)
 
         // when page changes
 
-        const onQuery = (q, page, number) => {
+        const onQuery = (q, page, number, scoped, from, to) => {
             console.log("SEARCH: ", q)
             Inertia.get(data.path, {
-                q: q,
-                page: page,
-                number: number,
+                q,
+                page,
+                number,
                 
-                ...scoped.value ? {
+                ...scoped ? {
                     scoped: true
+                }:{},
+                ...from ? {
+                    from
+                }:{},
+                ...to ? {
+                    to
                 }:{}
             },{
                 preserveState: true,
@@ -98,15 +106,14 @@ export default {
             })
         }
         
-        watch([q, number, scoped], debounce(([newQ, newNumber, newScoped], [oldQ, oldNumber, oldScoped]) => {
+        watch([q, number, scoped, dateStart, dateEnd], debounce(() => {
             // reset page number to 1
             page.value = 1
-            onQuery(q.value, page.value, number.value)            
+            onQuery(q.value, page.value, number.value, scoped.value, dateStart.value, dateEnd.value)            
         }, 400))
 
         return {
-            q, number, page,
-            scoped,
+            q, number, page, dateStart, dateEnd,scoped,
             AddCircle, Search
         }
     },

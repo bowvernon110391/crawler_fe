@@ -24,6 +24,8 @@ class CreateCrawlingJobsTable extends Migration
             // status
             // $table->enum('status', ['CREATED', 'PROCESSING', 'DONE']);
             $table->string('status');
+            // is private, default to true
+            $table->boolean('private')->default(true);
             // reference to user?
             $table->foreignIdFor(User::class);
 
