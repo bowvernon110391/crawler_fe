@@ -199,8 +199,18 @@ export const useMenu = () => {
         traverse(menuConfig, (e) => {
             if (e.href && url.value.startsWith(e.href)) {
                 activeItem.value = e.key
-            } else if (e.children && url.value.startsWith(e.key)) {
-                expandedKeys.value.push(e.key)
+            }
+        })
+
+        // double traversal for now BAD!!!!
+        traverse(menuConfig, (e) => {
+            if (e.children) {
+                // filter children?
+                let filtered = e.children.filter(e => activeItem.value == e.key)
+                console.log('filtered: ', filtered)
+                if (filtered.length > 0) {
+                    expandedKeys.value.push(e.key)
+                }
             }
         })
 

@@ -42,7 +42,7 @@ const menus = [
     {
         "text": "Messages",
         "icon":Power,
-        "key": "/dummy",
+        "key": "dummy",
         "role": ["user", "administrator"],
         "children": [
             {
