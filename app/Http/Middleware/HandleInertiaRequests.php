@@ -57,7 +57,7 @@ class HandleInertiaRequests extends Middleware
                     'name' => $request->route()->getName(),
                     'breadcrumbs' => Breadcrumbs::generate(
                         $request->route()->getName(),
-                        ...$request->route()->parameters()
+                        $request->route()->parameters()
                     )
                 ]
             ]

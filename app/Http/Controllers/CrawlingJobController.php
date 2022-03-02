@@ -7,7 +7,6 @@ use App\Http\Requests\UpdateCrawlingJobRequest;
 use App\Models\CrawlingJob;
 use App\Services\CrawlingJobService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Inertia\Inertia;
 
 class CrawlingJobController extends Controller
@@ -94,9 +93,16 @@ class CrawlingJobController extends Controller
      * @param  \App\Models\CrawlingJob  $crawlingJob
      * @return \Illuminate\Http\Response
      */
-    public function show(CrawlingJob $crawlingJob)
+    public function show(CrawlingJob $job)
     {
-        //
+        // dd($job);
+
+        return Inertia::render(
+            'CrawlingJobs/View', [
+                'title' => 'Job: ' . $job->name,
+                'data' => $job
+            ]
+        );
     }
 
     /**
@@ -117,7 +123,7 @@ class CrawlingJobController extends Controller
      * @param  \App\Models\CrawlingJob  $crawlingJob
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateCrawlingJobRequest $request, CrawlingJob $crawlingJob)
+    public function update(UpdateCrawlingJobRequest $request, CrawlingJob $job)
     {
         //
     }
@@ -128,7 +134,7 @@ class CrawlingJobController extends Controller
      * @param  \App\Models\CrawlingJob  $crawlingJob
      * @return \Illuminate\Http\Response
      */
-    public function destroy(CrawlingJob $crawlingJob)
+    public function destroy(CrawlingJob $job)
     {
         //
     }

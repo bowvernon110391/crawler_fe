@@ -146,10 +146,10 @@ const traverse = (menu, fn) => {
 }
 
 const userCheck = (item, user) => {
-    console.log(`checking item: `, item, `against user roles`, user)
+    // console.log(`checking item: `, item, `against user roles`, user)
     if (item && item.role && user) {
         let result = user.filter(e => item.role.includes(e)).length
-        console.log('intersection_test', item.role, user, 'result', result)
+        // console.log('intersection_test', item.role, user, 'result', result)
         
         // if resulting intersection contain something, mark as pass
         return result > 0
@@ -172,7 +172,7 @@ export const useMenu = () => {
 
     // const appMenu = computed(()_=> generateMenu( menuConfig, (item) => userCheck(item, userRef.value) ) )
     const appMenu = computed(() => {
-        console.log('User exist? ', props.value.user)
+        // console.log('User exist? ', props.value.user)
         return generateMenu(
             menuConfig, 
             item => userCheck(
@@ -189,7 +189,7 @@ export const useMenu = () => {
     
     watchEffect(() => {
         // watch url change
-        console.log(`Page Url`, url.value)
+        // console.log(`Page Url`, url.value)
 
         // reset data
         activeItem.value = null
@@ -207,22 +207,17 @@ export const useMenu = () => {
             if (e.children) {
                 // filter children?
                 let filtered = e.children.filter(e => activeItem.value == e.key)
-                console.log('filtered: ', filtered)
+                // console.log('filtered: ', filtered)
                 if (filtered.length > 0) {
                     expandedKeys.value.push(e.key)
                 }
             }
         })
 
-        console.log('activeItem', activeItem.value)
-        console.log('expandedKeys', expandedKeys.value)
+        // console.log('activeItem', activeItem.value)
+        // console.log('expandedKeys', expandedKeys.value)
     })
-
-    // watch user?
-    /* watchEffect(() => {
-        console.log(`menu-user`, user.username)
-    }) */
-
+    
     const userMenu = ref([
         mi_Url('Profile', 'profile', 'https://intra.siroleg.xyz', IdCard),
         mi_Divider('div-user'),

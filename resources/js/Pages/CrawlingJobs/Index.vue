@@ -85,7 +85,7 @@ export default {
         // when page changes
 
         const onQuery = (q, page, number, scoped, from, to) => {
-            console.log("SEARCH: ", q)
+            // console.log("SEARCH: ", q)
             Inertia.get(data.path, {
                 q,
                 page,

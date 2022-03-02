@@ -29,12 +29,12 @@
 <script>
 import { computed, defineComponent } from 'vue'
 import {
-    MailOpen, Archive, Pencil, Home, Search
+    MailOpen, Archive, Pencil, Home, Search, Eye
 } from '@vicons/ionicons5'
 
 export default defineComponent({
     components: {
-        MailOpen, Archive, Pencil
+        MailOpen, Archive, Pencil, Eye
     },
     props: {
         data: Array
@@ -43,11 +43,12 @@ export default defineComponent({
         const iconMap = {
             'home' : Home,
             'pencil' : Pencil,
-            'browse' : Search
+            'browse' : Search,
+            'eye' : Eye
         }
 
         const links = computed(() => {
-            console.log(`breadcrumbs change`, props.data)
+            // console.log(`breadcrumbs change`, props.data)
             // generate new data from data
             return props.data.map(e => ({ 
                 ...e, 

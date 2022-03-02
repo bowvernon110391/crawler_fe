@@ -25,3 +25,12 @@ Breadcrumbs::for('jobs.create', function(Trail $trail) {
         'icon' => 'pencil'
     ]);
 });
+
+// home > browse jobs > view job
+Breadcrumbs::for('jobs.show', function(Trail $trail, $params) {
+    $trail->parent('jobs.index');
+    $trail->push('View Job', route('jobs.show', $params), [
+        'icon' => 'eye'
+    ]);
+});
+

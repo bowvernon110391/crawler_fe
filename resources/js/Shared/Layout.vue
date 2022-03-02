@@ -139,14 +139,14 @@ export default {
         const { sso_login_url } = toRefs(props);
 
         const gotoLoginPage = () => {
-            console.log(`login_url`, sso_login_url.value);
+            // console.log(`login_url`, sso_login_url.value);
             if (sso_login_url.value) window.location.href = sso_login_url.value;
         };
 
         const message = useMessage()
 
         watchEffect(() => {
-            console.log('flash-message: ', props.message)
+            // console.log('flash-message: ', props.message)
             // flash it (if one exists)
             let type = props.messageType ?? 'info'
             if (props.message)

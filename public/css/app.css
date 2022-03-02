@@ -124,6 +124,9 @@
 .w-auto {
     width: auto
 }
+.w-28 {
+    width: 7rem
+}
 .w-32 {
     width: 8rem
 }
@@ -168,6 +171,11 @@
 }
 .gap-y-2 {
     row-gap: 0.5rem
+}
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))
 }
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;

@@ -9,7 +9,7 @@ export const useScreen = (mobileBreakpoint) => {
 
     // track by listener
     function update(e) {
-        console.log('window resize: ', e)
+        // console.log('window resize: ', e)
         width.value = window.innerWidth
         height.value = window.innerHeight
         isMobile.value = width.value <= mobileBreakpoint
