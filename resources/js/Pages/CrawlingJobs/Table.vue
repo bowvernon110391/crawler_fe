@@ -14,7 +14,9 @@
             <tbody>
                 <template v-if="data.data.length">
                     <tr v-for="d in data.data" :key="d.id">
-                        <td>{{ d.name }}</td>
+                        <td>
+                            {{ d.name }}
+                        </td>
                         <td>
                             <n-dynamic-tags :value="d.keywords" disabled type="primary" />
                         </td>

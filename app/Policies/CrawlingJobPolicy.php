@@ -31,8 +31,8 @@ class CrawlingJobPolicy
      */
     public function view(User $user, CrawlingJob $crawlingJob)
     {
-        // if it's an admin or owner
-        return $user->hasRole('administrator') || $crawlingJob->user->id == $user->id;
+        // if it's an admin or owner, or it's not private
+        return $user->hasRole('administrator') || $crawlingJob->user->id == $user->id || !$crawlingJob->private;
     }
 
     /**
