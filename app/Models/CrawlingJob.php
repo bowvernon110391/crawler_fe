@@ -19,8 +19,13 @@ class CrawlingJob extends Model
     const DELIMITER = ';';
 
     // some guarded, and some defaults
-    protected $guarded = [ 'created_at', 'updated_at' ];
+    // protected $guarded = [ 'created_at', 'updated_at' ];
     protected $hidden = [ 'keyword_data' ];
+    protected $fillable = [ 
+        'keywords',
+        'name',
+        'private'
+    ];
 
     protected $attributes = [
         'keyword_data' => ''    // empty by default
@@ -28,6 +33,10 @@ class CrawlingJob extends Model
 
     protected $appends = [
         'keywords'
+    ];
+
+    protected $casts = [
+        'private' => 'boolean'
     ];
 
 
@@ -38,7 +47,11 @@ class CrawlingJob extends Model
 
     // the real attributes as array
     public function getKeywordsAttribute() {
-        return explode(';', $this->keyword_data);
+        return explode(';', $this->attributes['keyword_data']);
+    }
+
+    public function setKeywordsAttribute(array $data) {
+        $this->attributes['keyword_data'] = implode(';', $data);
     }
 
     // local scope

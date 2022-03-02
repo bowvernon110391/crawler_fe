@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateCrawlingJobRequest;
 use App\Models\CrawlingJob;
 use App\Services\CrawlingJobService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 
 class CrawlingJobController extends Controller
@@ -85,6 +86,15 @@ class CrawlingJobController extends Controller
     public function store(StoreCrawlingJobRequest $request)
     {
         // use validated data only
+        // dd($request);
+        $job = CrawlingJob::create(
+            $request->validated()
+        );
+
+        return back()->with([
+            'message' => "Created Job '{$job->name}'",
+            'messageType' => 'success'
+        ]);
     }
 
     /**
@@ -131,7 +141,14 @@ class CrawlingJobController extends Controller
      */
     public function update(UpdateCrawlingJobRequest $request, CrawlingJob $job)
     {
-        //
+        // use validated data only
+        // dd($request->validated());
+        // dd($job);
+        $job->update($request->validated());
+
+        return Redirect::back()->with([
+            'message' => 'Job Saved'
+        ]);
     }
 
     /**

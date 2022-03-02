@@ -31,7 +31,7 @@ createInertiaApp({
     },
     // setup
     setup({ el, app, props, plugin }) {
-        createApp({ render: () => 
+        let vApp = createApp({ render: () => 
             // we wrap our inertia root in NMessageProvider
             h(
                 NMessageProvider,
@@ -41,6 +41,10 @@ createInertiaApp({
             )
             // h(app, props) 
         })
+
+        vApp.config.globalProperties.$route = route
+
+        vApp
         // register components
             .component('Link', Link)
             .component('Head', Head)

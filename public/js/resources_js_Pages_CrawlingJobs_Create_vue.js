@@ -137,27 +137,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       keywords: []
     }, data)); // hold ref to form component
 
-    var formEl = (0,vue__WEBPACK_IMPORTED_MODULE_2__.ref)(null); // client side validation rules
-
-    var rules = {
-      name: {
-        required: true,
-        trigger: ['blur', 'input'],
-        message: "name is required"
-      },
-      keywords: {
-        required: true,
-        trigger: ['blur', 'input'],
-        validator: function validator(item, value) {
-          return value.length > 0;
-        },
-        message: "keywords must NOT be empty"
-      }
-    }; // handle onSubmit
+    var formEl = (0,vue__WEBPACK_IMPORTED_MODULE_2__.ref)(null); // handle onSubmit
 
     var onSubmit = /*#__PURE__*/function () {
       var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee(e) {
-        var url;
+        var url, _url;
+
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -167,24 +152,32 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 return formEl.value.validate();
 
               case 3:
-                // compute url?
-                url = (0,_inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.usePage)().url; // if (createMode) {}
+                if (createMode) {
+                  url = route('jobs.store');
+                  form.post(url);
+                } else {
+                  _url = route('jobs.update', {
+                    job: form.id
+                  });
+                  form.put(_url, {}, {
+                    resetOnSuccess: false
+                  });
+                }
 
-                console.log("url", url.value);
-                _context.next = 10;
+                _context.next = 9;
                 break;
 
-              case 7:
-                _context.prev = 7;
+              case 6:
+                _context.prev = 6;
                 _context.t0 = _context["catch"](0);
                 console.log("errors", _context.t0);
 
-              case 10:
+              case 9:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[0, 7]]);
+        }, _callee, null, [[0, 6]]);
       }));
 
       return function onSubmit(_x) {
@@ -195,7 +188,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     return {
       form: form,
       formEl: formEl,
-      rules: rules,
       Save: _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_3__["default"],
       ArrowUndo: _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_4__["default"],
       Pencil: _vicons_ionicons5__WEBPACK_IMPORTED_MODULE_5__["default"],
@@ -275,7 +267,6 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "label-placement": "left",
     "label-width": "auto",
     "require-mark-placement": "right-hanging",
-    rules: $setup.rules,
     model: $setup.form,
     disabled: $props.readOnly
   }, {
@@ -288,7 +279,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
           return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" name "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_form_item_gi, {
             label: "Name",
             path: "name",
-            span: 2
+            span: 2,
+            validationStatus: $setup.form.errors.name ? 'error' : undefined,
+            feedback: $setup.form.errors.name
           }, {
             "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
               return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_input, {
@@ -304,7 +297,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
             _: 1
             /* STABLE */
 
-          }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" private "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_form_item_gi, {
+          }, 8
+          /* PROPS */
+          , ["validationStatus", "feedback"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" private "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_form_item_gi, {
             label: "Private",
             path: "private",
             span: 4
@@ -352,33 +347,40 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
             key: 0
           }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_button, {
             type: "primary",
-            onClick: $setup.onSubmit
+            onClick: $setup.onSubmit,
+            loading: $setup.form.processing
           }, {
-            "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+            icon: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
               return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_icon, {
                 component: $setup.Save
               }, null, 8
               /* PROPS */
-              , ["component"]), _hoisted_1];
+              , ["component"])];
+            }),
+            "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+              return [_hoisted_1];
             }),
             _: 1
             /* STABLE */
 
           }, 8
           /* PROPS */
-          , ["onClick"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_button, {
+          , ["onClick", "loading"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_button, {
             type: "warning",
             onClick: _cache[3] || (_cache[3] = function () {
               $setup.form.reset();
               $setup.formEl.restoreValidation();
             })
           }, {
-            "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+            icon: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
               return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_n_icon, {
                 component: $setup.ArrowUndo
               }, null, 8
               /* PROPS */
-              , ["component"]), _hoisted_2];
+              , ["component"])];
+            }),
+            "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+              return [_hoisted_2];
             }),
             _: 1
             /* STABLE */
@@ -420,7 +422,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   }, 8
   /* PROPS */
-  , ["rules", "model", "disabled"]);
+  , ["model", "disabled"]);
 }
 
 /***/ }),

@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Diglactic\Breadcrumbs\Breadcrumbs;
+use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
 
@@ -45,7 +46,8 @@ class HandleInertiaRequests extends Middleware
             [
                 // some shared data
                 'user' => $request->user(),
-                'token' => optional($request->user())->last_token
+                'token' => optional($request->user())->last_token,
+                'message' => session('message')
             ], 
             // login url
             $request->user() ? [] : [

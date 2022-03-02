@@ -4,13 +4,16 @@
         label-placement="left"
         label-width="auto"
         require-mark-placement="right-hanging"
-        :rules="rules"
         :model="form"
         :disabled="readOnly"
         >
         <n-grid :cols="4" :x-gap="24">
             <!-- name -->
-            <n-form-item-gi label="Name" path="name" :span="2">
+            <n-form-item-gi 
+                label="Name" 
+                path="name" :span="2" 
+                :validationStatus="form.errors.name ? 'error' : undefined"
+                :feedback="form.errors.name">
                 <n-input type="text" v-model:value="form.name" />
             </n-form-item-gi>
             <!-- private -->
@@ -26,12 +29,16 @@
         <n-space>
             <!-- submit and reset -->
             <template v-if="!readOnly">
-                <n-button type="primary" @click="onSubmit">
-                    <n-icon :component="Save" />
+                <n-button type="primary" @click="onSubmit" :loading="form.processing">
+                    <template #icon>
+                        <n-icon :component="Save" />
+                    </template>
                     Save
                 </n-button>
                 <n-button type="warning" @click="() => { form.reset(); formEl.restoreValidation() }">
-                    <n-icon :component="ArrowUndo" />
+                    <template #icon>
+                        <n-icon :component="ArrowUndo" />
+                    </template>
                     Reset
                 </n-button>
             </template>
@@ -50,7 +57,7 @@
 
 <script>
 import { Save, ArrowUndo, Pencil } from '@vicons/ionicons5'
-import { useForm, usePage } from '@inertiajs/inertia-vue3'
+import { useForm } from '@inertiajs/inertia-vue3'
 import { ref } from 'vue'
 
 export default {
@@ -73,23 +80,6 @@ export default {
         // hold ref to form component
         const formEl = ref(null)
 
-        // client side validation rules
-        const rules = {
-            name: {
-                required: true,
-                trigger: ['blur', 'input'],
-                message: "name is required"
-            },
-            keywords: {
-                required: true,
-                trigger: ['blur', 'input'],
-                validator: (item, value) => {
-                    return value.length > 0
-                },
-                message: "keywords must NOT be empty"
-            }
-        }
-
         // handle onSubmit
         const onSubmit = async (e) => {
             // console.log(`click`, e, `formEl`, formEl)
@@ -97,10 +87,13 @@ export default {
             try {
                 await formEl.value.validate()
                 
-                // compute url?
-                let url = usePage().url
-                // if (createMode) {}
-                console.log(`url`, url.value)
+                if (createMode) {
+                    const url = route('jobs.store')
+                    form.post(url)                    
+                } else {
+                    const url = route('jobs.update', { job: form.id })
+                    form.put(url, {}, { resetOnSuccess: false })
+                }
             } catch (error) {
                 console.log(`errors`, error)
             }
@@ -108,7 +101,6 @@ export default {
 
         return {
             form, formEl,
-            rules,
             Save, ArrowUndo, Pencil,
             onSubmit
         }
