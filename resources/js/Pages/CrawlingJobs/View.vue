@@ -1,12 +1,15 @@
 <template>
-    <div>
-        Data is as shown
-        <pre>{{ data }}</pre>
-    </div>
+    <Form :data="data" :readOnly="true"/>
 </template>
 
 <script>
+
+import Form from '../../Components/CrawlingJobs/Form.vue'
+
 export default {
+    components: {
+        Form
+    },
     props: {
         data: Object
     },

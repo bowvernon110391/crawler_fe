@@ -111,9 +111,15 @@ class CrawlingJobController extends Controller
      * @param  \App\Models\CrawlingJob  $crawlingJob
      * @return \Illuminate\Http\Response
      */
-    public function edit(CrawlingJob $crawlingJob)
+    public function edit(CrawlingJob $job)
     {
-        //
+        // edit job
+        return Inertia::render(
+            'CrawlingJobs/Edit', [
+                'title' => 'Job: ' . $job->name,
+                'data' => $job
+            ]
+        );
     }
 
     /**

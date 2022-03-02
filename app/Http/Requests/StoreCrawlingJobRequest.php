@@ -26,7 +26,8 @@ class StoreCrawlingJobRequest extends FormRequest
         return [
             // some rules inbound
             'name' => 'required|min:3',
-            'keywords' => 'required|array|min:1'
+            'keywords' => 'required|array|min:1',
+            'private' => 'required|boolean'
         ];
     }
 }

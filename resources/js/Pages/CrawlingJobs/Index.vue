@@ -7,7 +7,7 @@
                 <n-form-item>
                     <Link href="jobs/create">
                         <n-button type="primary">
-                            <n-icon :size="24" :component="AddCircle"/>
+                            <n-icon :component="Add"/>
                             Create Job
                         </n-button> 
                     </Link>
@@ -58,9 +58,9 @@
 import { ref, watch } from 'vue'
 import { Inertia } from '@inertiajs/inertia'
 import debounce from 'lodash/debounce'
-import { AddCircle, Search } from '@vicons/ionicons5'
+import { Add, AddCircle, Search } from '@vicons/ionicons5'
 import Pagination from '../../Shared/Pagination.vue'
-import Table from './Table.vue'
+import Table from '../../Components/CrawlingJobs/Table.vue'
 
 export default {
     components: {
@@ -114,7 +114,7 @@ export default {
 
         return {
             q, number, page, dateStart, dateEnd,scoped,
-            AddCircle, Search
+            AddCircle, Search, Add
         }
     },
 }

@@ -26,7 +26,8 @@ class UpdateCrawlingJobRequest extends FormRequest
         return [
             // same as storing
             'name' => 'required|min:3',
-            'keywords' => 'required|array|min:1'
+            'keywords' => 'required|array|min:1',
+            'private' => 'required|boolean'
         ];
     }
 }

@@ -14,7 +14,7 @@ import {
     NDrawer, NDrawerContent, NAvatar, NConfigProvider, NText, NPopover, NCard,
     NBreadcrumb, NBreadcrumbItem, NIcon, NTable, NForm, NInputGroup, NDynamicTags, NFormItem, 
     NFormItemCol, NFormItemGridItem, NFormItemRow, NDataTable, NButtonGroup, NPagination, NAlert,
-    NSwitch, NDatePicker, NSelect, NBadge
+    NSwitch, NDatePicker, NSelect, NBadge, NGrid, NFormItemGi, NGridItem
 } from 'naive-ui'
 
 const components = [
@@ -23,7 +23,7 @@ const components = [
     NDrawer, NDrawerContent, NAvatar, NConfigProvider, NText, NPopover, NCard,
     NBreadcrumb, NBreadcrumbItem, NIcon, NTable, NForm, NInputGroup, NDynamicTags, NFormItem, 
     NFormItemCol, NFormItemGridItem, NFormItemRow, NDataTable, NButtonGroup, NPagination,NAlert,
-    NSwitch, NDatePicker, NSelect, NBadge
+    NSwitch, NDatePicker, NSelect, NBadge, NGrid, NFormItemGi, NGridItem
 ]
 
 //========================EXPORTS=====================================================

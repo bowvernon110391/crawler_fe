@@ -18,7 +18,7 @@ Breadcrumbs::for('jobs.index', function(Trail $trail) {
     ]);
 });
 
-// home > browse jobs > view job
+// home > browse jobs > create new job
 Breadcrumbs::for('jobs.create', function(Trail $trail) {
     $trail->parent('jobs.index');
     $trail->push('Create New Job', route('jobs.create'), [
@@ -31,6 +31,14 @@ Breadcrumbs::for('jobs.show', function(Trail $trail, $params) {
     $trail->parent('jobs.index');
     $trail->push('View Job', route('jobs.show', $params), [
         'icon' => 'eye'
+    ]);
+});
+
+// home > browse jobs > edit job
+Breadcrumbs::for('jobs.edit', function(Trail $trail, $params) {
+    $trail->parent('jobs.index');
+    $trail->push('Edit Job', route('jobs.edit', $params), [
+        'icon' => 'pencil'
     ]);
 });
 
