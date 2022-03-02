@@ -1,10 +1,24 @@
 <template>
     <div class="flex flex-wrap place-content-between place-items-center">
             <!-- indicator -->
-            <div>
-                Showing from <strong>{{ data.from }}</strong> to <strong>{{ data.to }}</strong>
+            <div class="flex place-content-between place-items-center space-x-2">
+                
+                <div>
+                    Records <strong>{{ data.from }} - {{ data.to }}</strong> of <strong>{{ data.total }}</strong>
+                </div>
+                <div class="w-28">
+                    <n-select size="small" :options="[
+                    { label: '5 / Page', value: 5 },
+                    { label: '10 / Page', value: 10 },
+                    { label: '15 / Page', value: 15 },
+                    { label: '20 / Page', value: 20 },
+                    { label: '25 / Page', value: 25 },
+                    ]" placeholder="" :value="modelValue" @update:value="e => $emit('update:modelValue', e)"/>
+                </div>
             </div>
-            <n-divider vertical />
+
+            <!-- per page? -->
+
             <!-- controls -->
             <div class="flex flex-wrap space-x-1 place-items-center"> 
                 <template v-for="d in data.links" :key="d.label">
@@ -30,7 +44,8 @@
 <script>
 export default {
     props: {
-        data: Object
+        data: Object,
+        modelValue: [Number, String]
     },
     setup() {
     },
