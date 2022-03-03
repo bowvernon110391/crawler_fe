@@ -25,18 +25,19 @@
             >
                 <!-- the trigger -->
                 <template #trigger>
-                    <div style="padding: 1rem 1rem; display: inline-flex; justify-content: flex-end; align-items: center; cursor: pointer;">
-                        <div style="font-weight: 400; margin-right: var(--default-margin);">
+                    <div class="space-x-1" 
+                        style="padding: 1rem 1rem; display: inline-flex; justify-content: flex-end; align-items: center; cursor: pointer;">
+                        <div style="font-weight: 400;">
                             {{ $page.props.user.nama }}
-                            <NIcon>
-                                <ChevronDown />
-                            </NIcon>
                         </div>
                         <n-avatar
                             src="https://i.pravatar.cc/48"
                             :size="32"
                             round
                         />
+                        <NIcon>
+                            <ChevronDown />
+                        </NIcon>
                     </div>
                 </template>
                 <!-- the content -->

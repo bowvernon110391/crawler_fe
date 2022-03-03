@@ -20,5 +20,8 @@
     "optionTextColorActive": "#eeeeefff",
     "optionTextColorChildActive": "#eeeeefff",
     "optionColorActive": "rgba(232, 234, 233, 0.1)"
+  },
+  "Layout": {
+    "siderColor": "rgba(30, 35, 37, 255)"
   }
 }

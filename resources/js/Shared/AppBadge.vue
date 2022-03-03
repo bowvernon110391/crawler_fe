@@ -1,12 +1,14 @@
 <template>
     <Link href="/" as="div">
-        <div class="app-badge">
+        <div class="border-blue-50 bg-[rgb(18,22,24)] h-16 flex place-content-center items-center cursor-pointer space-x-4">
             <img
                 src="@/app_icon.png"
-                width="32"
-                style="margin-right: 0.5rem;"
+                height="40"
             />
-            Crawler v1.0
+            <div>
+                <div class="font-medium text-xl">Crawler</div>
+                <div class="text-sm">v1.0</div>
+            </div>
         </div>
     </Link>
 </template>
@@ -22,7 +24,9 @@ export default defineComponent({
 .app-badge {
     color: var(--n-text-color);
     /* background-color: #fff; */
-    border-bottom: 1px solid var(--n-border-color, rgba(255, 255, 255, 0.09));
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+
+    background: rgb(18, 22, 24);
 
     padding: 1rem;
     font-size: 1.2rem;
