@@ -25,7 +25,8 @@ class CrawlingJob extends Model
         'keywords',
         'name',
         'private',
-        'user_id'
+        'user_id',
+        'status'
     ];
 
     protected $attributes = [

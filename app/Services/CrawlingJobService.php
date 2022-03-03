@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Events\CrawlingJobCreated;
 use App\Models\CrawlingJob;
 use App\Models\SSO\User;
 use Illuminate\Contracts\Pagination\Paginator;
@@ -72,12 +73,18 @@ class CrawlingJobService {
     }
 
     public function store(array $attributes, User $author): ?CrawlingJob {
-        return CrawlingJob::create(
+        $job = CrawlingJob::create(
             [ 'user_id' => $author->id ] + $attributes
         );
+
+        // spawn job here
+        CrawlingJobCreated::dispatch($job);
+
+        return $job;
     }
 
-    public function update(CrawlingJob $job, array $attributes, User $author) {
+    public function update(CrawlingJob $job, array $attributes, ?User $author) {
+        // spawn job too
         return $job->update($attributes);
     }
 
