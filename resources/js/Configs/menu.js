@@ -11,7 +11,7 @@ import {
 // our menu structure
 const menus = [
     // simple item (Link)
-    {
+    /* {
         "text": "About Page",
         "icon": IdCard,
         "href": "/about",
@@ -23,7 +23,7 @@ const menus = [
         "url": "https://lmgtfy.app?q=shit+take",
         "key": "user-privacy",
         "role": [ "user" ]
-    },
+    }, */
     {
         "text": "Browse",
         "icon": Search,
@@ -39,7 +39,7 @@ const menus = [
     },
     // a group, it had to point to base url of a resource, or something 
     // otherwise the auto expand menu won't work
-    {
+    /* {
         "text": "Messages",
         "icon":Power,
         "key": "dummy",
@@ -77,7 +77,7 @@ const menus = [
         "icon": Archive,
         "url": "https://www.google.com?q=bokep",
         "key": "secret-files"
-    }
+    } */
 ]
 
 export default menus
