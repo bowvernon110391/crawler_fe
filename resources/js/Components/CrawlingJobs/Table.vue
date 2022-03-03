@@ -78,7 +78,7 @@
     </div>
 </template>
 
-<style scoped>
+<style lang="postcss" scoped>
 .table-head th {
     @apply text-gray-100 bg-gray-800 border-gray-100 !important;
 }

@@ -15,11 +15,7 @@ require('laravel-mix-tailwind')
 
 mix.js('resources/js/app.js', 'public/js')
     .vue()
-    .postCss('resources/css/app.css', 'public/css', [
-        // add dependencies
-        require('postcss-import'),
-        require('tailwindcss')
-    ])
+    .postCss('resources/css/app.css', 'public/css')
     .tailwind()
     .alias({
         '@': path.join(__dirname, 'resources/assets')
@@ -29,4 +25,21 @@ mix.webpackConfig({
     output: {
         chunkFilename: "js/[name].js?id=[chunkhash]",
     },
+    module: {
+        rules: [
+            {
+                test: /\.(postcss)$/,
+                use: [
+                    'vue-style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 1
+                        }
+                    },
+                    'postcss-loader'
+                ]
+            }
+        ]
+    }
 });
