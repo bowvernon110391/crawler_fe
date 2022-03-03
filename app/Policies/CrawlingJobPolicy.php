@@ -5,6 +5,7 @@ namespace App\Policies;
 use App\Models\CrawlingJob;
 use App\Models\SSO\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
+use Illuminate\Auth\Access\Response;
 
 class CrawlingJobPolicy
 {
@@ -67,10 +68,15 @@ class CrawlingJobPolicy
      * @param  \App\Models\CrawlingJob  $crawlingJob
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, CrawlingJob $crawlingJob)
+    public function delete(User $user, CrawlingJob $job)
     {
+        // logger("DELETE[CrawlingJob]", ['job' => $job]);
+        // prevent deletion of job in process
+        if ($job->status == 'PROCESSING') {
+            return Response::deny("This job is currently processing, cannot delete it");
+        }
         // owner or admin
-        return $user->hasRole('administrator') || $crawlingJob->user->id == $user->id;
+        return ($user->hasRole('administrator') || $job->user->id == $user->id);
     }
 
     /**

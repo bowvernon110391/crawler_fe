@@ -24,11 +24,13 @@ class CrawlingJob extends Model
     protected $fillable = [ 
         'keywords',
         'name',
-        'private'
+        'private',
+        'user_id'
     ];
 
     protected $attributes = [
-        'keyword_data' => ''    // empty by default
+        'keyword_data' => '',    // empty by default
+        'status' => 'CREATED'   // CREATED by default
     ];
 
     protected $appends = [

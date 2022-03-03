@@ -1,7 +1,7 @@
 <template>
     <div class="overflow-x-auto drop-shadow-xl">
         <n-table size="small" bordered striped :single-line="false">
-            <thead>
+            <thead class="table-head">
                 <tr>
                     <th>Name</th>
                     <th>Keywords</th>
@@ -33,24 +33,30 @@
                             <n-button-group round size="small">
                                 <Link :href="`/jobs/${d.id}`" v-if="d.can.view">
                                     <n-button quaternary type="primary">
-                                        <n-icon :component="Eye" />
+                                        <template #icon>
+                                            <n-icon :component="Eye" />
+                                        </template>
                                         View
                                     </n-button>
                                 </Link>
 
                                 <Link :href="`/jobs/${d.id}/edit`" v-if="d.can.edit">
                                     <n-button quaternary type="warning">
-                                        <n-icon :component="Pencil" />
+                                        <template #icon>
+                                            <n-icon :component="Pencil" />
+                                        </template>
                                         Edit
                                     </n-button>
                                 </Link>
 
-                                <Link as="n-button" method="delete" :href="`/jobs/${d.id}`" v-if="d.can.delete">
-                                    <n-button quaternary type="error">
+                                <!-- <Link as="n-button" method="delete" :href="`/jobs/${d.id}`" v-if="d.can.delete"> -->
+                                <n-button quaternary type="error" @click="onClick(d)">
+                                    <template #icon>
                                         <n-icon :component="Trash" />
-                                        Delete
-                                    </n-button>
-                                </Link>
+                                    </template>
+                                    Delete
+                                </n-button>
+                                <!-- </Link> -->
                             </n-button-group>
 
                         </td>
@@ -72,16 +78,41 @@
     </div>
 </template>
 
+<style scoped>
+.table-head th {
+    @apply text-gray-100 bg-gray-800 border-gray-100 !important;
+}
+</style>
+
 <script>
 import { Search, Pencil, Eye, Trash } from '@vicons/ionicons5'
+import { useDialog } from 'naive-ui'
 
 export default {
     props: {
         data: Object
     },
-    setup() {      
+    emits: [
+        'delete'
+    ],
+    setup(props, { emit }) {
+
+        const dialog = useDialog()
+
+        const onClick = (job) => {
+            // return confirm(`Delete job '${job.name}'?`) && emit('delete', job)
+            dialog.warning({
+                title: 'Confirm',
+                content: `Hapus job [${job.name}]?`,
+                positiveText: 'Delete',
+                negativeText: 'Cancel',
+                onPositiveClick: () => emit('delete', job)
+            })
+        }
+
         return {
-            Pencil, Eye, Trash, Search
+            Pencil, Eye, Trash, Search,
+            onClick
         }
     },
 }

@@ -10,7 +10,7 @@ import { naiveUiSetup } from './naiveui'
 import { Link, Head } from '@inertiajs/inertia-vue3'
 // default layout
 import Layout from './Shared/Layout'
-import { NMessageProvider } from 'naive-ui';
+import { NMessageProvider, NDialogProvider } from 'naive-ui';
 
 InertiaProgress.init();
 
@@ -31,13 +31,21 @@ createInertiaApp({
     },
     // setup
     setup({ el, app, props, plugin }) {
-        let vApp = createApp({ render: () => 
+        let vApp = createApp({ 
+            render: () => 
             // we wrap our inertia root in NMessageProvider
             h(
                 NMessageProvider,
-                null, {
-                    default: () => h(app, props)
-                }
+                null, 
+                () => h(
+                    NDialogProvider,
+                    null,
+                    () => h(
+                        app, 
+                        props
+                    )
+                ) //h(app, props)
+                
             )
             // h(app, props) 
         })

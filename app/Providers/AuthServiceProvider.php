@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\CrawlingJob;
 use App\Models\SSO\User;
+use App\Policies\CrawlingJobPolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -15,6 +17,7 @@ class AuthServiceProvider extends ServiceProvider {
      */
     protected $policies = [
         // 'App\Models\Model' => 'App\Policies\ModelPolicy',
+        CrawlingJob::class => CrawlingJobPolicy::class
     ];
 
     /**

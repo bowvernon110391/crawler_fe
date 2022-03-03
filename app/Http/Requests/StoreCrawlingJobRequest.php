@@ -30,4 +30,11 @@ class StoreCrawlingJobRequest extends FormRequest
             'private' => 'required|boolean'
         ];
     }
+
+    protected function prepareForValidation()
+    {
+        $this->merge([
+            'user_id' => $this->user()->id
+        ]);
+    }
 }

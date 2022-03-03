@@ -8,9 +8,11 @@
             tertiary
             style="margin: var(--default-margin)"
         >
-            <NIcon>
-                <MenuSharp />
-            </NIcon>
+            <template #icon>
+                <NIcon>
+                    <MenuSharp />
+                </NIcon>
+            </template>
         </n-button>
         <div style="flex-grow: 1; text-align: right;">
 

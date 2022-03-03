@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateCrawlingJobRequest;
 use App\Models\CrawlingJob;
 use App\Services\CrawlingJobService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 
@@ -17,6 +18,8 @@ class CrawlingJobController extends Controller
     public function __construct(CrawlingJobService $svc)
     {    
         $this->crawlingJobService = $svc;
+        // use policy
+        $this->authorizeResource(CrawlingJob::class, 'job');
     }
     /**
      * Display a listing of the resource.
@@ -25,6 +28,8 @@ class CrawlingJobController extends Controller
      */
     public function index(Request $request)
     {
+        // Gate::authorize('viewAny', CrawlingJob::class);
+        
         // grab auth
         $user = $request->user();
 
@@ -68,6 +73,7 @@ class CrawlingJobController extends Controller
      */
     public function create()
     {
+        // Gate::authorize('create', CrawlingJob::class);
         // let's create some shit?
         return Inertia::render(
             'CrawlingJobs/Create',
@@ -85,10 +91,13 @@ class CrawlingJobController extends Controller
      */
     public function store(StoreCrawlingJobRequest $request)
     {
+        // Gate::authorize('create', CrawlingJob::class);
         // use validated data only
+        // dd($request->validated());
         // dd($request);
-        $job = CrawlingJob::create(
-            $request->validated()
+        $job = $this->crawlingJobService->store(
+            $request->validated(),
+            $request->user()
         );
 
         return back()->with([
@@ -106,6 +115,7 @@ class CrawlingJobController extends Controller
     public function show(CrawlingJob $job)
     {
         // dd($job);
+        // Gate::authorize('view', $job);
 
         return Inertia::render(
             'CrawlingJobs/View', [
@@ -144,7 +154,12 @@ class CrawlingJobController extends Controller
         // use validated data only
         // dd($request->validated());
         // dd($job);
-        $job->update($request->validated());
+        // $job->update($request->validated());
+        $this->crawlingJobService->update(
+            $job,
+            $request->validated(),
+            $request->user()
+        );
 
         return Redirect::back()->with([
             'message' => 'Job Saved'
@@ -159,6 +174,14 @@ class CrawlingJobController extends Controller
      */
     public function destroy(CrawlingJob $job)
     {
-        //
+        // delete item?
+        $jobName = $job->name;
+        // dd($job);
+        $this->crawlingJobService->destroy($job);
+
+        return back()->with([
+            'message' => "Job [{$jobName}] was deleted",
+            'messageType' => 'warning'
+        ]);
     }
 }

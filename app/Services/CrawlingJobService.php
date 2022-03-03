@@ -70,4 +70,18 @@ class CrawlingJobService {
 
         return $p;
     }
+
+    public function store(array $attributes, User $author): ?CrawlingJob {
+        return CrawlingJob::create(
+            [ 'user_id' => $author->id ] + $attributes
+        );
+    }
+
+    public function update(CrawlingJob $job, array $attributes, User $author) {
+        return $job->update($attributes);
+    }
+
+    public function destroy(CrawlingJob $job) {
+        return $job->delete();
+    }
 }

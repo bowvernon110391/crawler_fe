@@ -7,7 +7,9 @@
                 <n-form-item>
                     <Link href="jobs/create">
                         <n-button type="primary">
-                            <n-icon :component="Add"/>
+                            <template #icon>
+                                <n-icon :component="Add"/>
+                            </template>
                             Create Job
                         </n-button> 
                     </Link>
@@ -45,7 +47,7 @@
     </div>
     
     <!-- some table below -->
-    <Table :data="data" />
+    <Table :data="data" @delete="onDelete" />
 
     <!-- pagination here? -->
     <div class="mt-4">        
@@ -61,6 +63,7 @@ import debounce from 'lodash/debounce'
 import { Add, AddCircle, Search } from '@vicons/ionicons5'
 import Pagination from '../../Shared/Pagination.vue'
 import Table from '../../Components/CrawlingJobs/Table.vue'
+import { useMessage } from 'naive-ui'
 
 export default {
     components: {
@@ -105,6 +108,16 @@ export default {
                 preserveScroll: false
             })
         }
+
+        const msg = useMessage()
+
+        const onDelete = (job) => {
+            
+            // msg.warning(`Delete job [${job.name}] here!`)
+            const url = route('jobs.destroy', { job })
+            // msg.warning(`Gotta go to -> ${url}`)                
+            Inertia.delete(url)
+        }
         
         watch([q, number, scoped, dateStart, dateEnd], debounce(() => {
             // reset page number to 1
@@ -114,7 +127,8 @@ export default {
 
         return {
             q, number, page, dateStart, dateEnd,scoped,
-            AddCircle, Search, Add
+            AddCircle, Search, Add,
+            onDelete
         }
     },
 }
