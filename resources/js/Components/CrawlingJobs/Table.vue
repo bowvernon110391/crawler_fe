@@ -63,32 +63,22 @@
                     </tr>
                 </template>
 
-                <template v-else>
-                    <td colspan="100">
-                        <n-alert title="Empty Result" type="warning" class="w-96 mx-auto">
-                            <template #icon>
-                                <n-icon :component="Search" />
-                            </template>
-                            The query doesn't produce any results
-                        </n-alert>
-                    </td>
-                </template>
+                <empty-table v-else />
+                
             </tbody>
         </n-table>
     </div>
 </template>
 
-<style lang="postcss" scoped>
-.table-head th {
-    @apply text-gray-100 bg-gray-800 border-gray-100 !important;
-}
-</style>
-
 <script>
-import { Search, Pencil, Eye, Trash } from '@vicons/ionicons5'
+import { Pencil, Eye, Trash } from '@vicons/ionicons5'
 import { useDialog } from 'naive-ui'
+import EmptyTable from '../EmptyTable.vue'
 
 export default {
+    components: {
+        EmptyTable
+    },
     props: {
         data: Object
     },
@@ -111,7 +101,7 @@ export default {
         }
 
         return {
-            Pencil, Eye, Trash, Search,
+            Pencil, Eye, Trash,
             onClick
         }
     },

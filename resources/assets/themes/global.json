@@ -1,0 +1,9 @@
+{
+    "Table": {
+      "tdColorStriped": "rgba(245, 245, 252, 1)",
+      "thColor": "rgba(38, 38, 44, 1)",
+      "thTextColor": "rgba(239, 239, 242, 1)",
+      "thFontWeight": "500",
+      "borderRadius": "5px"
+    }
+  }

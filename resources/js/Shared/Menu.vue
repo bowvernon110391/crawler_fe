@@ -1,7 +1,9 @@
 <template>
     <!-- menu goes here -->
-    <n-config-provider :theme="theme">
+    <n-config-provider :theme="theme" :theme-overrides="themeOverrides">
         <n-layout-sider
+            class="slider"
+
             v-if="!isMobile"
             bordered
             collapse-mode="width"
@@ -55,6 +57,15 @@
     </n-config-provider>
 </template>
 
+<style lang="postcss" scoped>
+/* .slider {
+    @apply bg-gray-900 !important;
+} */
+.n-menu-item-content {
+    @apply bg-slate-100 hover:bg-gray-100 !important; 
+}
+</style>
+
 <script>
 import { darkTheme } from "naive-ui"
 import { defineComponent, ref, watchEffect } from "vue"
@@ -78,8 +89,15 @@ export default defineComponent({
         // theme
         const theme = ref(darkTheme)
 
+        console.log('theme', darkTheme)
+
+        // const appTheme = useThemeVars()
+
         // for the expanded keys, just copy and manage it ourselves
         const localKeys = ref(props.expandedKeys)
+
+        // overrides
+        const themeOverrides = require('@/themes/sidenav.json')
 
         // gotta watch props then
         watchEffect(() => {
@@ -87,7 +105,7 @@ export default defineComponent({
         })
 
         return {
-            theme, localKeys
+            theme, localKeys, themeOverrides
         }
     }
 })

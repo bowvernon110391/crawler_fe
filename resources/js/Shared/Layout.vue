@@ -1,90 +1,93 @@
 <template>
-    <n-layout
-        :has-sider="!isMobile"
-        :class="['m-d', { 'mobile': isMobile }]"
-    >
-        <!-- menu goes here -->
-        <Menu
-            :menuCollapsed="menuCollapsed"
-            :isMobile="isMobile"
-            :menu="appMenu"
-            :handleDrawerMenuClick="handleDrawerMenuClick"
-            @menu-toggle="(e) => menuCollapsed = e"
-            :activeItem="activeItem"
-            :expandedKeys="expandedKeys"
-        />
-
-        <!-- content goes here -->
+    <!-- <n-theme-editor> -->
         <n-layout
-            style="height: 100vh"
-            class="appbg"
-            scroll-region
+            :has-sider="!isMobile"
+            :class="['m-d', { 'mobile': isMobile }]"
         >
+            <!-- menu goes here -->
+            <Menu
+                :menuCollapsed="menuCollapsed"
+                :isMobile="isMobile"
+                :menu="appMenu"
+                :handleDrawerMenuClick="handleDrawerMenuClick"
+                @menu-toggle="(e) => menuCollapsed = e"
+                :activeItem="activeItem"
+                :expandedKeys="expandedKeys"
+            />
 
-            <n-layout-header
-                style="top: 0; position: sticky; z-index: 13;"
-                bordered
-                class="shadow-md"
+            <!-- content goes here -->
+            <n-layout
+                style="height: 100vh"
+                class="appbg"
+                scroll-region
             >
-                <!-- navbar -->
-                <NavBar
-                    @menu-toggle="menuCollapsed = !menuCollapsed"
-                    @login="gotoLoginPage"
-                    :menu="userMenu"
-                    :isMobile="isMobile"
-                />
 
-                <!-- page title + breadcrumbs -->
-                <div
-                    v-if="!isMobile"
-                    style="padding: var(--default-margin); border-top: 1px solid var(--n-border-color);"
-                    class="flexed"
+                <n-layout-header
+                    style="top: 0; position: sticky; z-index: 13;"
+                    bordered
+                    class="shadow-md"
                 >
-                    <template v-if="$page.props.title">
-                        <div style="font-size: 1.2rem; font-weight: 500;">
-                            {{ $page.props.title }}
-                        </div>
-                        <n-divider vertical />
-                    </template>
-                    <Breadcrumbs :data="$page.props.route.breadcrumbs" />
-                </div>
-            </n-layout-header>
+                    <!-- navbar -->
+                    <NavBar
+                        @menu-toggle="menuCollapsed = !menuCollapsed"
+                        @login="gotoLoginPage"
+                        :menu="userMenu"
+                        :isMobile="isMobile"
+                    />
 
-            <n-layout-content :style="{
-                    padding: isMobile ? 0 : 'var(--default-margin)',
-                    background: 'inherit'
-                }">
-                <!-- if mobile, show header+breadcrumb here instead -->
-                <!-- wrap contents in card -->
-                <n-card
-                    header-style="padding: var(--default-margin)"
-                    :content-style="isMobile ? {
-                        padding: 'var(--default-margin)',
-                    } : {}"
-                >
-                    <template
-                        #header
-                        v-if="isMobile"
+                    <!-- page title + breadcrumbs -->
+                    <div
+                        v-if="!isMobile"
+                        style="padding: var(--default-margin); border-top: 1px solid var(--n-border-color);"
+                        class="flexed"
                     >
-                        <div style="padding: 0;">
-                            <div
-                                style="font-size: 1.2rem; font-weight: 500;"
-                                v-if="$page.props.title"
-                            >
+                        <template v-if="$page.props.title">
+                            <div style="font-size: 1.2rem; font-weight: 500;">
                                 {{ $page.props.title }}
                             </div>
-                            <Breadcrumbs />
-                        </div>
-                    </template>
+                            <n-divider vertical />
+                        </template>
+                        <Breadcrumbs :data="$page.props.route.breadcrumbs" />
+                    </div>
+                </n-layout-header>
 
-                    <!-- default goes here -->
-                    
-                    <slot></slot>
+                <n-layout-content :style="{
+                        padding: isMobile ? 0 : 'var(--default-margin)',
+                        background: 'inherit'
+                    }">
+                    <!-- if mobile, show header+breadcrumb here instead -->
+                    <!-- wrap contents in card -->
+                    <n-card
+                        header-style="padding: var(--default-margin)"
+                        :content-style="isMobile ? {
+                            padding: 'var(--default-margin)',
+                        } : {}"
+                    >
+                        <template
+                            #header
+                            v-if="isMobile"
+                        >
+                            <div style="padding: 0;">
+                                <div
+                                    style="font-size: 1.2rem; font-weight: 500;"
+                                    v-if="$page.props.title"
+                                >
+                                    {{ $page.props.title }}
+                                </div>
+                                <Breadcrumbs />
+                            </div>
+                        </template>
 
-                </n-card>
-            </n-layout-content>
+                        <!-- default goes here -->
+                        <n-config-provider :theme-overrides="themeOverrides">
+                            <slot></slot>
+                        </n-config-provider>
+
+                    </n-card>
+                </n-layout-content>
+            </n-layout>
         </n-layout>
-    </n-layout>
+    <!-- </n-theme-editor> -->
 </template>
 
 <script>
@@ -98,7 +101,7 @@ import Menu from "./Menu.vue";
 import NavBar from "./NavBar.vue";
 
 import { MenuSharp } from "@vicons/ionicons5";
-import { useMessage } from 'naive-ui';
+import { useMessage, NThemeEditor } from 'naive-ui';
 
 export default {
     props: {
@@ -125,6 +128,7 @@ export default {
         MenuSharp,
         Menu,
         NavBar,
+        NThemeEditor
     },
     setup(props) {
         const { isMobile } = useScreen();
@@ -145,6 +149,8 @@ export default {
 
         const message = useMessage()
 
+        const themeOverrides = require('@/themes/global.json')
+
         watchEffect(() => {
             // console.log('flash-message: ', props.message)
             // flash it (if one exists)
@@ -160,6 +166,8 @@ export default {
             userMenu,
             activeItem,
             expandedKeys,
+
+            themeOverrides,
 
             handleDrawerMenuClick,
             gotoLoginPage,

@@ -1,0 +1,24 @@
+{
+  "Menu": {
+    "itemColorActive": "rgba(164, 160, 168, 0.25)",
+    "itemTextColorHover": "#eeeeefFF",
+    "itemTextColor": "rgba(209, 219, 230, 1)",
+    "itemTextColorActive": "#eeeeefff",
+    "itemTextColorChildActive": "#eeeeefff",
+    "itemIconColor": "rgba(209, 219, 230, 1)",
+    "itemIconColorHover": "#eeeeefff",
+    "itemIconColorActive": "#eeeeefff",
+    "itemIconColorChildActive": "#eeeeefff",
+    "arrowColor": "rgba(209, 219, 230, 1)",
+    "arrowColorHover": "#eeeeefff",
+    "arrowColorChildActive": "#eeeeefff",
+    "arrowColorActive": "#eeeeefff"
+  },
+  "Dropdown": {
+    "optionTextColor": "rgba(209, 219, 230, 1)",
+    "color": "#282828FF",
+    "optionTextColorActive": "#eeeeefff",
+    "optionTextColorChildActive": "#eeeeefff",
+    "optionColorActive": "rgba(232, 234, 233, 0.1)"
+  }
+}
