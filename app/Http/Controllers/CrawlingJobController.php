@@ -7,7 +7,6 @@ use App\Http\Requests\UpdateCrawlingJobRequest;
 use App\Models\CrawlingJob;
 use App\Services\CrawlingJobService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 
@@ -100,7 +99,12 @@ class CrawlingJobController extends Controller
             $request->user()
         );
 
-        return back()->with([
+        /* return back()->with([
+            'message' => "Created Job '{$job->name}'",
+            'messageType' => 'success'
+        ]); */
+        // redirect to list
+        return Redirect::route('jobs.index')->with([
             'message' => "Created Job '{$job->name}'",
             'messageType' => 'success'
         ]);

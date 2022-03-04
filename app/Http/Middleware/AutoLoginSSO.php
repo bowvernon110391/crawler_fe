@@ -49,7 +49,7 @@ class AutoLoginSSO {
             // the mockup user exist. login using that
             Auth::login($user);
             // log
-            logger('Mock Auth with', [ 'user' => $user ]);
+            // logger('Mock Auth with', [ 'user' => $user ]);
             // continue chain
             return $next($request);
         }
@@ -63,9 +63,9 @@ class AutoLoginSSO {
         if ($verification_string) {
             $this->broker->verify($verification_string);
 
-            logger('SSOLogin: verifying', [
+            /* logger('SSOLogin: verifying', [
                 'verify' => $verification_string
-            ]);
+            ]); */
 
             // redirect again, without sso_verify
             return redirect($request->fullUrlWithoutQuery('sso_verify'));
@@ -77,10 +77,10 @@ class AutoLoginSSO {
             $return_url = $request->fullUrl();
             $url = $this->broker->getAttachUrl(['return_url' => $return_url]);
 
-            logger('SSOLogin: not attached!', [
+            /* logger('SSOLogin: not attached!', [
                 'return_url' => $return_url,
                 'attach_url' => $url
-            ]);
+            ]); */
 
             return redirect()->away($url, 303);
         }
@@ -90,18 +90,18 @@ class AutoLoginSSO {
 
         // are we logged in?
         if ($user) {
-            logger('SSOLogin: LOGGED IN!', [
+            /* logger('SSOLogin: LOGGED IN!', [
                 'user' => $user
-            ]);
+            ]); */
 
             // cache user + login
             $userModel = $this->userService->cacheUserObject($user, $this->broker->getBearerToken()); //User::cacheUserObject($user, $this->broker->getBearerToken());
 
             // check user (enabled?)
             if ($userModel && $userModel->status == 'enabled') {
-                logger('SSOLogin: LOGGING IN!', [
+                /* logger('SSOLogin: LOGGING IN!', [
                     'userModel' => $userModel
-                ]);
+                ]); */
 
                 Auth::login($userModel);
             } else {
@@ -112,7 +112,7 @@ class AutoLoginSSO {
                 }
             }
         } else {
-            logger('SSOLogin: NOT LOGGED IN!');
+            // logger('SSOLogin: NOT LOGGED IN!');
             if (Auth::check()) {
                 // logout to clear stale sso auth
                 Auth::logout();

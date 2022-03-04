@@ -4,6 +4,7 @@ namespace App\Jobs;
 
 use App\Models\CrawlingJob;
 use App\Services\CrawlingJobService;
+use Illuminate\Bus\Batchable;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -14,7 +15,7 @@ use Illuminate\Queue\SerializesModels;
 
 class ProcessCrawlingJob implements ShouldQueue
 {
-    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+    use Batchable, Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     // the job definition
     protected $crawlingJob;
@@ -42,15 +43,26 @@ class ProcessCrawlingJob implements ShouldQueue
      */
     public function handle(CrawlingJobService $service)
     {
-        // do something
-        logger("[ProcessCrawlingJob]: Processing crawling job", ['job' => $this->crawlingJob, 'keyword' => $this->keyword]);
+        // refresh model to throw error when it's deleted
+        // $this->crawlingJob->refresh();  // will throw error when it's deleted
 
-        // mark status
+        // do something
+        logger("[ProcessCrawlingJob]: Processing crawling job ({$this->crawlingJob->id}, {$this->keyword})", ['job' => $this->crawlingJob, 'keyword' => $this->keyword]);
+
+        // mark status, possibly update progress too
         $service->update($this->crawlingJob, ['status' => 'PROCESSING'], null);
         
+        // prevent unncessary work
+        if ($this->batch()->cancelled()) {
+            $service->update($this->crawlingJob, ['status', 'CANCELLED'], null);
+            return;
+        }
+
+        // do some heavy work
         sleep(30);
 
-        $service->update($this->crawlingJob, ['status' => 'DONE'], null);
+        $service->update($this->crawlingJob, ['status' => "PROCESSING({$this->batch()->processedJobs()}/{$this->batch()->totalJobs})"], null);
+        logger("[ProcessCrawlingJob]: -> Done crawling job ({$this->crawlingJob->id}, {$this->keyword})", ['job' => $this->crawlingJob, 'keyword' => $this->keyword]);
     }
 
     /**

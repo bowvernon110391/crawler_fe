@@ -38,7 +38,7 @@ class HandleInertiaRequests extends Middleware
      */
     public function share(Request $request): array
     {
-        logger('Inertia: ' . $request->fullUrl());
+        // logger('Inertia: ' . $request->fullUrl());
         return array_merge(
             // parent data
             parent::share($request), 

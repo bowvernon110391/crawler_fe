@@ -73,6 +73,14 @@ class CrawlingJobService {
         return $p;
     }
 
+    public function findOrFail($id) {
+        return CrawlingJob::findOrFail($id);
+    }
+
+    public function find($id) {
+        return CrawlingJob::find($id);
+    }
+
     public function store(array $attributes, User $author): ?CrawlingJob {
         $job = CrawlingJob::create(
             [ 'user_id' => $author->id ] + $attributes

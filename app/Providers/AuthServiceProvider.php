@@ -35,9 +35,9 @@ class AuthServiceProvider extends ServiceProvider {
 
             debug('Auth User', $user);
             
-            logger('sso-token: ', [
+            /* logger('sso-token: ', [
                 'user' => $user
-            ]);
+            ]); */
 
             return $user;
         });

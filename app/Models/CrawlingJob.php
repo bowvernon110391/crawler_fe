@@ -6,6 +6,7 @@ use App\Models\SSO\User;
 use App\Traits\StandardDate;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Bus;
 
 class CrawlingJob extends Model
 {
@@ -26,7 +27,8 @@ class CrawlingJob extends Model
         'name',
         'private',
         'user_id',
-        'status'
+        'status',
+        'batch_id'
     ];
 
     protected $attributes = [
@@ -55,6 +57,11 @@ class CrawlingJob extends Model
 
     public function setKeywordsAttribute(array $data) {
         $this->attributes['keyword_data'] = implode(';', $data);
+    }
+
+    // batch attributes...cannot be set though
+    public function getBatchAttribute() {
+        return Bus::findBatch($this->batch_id ?? '');
     }
 
     // local scope

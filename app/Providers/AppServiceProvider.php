@@ -14,7 +14,7 @@ class AppServiceProvider extends ServiceProvider {
     public function register() {
         // register our broker class
         $this->app->singleton(Broker::class, function ($app) {
-            logger('Broker Instance requested, serviced...');
+            // logger('Broker Instance requested, serviced...');
             return (new Broker(
                 config('sso.url'),
                 config('sso.broker'),
