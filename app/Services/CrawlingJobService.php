@@ -6,6 +6,7 @@ use App\Events\CrawlingJobCreated;
 use App\Models\CrawlingJob;
 use App\Models\SSO\User;
 use Illuminate\Contracts\Pagination\Paginator;
+use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 
@@ -90,5 +91,26 @@ class CrawlingJobService {
 
     public function destroy(CrawlingJob $job) {
         return $job->delete();
+    }
+
+    /**
+     * For validation purposes
+     */
+    public function rules(): array {
+        return [
+            // some rules inbound
+            'name' => 'required|min:3',
+            'keywords' => 'required|array|min:1',
+            'private' => 'required|boolean'
+        ];
+    }
+
+    public function after(Validator $validator) {
+        return $validator->after(function (Validator $validator) {
+            $dup = array_duplicate($validator->validated()['keywords']);
+            if ($dup) {
+                $validator->errors()->add('keywords', "Duplicate keyword: '{$dup}'");
+            }
+        });
     }
 }

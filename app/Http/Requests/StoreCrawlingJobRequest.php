@@ -2,10 +2,17 @@
 
 namespace App\Http\Requests;
 
+use App\Services\CrawlingJobService;
+use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 
 class StoreCrawlingJobRequest extends FormRequest
 {
+    protected $service;
+    public function __construct(CrawlingJobService $service)
+    {
+        $this->service = $service;
+    }
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -23,12 +30,7 @@ class StoreCrawlingJobRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            // some rules inbound
-            'name' => 'required|min:3',
-            'keywords' => 'required|array|min:1',
-            'private' => 'required|boolean'
-        ];
+        return $this->service->rules();
     }
 
     protected function prepareForValidation()
@@ -36,5 +38,9 @@ class StoreCrawlingJobRequest extends FormRequest
         $this->merge([
             'user_id' => $this->user()->id
         ]);
+    }
+
+    public function withValidator(Validator $validator) {
+        return $this->service->after($validator);
     }
 }

@@ -18,6 +18,7 @@ class ProcessCrawlingJob implements ShouldQueue
 
     // the job definition
     protected $crawlingJob;
+    protected $keyword;
     // timeout? for safety, set it at 30 minutes
     public $timeout = 1800;
     // force fail after timeout
@@ -28,9 +29,10 @@ class ProcessCrawlingJob implements ShouldQueue
      *
      * @return void
      */
-    public function __construct(CrawlingJob $job)
+    public function __construct(CrawlingJob $job, string $keyword)
     {
         $this->crawlingJob = $job;
+        $this->keyword = $keyword;
     }
 
     /**
@@ -41,7 +43,7 @@ class ProcessCrawlingJob implements ShouldQueue
     public function handle(CrawlingJobService $service)
     {
         // do something
-        logger("[ProcessCrawlingJob]: Processing crawling job", ['job' => $this->crawlingJob]);
+        logger("[ProcessCrawlingJob]: Processing crawling job", ['job' => $this->crawlingJob, 'keyword' => $this->keyword]);
 
         // mark status
         $service->update($this->crawlingJob, ['status' => 'PROCESSING'], null);
@@ -57,7 +59,7 @@ class ProcessCrawlingJob implements ShouldQueue
     public function middleware() {
         return [
             // no release for duplicates, directly drop
-            (new WithoutOverlapping($this->crawlingJob->id))->dontRelease()
+            (new WithoutOverlapping($this->crawlingJob->id . '-' . $this->keyword))->dontRelease()
         ];
     }
 }
