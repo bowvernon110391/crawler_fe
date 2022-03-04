@@ -2,6 +2,7 @@
 
 namespace App\Jobs;
 
+use App\Events\CrawlingJobProgress;
 use App\Models\CrawlingJob;
 use App\Services\CrawlingJobService;
 use Illuminate\Bus\Batchable;
@@ -41,28 +42,31 @@ class ProcessCrawlingJob implements ShouldQueue
      *
      * @return void
      */
-    public function handle(CrawlingJobService $service)
+    public function handle()
     {
-        // refresh model to throw error when it's deleted
-        // $this->crawlingJob->refresh();  // will throw error when it's deleted
-
-        // do something
-        logger("[ProcessCrawlingJob]: Processing crawling job ({$this->crawlingJob->id}, {$this->keyword})", ['job' => $this->crawlingJob, 'keyword' => $this->keyword]);
-
+        // log
+        logger("[ProcessCrawlingJob]: -> Crawling started. ({$this->crawlingJob->id}, {$this->keyword})", ['job' => $this->crawlingJob, 'keyword' => $this->keyword]);
         // mark status, possibly update progress too
-        $service->update($this->crawlingJob, ['status' => 'PROCESSING'], null);
+        CrawlingJobProgress::dispatch($this->crawlingJob);
         
         // prevent unncessary work
         if ($this->batch()->cancelled()) {
-            $service->update($this->crawlingJob, ['status', 'CANCELLED'], null);
+            // tell user?
+            logger("[ProcessCrawlingJob]: -> Crawling canceled. ({$this->crawlingJob->id}, {$this->keyword})!");
             return;
         }
 
         // do some heavy work
-        sleep(30);
+        sleep(random_int(1, 5));
+        // also, randomly spawn error
+        if (random_int(0, 100) > 160) {
+            throw new \Exception("Fail at keyword: {$this->keyword}");
+        }
 
-        $service->update($this->crawlingJob, ['status' => "PROCESSING({$this->batch()->processedJobs()}/{$this->batch()->totalJobs})"], null);
+        // $service->update($this->crawlingJob, ['status' => "PROCESSING({$this->batch()->processedJobs()}/{$this->batch()->totalJobs})"], null);
         logger("[ProcessCrawlingJob]: -> Done crawling job ({$this->crawlingJob->id}, {$this->keyword})", ['job' => $this->crawlingJob, 'keyword' => $this->keyword]);
+        // update again after another work
+        CrawlingJobProgress::dispatch($this->crawlingJob);
     }
 
     /**

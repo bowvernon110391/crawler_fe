@@ -3,6 +3,8 @@
 namespace App\Listeners;
 
 use App\Events\CrawlingJobCreated;
+use App\Events\CrawlingJobProgress;
+use App\Events\CrawlingJobStarted;
 use App\Jobs\ProcessCrawlingJob;
 use App\Services\CrawlingJobService;
 use Illuminate\Bus\Batch;
@@ -45,31 +47,24 @@ class SpawnCrawler implements ShouldQueue
         ->then(function (Batch $batch) {
             logger("-> Batch[{$batch->id}] COMPLETED SUCCESSFULLY!");
             // TODO: MARK JOB AS DONE HERE!!!
-            // $this->service->update($jobdef, [ 'status' => 'DONE' ], null);
         })
         // WHEN ERROR
         ->catch(function (Batch $batch, Throwable $ex) {
             Log::error("-> Batch[{$batch->id}] FAILED: {$ex->getMessage()}");
             // TODO: MARK ERROR HERE, POSSIBLY WITH EXPLANATION?
-            // $this->service->update($jobdef, [ 'status' => 'ERROR' ], null);
         })
         // ALWAYS EXECUTED
-        ->finally(function (Batch $batch) {
+        ->finally(function (Batch $batch) use($ev) {
             logger("-> Batch[{$batch->id}] FINISHED!");
             // TODO: ADD CLEANP CODE HERE
+            // always update status no matter if we fail or succeed
+            CrawlingJobProgress::dispatch($ev->crawlingJob);
         })
+        // ->allowFailures()
         ->dispatch();
         
         // update status + batch data
         logger("-> Batch[{$batch->id}] CREATED.");
-
-        app()->make(CrawlingJobService::class)->update($ev->crawlingJob, [
-            'status' => 'STARTED',
-            'batch_id' => $batch->id
-        ], null);
-        /* $this->service->update($jobdef, [
-            'status' => 'CREATED',
-            'batch_id' => $batch->id
-        ], null); */
+        CrawlingJobStarted::dispatch($ev->crawlingJob, $batch);
     }
 }

@@ -3,11 +3,14 @@
 namespace App\Providers;
 
 use App\Events\CrawlingJobCreated;
+use App\Events\CrawlingJobProgress;
+use App\Events\CrawlingJobStarted;
 use App\Listeners\SpawnCrawler;
+use App\Listeners\UpdateCrawlingJobBatch;
+use App\Listeners\UpdateCrawlingJobProgress;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
-use Illuminate\Support\Facades\Event;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -23,6 +26,14 @@ class EventServiceProvider extends ServiceProvider
         // crawling job
         CrawlingJobCreated::class => [
             SpawnCrawler::class
+        ],
+        // when crawler is spawned
+        CrawlingJobStarted::class => [
+            UpdateCrawlingJobBatch::class
+        ],
+        // when crawling job has progress
+        CrawlingJobProgress::class => [
+            UpdateCrawlingJobProgress::class
         ]
     ];
 
