@@ -5,7 +5,7 @@
         </n-text>
     </template>
     <template v-else>
-        Oh shit, spawn progress bar here please
+        <n-progress type="line" :border-radius="4" :percentage="progress" :indicator-placement="'inside'" processing />
     </template>
 </template>
 
@@ -56,6 +56,7 @@ export default {
                     }
                 } else {
                     clearTimeout(timerId)
+                    timerId = null
                     return
                 }
 
