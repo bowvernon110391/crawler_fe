@@ -64,7 +64,7 @@ class SpawnCrawler implements ShouldQueue
         ->dispatch();
         
         // update status + batch data
-        logger("-> Batch[{$batch->id}] CREATED.");
+        logger("-> Batch[{$batch->id}] CREATED.", ['id' => $batch->id]);
         CrawlingJobStarted::dispatch($ev->crawlingJob, $batch);
     }
 }

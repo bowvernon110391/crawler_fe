@@ -59,7 +59,7 @@ class ProcessCrawlingJob implements ShouldQueue
         // do some heavy work
         sleep(random_int(1, 5));
         // also, randomly spawn error
-        if (random_int(0, 100) > 160) {
+        if (random_int(0, 100) > 60) {
             throw new \Exception("Fail at keyword: {$this->keyword}");
         }
 

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CrawlingJobController;
+use App\Http\Controllers\NotificationController;
 use App\Models\SSO\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -72,6 +73,8 @@ Route::get('/', function () {
 Route::get('/test', function () {
     abort(403);
 });
+
+Route::get('/notifications', [NotificationController::class, 'index']);
 
 // resource controller
 Route::middleware('auth')->group(function() {

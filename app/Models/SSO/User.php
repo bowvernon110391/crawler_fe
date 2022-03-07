@@ -5,9 +5,11 @@ namespace App\Models\SSO;
 use App\Traits\StandardDate;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as AuthUser;
+use Illuminate\Notifications\Notifiable;
 
 class User extends AuthUser
 {
+    use Notifiable;
     use HasFactory;
     use StandardDate;
 
