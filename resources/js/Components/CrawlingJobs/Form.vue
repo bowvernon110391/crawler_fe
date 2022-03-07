@@ -76,13 +76,21 @@
             </template>
 
             <template v-else>
-                <Link :href="`${$page.url}/edit`">
-                <n-button>
-                    <template #icon>
-                        <n-icon :component="Pencil" />
-                    </template>
-                    Edit
-                </n-button>
+                <Link :href="`${$page.url}/edit`" v-if="can.edit">
+                    <n-button>
+                        <template #icon>
+                            <n-icon :component="Pencil" />
+                        </template>
+                        Edit
+                    </n-button>
+                </Link>
+                <Link :href="`${$page.url}/restart`" as="n-button" method="patch" v-if="can.restart">
+                    <n-button type="error">
+                        <template #icon>
+                            <n-icon :component="Refresh" />
+                        </template>
+                        Restart
+                    </n-button>
                 </Link>
             </template>
         </n-space>
@@ -90,13 +98,14 @@
 </template>
 
 <script>
-import { Save, ArrowUndo, Pencil } from "@vicons/ionicons5";
+import { Save, ArrowUndo, Pencil, Refresh } from "@vicons/ionicons5";
 import { useForm } from "@inertiajs/inertia-vue3";
 import { ref } from "vue";
 
 export default {
     props: {
         data: Object,
+        can: Object,
         readOnly: Boolean,
         createMode: Boolean,
     },
@@ -138,6 +147,7 @@ export default {
             Save,
             ArrowUndo,
             Pencil,
+            Refresh,
             onSubmit,
         };
     },

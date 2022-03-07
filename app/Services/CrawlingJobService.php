@@ -46,19 +46,24 @@ class CrawlingJobService {
         }); */
     }
 
+    public function authFields(CrawlingJob $job, User $user) {
+        return [
+            'view' => $user->can('view', $job),
+            'edit' => $user->can('update', $job),
+            'delete' => $user->can('delete', $job),
+            'restart' => $user->can('update', $job) && $job->status == 'CANCELLED'
+        ];
+    }
+
     protected function paginateResult(Builder $query, int $perPage = 10) {
         $paginator = $query->paginate($perPage)->withQueryString();
 
         return $paginator;
     }
 
-    protected function addAuthFields(Collection $result, User $user) {
+    public function addAuthFields(Collection $result, User $user) {
         $result->map(function ($item) use ($user) {
-            $item->can = [
-                'view' => $user->can('view', $item),
-                'edit' => $user->can('update', $item),
-                'delete' => $user->can('delete', $item)
-            ];
+            $item->can = $this->authFields($item, $user);
             return $item;
         });
     }
@@ -73,21 +78,25 @@ class CrawlingJobService {
         return $p;
     }
 
-    public function findOrFail($id) {
-        return CrawlingJob::findOrFail($id);
+    public function findOrFail($id, User $user = null) {
+        $job = CrawlingJob::findOrFail($id);
+        if ($job && $user) {
+            $job->can = $this->authFields($job, $user);
+        }
     }
 
-    public function find($id) {
-        return CrawlingJob::find($id);
+    public function find($id, User $user = null) {
+        $job = CrawlingJob::find($id);
+        if ($job && $user) {
+            $job->can = $this->authFields($job, $user);
+        }
+        return $job;
     }
 
     public function store(array $attributes, User $author): ?CrawlingJob {
         $job = CrawlingJob::create(
             [ 'user_id' => $author->id ] + $attributes
         );
-
-        // spawn job here
-        CrawlingJobCreated::dispatch($job);
 
         return $job;
     }

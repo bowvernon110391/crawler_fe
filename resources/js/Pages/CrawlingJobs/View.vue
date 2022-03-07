@@ -1,5 +1,5 @@
 <template>
-    <Form :data="data" :readOnly="true"/>
+    <Form :data="data" :readOnly="true" :can="can"/>
 </template>
 
 <script>
@@ -11,7 +11,8 @@ export default {
         Form
     },
     props: {
-        data: Object
+        data: Object,
+        can: Object
     },
     setup() {
         

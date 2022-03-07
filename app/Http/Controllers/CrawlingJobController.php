@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\CrawlingJobCreated;
 use App\Http\Requests\StoreCrawlingJobRequest;
 use App\Http\Requests\UpdateCrawlingJobRequest;
 use App\Models\CrawlingJob;
 use App\Services\CrawlingJobService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 
@@ -99,6 +102,9 @@ class CrawlingJobController extends Controller
             $request->user()
         );
 
+        // spawn job here
+        CrawlingJobCreated::dispatch($job);
+
         /* return back()->with([
             'message' => "Created Job '{$job->name}'",
             'messageType' => 'success'
@@ -124,7 +130,8 @@ class CrawlingJobController extends Controller
         return Inertia::render(
             'CrawlingJobs/View', [
                 'title' => 'Job: ' . $job->name,
-                'data' => $job
+                'data' => $job,
+                'can' => $this->crawlingJobService->authFields($job, Auth::user())
             ]
         );
     }
@@ -141,7 +148,8 @@ class CrawlingJobController extends Controller
         return Inertia::render(
             'CrawlingJobs/Edit', [
                 'title' => 'Job: ' . $job->name,
-                'data' => $job
+                'data' => $job,
+                'can' => $this->crawlingJobService->authFields($job, Auth::user())
             ]
         );
     }
@@ -189,7 +197,28 @@ class CrawlingJobController extends Controller
         ]);
     }
 
+    /**
+     * grab status of a job (for xhr request usually)
+     */
     public function status(CrawlingJob $job) {
         return response()->json($job->status);
+    }
+
+    /**
+     * restart a job
+     */
+    public function restart(CrawlingJob $job) {
+        // gate keep it?
+        // only when user can update it and the job is cancelled
+        Gate::allowIf(fn ($user) => $user->can('update', $job) && $job->status == 'CANCELLED');
+
+        // simply respawn crawler then? and reset status
+        $this->crawlingJobService->update($job, ['status' => 'CREATED'], Auth::user());
+
+        CrawlingJobCreated::dispatch($job);
+
+        return redirect()->route('jobs.index', [
+            'q' => $job->name
+        ]);
     }
 }

@@ -80,6 +80,8 @@ Route::get('/notifications', [NotificationController::class, 'index']);
 Route::middleware('auth')->group(function() {
     // job status
     Route::get('jobs/{job}/status', [CrawlingJobController::class, 'status'])->name('jobs.status');
+    // restart job
+    Route::patch('jobs/{job}/restart', [CrawlingJobController::class, 'restart'])->name('jobs.restart');
     // crawling jobs
     Route::resource('jobs', CrawlingJobController::class);
 });
