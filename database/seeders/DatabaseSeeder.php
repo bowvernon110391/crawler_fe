@@ -17,7 +17,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UserSeeder::class,
             CrawlingJobSeeder::class,
-            CategorySeeder::class
+            CategorySeeder::class,
+            TagSeeder::class
         ]);
     }
 }
