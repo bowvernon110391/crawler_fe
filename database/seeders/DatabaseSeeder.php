@@ -18,7 +18,9 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             CrawlingJobSeeder::class,
             CategorySeeder::class,
-            TagSeeder::class
+            TagSeeder::class,
+            ShopSeeder::class,
+            ItemSeeder::class
         ]);
     }
 }
