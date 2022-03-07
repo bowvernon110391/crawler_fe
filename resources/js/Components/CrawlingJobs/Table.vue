@@ -27,7 +27,8 @@
                             {{ d.created_at }}
                         </td>
                         <td>
-                            {{ d.status }}
+                            <!-- {{ d.status }} -->
+                            <Status :id="d.id" :status="d.status" />
                         </td>
                         <td class="min-w-[64px]">
                             <n-button-group round size="small">
@@ -74,10 +75,12 @@
 import { Pencil, Eye, Trash } from '@vicons/ionicons5'
 import { useDialog } from 'naive-ui'
 import EmptyTable from '../EmptyTable.vue'
+import Status from './Status.vue'
 
 export default {
     components: {
-        EmptyTable
+        EmptyTable,
+        Status
     },
     props: {
         data: Object

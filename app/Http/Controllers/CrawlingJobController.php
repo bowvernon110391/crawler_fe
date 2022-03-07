@@ -188,4 +188,8 @@ class CrawlingJobController extends Controller
             'messageType' => 'warning'
         ]);
     }
+
+    public function status(CrawlingJob $job) {
+        return response()->json($job->status);
+    }
 }

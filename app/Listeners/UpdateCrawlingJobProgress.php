@@ -47,7 +47,7 @@ class UpdateCrawlingJobProgress /* implements ShouldQueue */
         } else {
             // update progress
             logger("[UpdateCrawlingJobProgress]: progress {$event->crawlingJob->batch->progress()}%...");
-            $this->svc->update($event->crawlingJob, [ 'status' => "PROCESSING({$event->crawlingJob->batch->progress()}%)" ], null);
+            $this->svc->update($event->crawlingJob, [ 'status' => "PROCESSING {$event->crawlingJob->batch->progress()}" ], null);
         }
     }
 }
