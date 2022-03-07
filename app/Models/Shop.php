@@ -25,4 +25,15 @@ class Shop extends Model
         'registered_at',
         'marketplace',
     ];
+
+    protected $casts = [
+        'lat' => 'float',
+        'lon' => 'float',
+        'kode_pos' => 'string'
+    ];
+
+    // RELATIONS
+    public function items() {
+        return $this->hasMany(Item::class);
+    }
 }

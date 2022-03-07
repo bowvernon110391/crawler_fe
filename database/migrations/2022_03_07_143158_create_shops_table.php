@@ -22,7 +22,7 @@ class CreateShopsTable extends Migration
             // some are optionals
             $table->string('domain')->nullable();
             $table->string('kota');
-            $table->mediumText('alamat');
+            $table->text('alamat');
 
             
             $table->string('kode_pos')->nullable();

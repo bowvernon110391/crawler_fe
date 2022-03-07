@@ -50,6 +50,10 @@ class CrawlingJob extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function items() {
+        return $this->hasMany(Item::class);
+    }
+
     // the real attributes as array
     public function getKeywordsAttribute() {
         return explode(';', $this->attributes['keyword_data']);

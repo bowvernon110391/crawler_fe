@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Category;
+use App\Models\CrawlingJob;
 use App\Models\Shop;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -16,6 +17,7 @@ class ItemFactory extends Factory
     public function definition()
     {
         return [
+            'crawling_job_id' => optional(CrawlingJob::inRandomOrder()->first())->id,
             'item_id' => random_int(3332, PHP_INT_MAX/10),
             'name' => $this->faker->words(3, true),
             'url' => $this->faker->url,

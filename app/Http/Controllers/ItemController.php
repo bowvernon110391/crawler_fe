@@ -2,18 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreItemRequest;
-use App\Http\Requests\UpdateItemRequest;
+use App\Models\CrawlingJob;
 use App\Models\Item;
+use Illuminate\Http\Request;
 
 class ItemController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
+     * @param  \App\Models\CrawlingJob  $crawlingJob
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(CrawlingJob $crawlingJob)
     {
         //
     }
@@ -21,9 +22,10 @@ class ItemController extends Controller
     /**
      * Show the form for creating a new resource.
      *
+     * @param  \App\Models\CrawlingJob  $crawlingJob
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(CrawlingJob $crawlingJob)
     {
         //
     }
@@ -31,10 +33,11 @@ class ItemController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreItemRequest  $request
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\CrawlingJob  $crawlingJob
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreItemRequest $request)
+    public function store(Request $request, CrawlingJob $crawlingJob)
     {
         //
     }
@@ -42,10 +45,11 @@ class ItemController extends Controller
     /**
      * Display the specified resource.
      *
+     * @param  \App\Models\CrawlingJob  $crawlingJob
      * @param  \App\Models\Item  $item
      * @return \Illuminate\Http\Response
      */
-    public function show(Item $item)
+    public function show(CrawlingJob $crawlingJob, Item $item)
     {
         //
     }
@@ -53,10 +57,11 @@ class ItemController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
+     * @param  \App\Models\CrawlingJob  $crawlingJob
      * @param  \App\Models\Item  $item
      * @return \Illuminate\Http\Response
      */
-    public function edit(Item $item)
+    public function edit(CrawlingJob $crawlingJob, Item $item)
     {
         //
     }
@@ -64,11 +69,12 @@ class ItemController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateItemRequest  $request
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\CrawlingJob  $crawlingJob
      * @param  \App\Models\Item  $item
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateItemRequest $request, Item $item)
+    public function update(Request $request, CrawlingJob $crawlingJob, Item $item)
     {
         //
     }
@@ -76,10 +82,11 @@ class ItemController extends Controller
     /**
      * Remove the specified resource from storage.
      *
+     * @param  \App\Models\CrawlingJob  $crawlingJob
      * @param  \App\Models\Item  $item
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Item $item)
+    public function destroy(CrawlingJob $crawlingJob, Item $item)
     {
         //
     }
