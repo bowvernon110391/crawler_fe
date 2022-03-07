@@ -53,4 +53,8 @@ class Item extends Model
     public function crawlingJob() {
         return $this->belongsTo(CrawlingJob::class);
     }
+
+    public function tags() {
+        return $this->belongsToMany(Tag::class)->withTimestamps();
+    }
 }
