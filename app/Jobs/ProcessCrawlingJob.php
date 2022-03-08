@@ -73,18 +73,21 @@ class ProcessCrawlingJob implements ShouldQueue
         $number = 60;
 
         $count = 0;
-        while ($count++ < random_int(1, 5)) {
+        while (true) {
             // build command
-            $cmd = build_crawl_command($keyword, $page, $number, $lockId) . " 2>&1";
+            $cmd = build_crawl_command($keyword, $page, $number, $lockId);
             logger("[ProcessCrawlingJob]: -> exec($cmd)");
 
             // execute it for real
-            exec($cmd, $result, $stat);
+            $json = exec($cmd, $result, $stat);
 
             if (!$stat) {
                 // normal
-                $data = json_decode(implode("\n", $result));
-                logger("[ProcessCrawlingJob]: -> RAW DATA", [ 'data' => $data, 'result' => $result ]);
+                $data = json_decode($json);
+
+                // append more?
+                logger("[ProcessCrawlingJob]: -> RAW DATA", $result);
+                logger("[ProcessCrawlingJob]: -> PARSED DATA", [ 'parsed' => $data ]);
 
                 $dataCount = count($data);
 
