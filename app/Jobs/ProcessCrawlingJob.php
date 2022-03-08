@@ -5,6 +5,7 @@ namespace App\Jobs;
 use App\Events\CrawlingJobProgress;
 use App\Models\CrawlingJob;
 use App\Services\CrawlingJobService;
+use App\Services\ItemService;
 use Illuminate\Bus\Batchable;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
@@ -42,7 +43,7 @@ class ProcessCrawlingJob implements ShouldQueue
      *
      * @return void
      */
-    public function handle()
+    public function handle(ItemService $service)
     {
         // log
         logger("[ProcessCrawlingJob]: -> Crawling started. ({$this->crawlingJob->id}, {$this->keyword})", ['job' => $this->crawlingJob, 'keyword' => $this->keyword]);
@@ -57,10 +58,64 @@ class ProcessCrawlingJob implements ShouldQueue
         }
 
         // do some heavy work
-        sleep(random_int(1, 5));
+        /* sleep(random_int(1, 5));
         // also, randomly spawn error
         if (random_int(0, 100) > 70) {
             throw new \Exception("Fail at keyword: {$this->keyword}");
+        } */
+
+        // call the script and service
+
+        // call it?
+        $keyword = $this->keyword;
+        $lockId = $this->crawlingJob->id . '-' . $keyword;
+        $page = 1;
+        $number = 60;
+
+        $count = 0;
+        while ($count++ < random_int(1, 5)) {
+            // build command
+            $cmd = build_crawl_command($keyword, $page, $number, $lockId) . " 2>&1";
+            logger("[ProcessCrawlingJob]: -> exec($cmd)");
+
+            // execute it for real
+            exec($cmd, $result, $stat);
+
+            if (!$stat) {
+                // normal
+                $data = json_decode(implode("\n", $result));
+                logger("[ProcessCrawlingJob]: -> RAW DATA", [ 'data' => $data, 'result' => $result ]);
+
+                $dataCount = count($data);
+
+                logger("[ProcessCrawlingJob]: -> GOT {$dataCount} DATA!");
+
+                if (!$dataCount) {
+                    // stop crawler, 
+                    logger("[ProcessCrawlingJob]: -> No more result. Stopping crawler...");
+                    break;
+                }
+            } else if ($stat != 2) {
+                // error happens. stop crawler?
+                logger("[ProcessCrawlingJob]: EXCEPTION", [
+                    'exception' => $result,
+                    'code' => $stat,
+                    'keyword' => $keyword,
+                    'page' => $page,
+                    'number' => $number,
+                    'lockId' => $lockId
+                ]);
+                throw new \Exception(print_r($result, false), $stat);
+            } else {
+                // duplicate process... just bail
+                logger("[ProcessCrawlingJob]: -> Duplicate lock {$lockId}");
+                return ;
+            }
+
+            $page++;
+
+            // maybe sleep a bit to avoid suspicion?
+            sleep(5);
         }
 
         // $service->update($this->crawlingJob, ['status' => "PROCESSING({$this->batch()->processedJobs()}/{$this->batch()->totalJobs})"], null);
